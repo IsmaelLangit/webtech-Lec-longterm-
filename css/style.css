@@ -1,55 +1,61 @@
 * {
     margin: 0;
     padding: 0;
-    list-style: none;}
+    list-style: none;
+    text-decoration: none;
+}
 
 body {
     background-image: url("http://wallpaper-gallery.net/images/blur-wallpaper/blur-wallpaper-3.jpg");
     background-size: cover;
 }
-
-
+  
 .navClass ul {
     background-color: rgba(0,0,0,.7);
     color:white;
     font-size: 20px;
-    padding-left: 20px;
     font-family: sans-serif;
     position: fixed;
     width: 100%;
+    z-index: : 10;
+    height: 50px;
 }
+
 .navClass ul li a {
     color: white;
     text-decoration: none;
 }
+
 .navClass ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 16px 16px;
-    position: relative;
-}
-.navClass ul li:hover {
-    background-color: yellow;
-    color : black;
+list-style-type: none;
+display: inline-block;
+padding: 14px 16px;
+position: relative;
 }
 
-ul.lessons {
+.navClass li:hover {
+background-color: gray;
+}
+
+ul.navlesson {
     position: absolute;
     list-style-type: none;
-    margin-left: -25px;
-    padding-top: 5px;
+    width: auto;
+    height : auto;
+    margin-left: -17px;
+    margin-top: 15px;
     opacity: 0;
 }
-ul.lessons li {
-    text-align: center
+
+ul.navlesson li {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.navClass li:hover .lessons {
-    margin-top : 15px;
-    color : black;
-    opacity: .9;
+
+.navClass li:hover .navlesson {
+    opacity: 1;
 }
+
 .welcome h1 {
     padding-top: 60px;
     text-align: center;
@@ -57,27 +63,30 @@ ul.lessons li {
     font-family: Julius Sans One;
     font-size:3.5em;
 }
+
 .welcome p {
     text-align: center;
     color: white;
     font-family: Coustard;
     font-size: 15px;
 }
+
 .lesson h1 {
     padding-top: 60px;
     text-align: center;
     font-family: Special Elite;
-    color:darkgray:
-    
+     color:darkgray:
 }
-.fonts p {
+
+.lesson p {
     text-align: left;
     font-family: Coustard;
     color: white;
     font-size: 17px;
 }
-.fonts h2 {
+
+.lesson h2 {
     text-align: left;
     font-family: Numans;
     color:burlywood;
-}
+  }
