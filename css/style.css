@@ -35,7 +35,9 @@ position: relative;
 
 .navClass li:hover {
 background-color: gray;
+color : yellow;
 }
+
 
 ul.navlesson {
     position: absolute;
@@ -45,6 +47,8 @@ ul.navlesson {
     margin-left: -17px;
     margin-top: 15px;
     opacity: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 ul.navlesson li {
@@ -71,22 +75,40 @@ ul.navlesson li {
     font-size: 15px;
 }
 
+.lesson {
+    margin-left : 50px;
+    margin-right : 50px;
+}
+
 .lesson h1 {
     padding-top: 60px;
     text-align: center;
     font-family: Special Elite;
-     color:darkgray:
+    color:darkgray:
 }
 
+
+.lesson h2 {
+    font-family: Numans;
+    color:burlywood;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+
 .lesson p {
-    text-align: left;
+    margin-left : 50px;
+    font-family: Numans;
+    color:burlywood;
+  }
+
+.lesson li{
+    list-style: square outside;
+    margin-left: 50px;
+}
+
+
+.lesson p, ul, li{
     font-family: Coustard;
     color: white;
     font-size: 17px;
 }
-
-.lesson h2 {
-    text-align: left;
-    font-family: Numans;
-    color:burlywood;
-  }
