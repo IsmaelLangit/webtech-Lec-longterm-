@@ -42,44 +42,34 @@
       
       
 <div class="lesson lesson3" id = "lesson3">
-<h1>LESSON 3: HTTP Resource Addressing </h1>
-<br>
-<br>
-<br>
-<h2>HTTP resources are identified unding URIs (RFC 3986), or, more specifically, HTTP URLs.</h2>
-<ul>
-<li>scheme (http or https)</li>
-<li>authority</li>
-<ul>
-<li>user information or authentication credentials (deprecated). </li>
-<li>host 
-</li>
-<ul>
-<li>domain name (resolved to an IP address using DNS) of the server where the resource resides (or will be created).</li>
-</ul>
-<li>port number</li>
-</ul>
-<li>path to resource </li> 
-<ul>
-<li> (resolved relative to the document root on the server)
-			("/" or "\") </li>
-<li> may refer to a static or dynamic resource </li>
-</ul>
-<li> query
-<ul>
-<li> typically provided as key = value pairs, with ampersand (&) separators between key/value pairs.may be URL - encoded. </li>
-</ul>
-
-<li> fragment identifier (#)
+	<h1>LESSON 3: HTTP Resource Addressing </h1>
+	<br><br><br>
+	<h2>HTTP resources are identified unding URIs (RFC 3986), or, more specifically, HTTP URLs.</h2>
+	<ul>
+		<li>scheme (http or https)</li>
+		<li>authority</li>
+		<li>user information or authentication credentials (deprecated). </li>
+		<li>host </li>
+		<li>domain name (resolved to an IP address using DNS) of the server where the resource resides (or will be created).</li>
+		<li>port number</li>
+		<li>path to resource </li> 
+		<li> (resolved relative to the document root on the server) ("/" or "\") </li>
+		<li> may refer to a static or dynamic resource </li>
+		<li> query
+		<li> typically provided as key = value pairs, with ampersand (&) separators between key/value pairs.may be URL - encoded. </li>
+		<li> fragment identifier (#)
 			typically used in the browsers end.
-			sometimes called a bookmark </li>
-						
-Examples: 
-<ul>
-<li> http://usr:pwd@server.org:81/info/profile.php?id 1234#adr </li>
-<li> https://www.google.com </li>
-</ul>
+			sometimes called a bookmark </li>	
+	</ul>
+	
+	<br>
+	
+		<p>Examples:</p>
+	<ul>
+		<li> http://usr:pwd@server.org:81/info/profile.php?id 1234#adr </li>
+		<li> https://www.google.com </li>
+	</ul>
 </div>
     
     </body>
-   </html>
+ </html>
