@@ -87,6 +87,11 @@ ul.navlesson li {
     color: white;
 }
 
+.lesson dd { 
+    display: block;
+    margin-left: 70px;
+}
+
 
 .lesson h2 {
     font-family: Numans;
