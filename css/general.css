@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: url("http://wallpaper-gallery.net/images/blur-wallpaper/blur-wallpaper-3.jpg");
+    background-size: cover;
+}
+  
