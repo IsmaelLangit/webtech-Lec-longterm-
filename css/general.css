@@ -10,3 +10,68 @@ body {
     background-size: cover;
 }
   
+div.lesson1 {
+    border: 0px solid black;
+	margin: auto;
+    background-color: black;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 1200px;
+}
+
+div.lesson2 {
+    border: 0px solid black;
+	margin: auto;
+    background-color: black;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 1200px;
+}
+
+div.lesson3 {
+    border: 0px solid black;
+	margin: auto;
+    background-color: black;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 1200px;
+}
+
+div.lesson4 {
+    border: 0px solid black;
+	margin: auto;
+    background-color: black;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 1200px;
+}
+
+div.lesson5 {
+    border: 0px solid black;
+	margin: auto;
+    background-color: black;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 1200px;
+}
+
+div.lesson6 {
+    border: 0px solid black;
+	margin: auto;
+    background-color: black;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 1200px;
+}
