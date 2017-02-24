@@ -12,6 +12,7 @@ body {
 
 .welcome h1 {
     padding-top: 60px;
+    padding-bottom: 60px;
     text-align: center;
     color:bisque;
     font-family: Julius Sans One;
@@ -19,6 +20,38 @@ body {
 }
 
 .welcome p {
+    text-align: center;
+    color: white;
+    font-family: Coustard;
+    font-size: 15px;
+}
+
+.internet h1 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+    text-align: center;
+    color:bisque;
+    font-family: Julius Sans One;
+    font-size:3.5em;
+}
+
+.internet p {
+    text-align: center;
+    color: white;
+    font-family: Coustard;
+    font-size: 15px;
+}
+
+.http h1 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+    text-align: center;
+    color:bisque;
+    font-family: Julius Sans One;
+    font-size:3.5em;
+}
+
+.http p {
     text-align: center;
     color: white;
     font-family: Coustard;

@@ -9,6 +9,39 @@ body {
     background-image: url("http://wallpaper-gallery.net/images/blur-wallpaper/blur-wallpaper-3.jpg");
     background-size: cover;
 }
+
+div.welcome {
+	border: 0px solid black;
+	margin-top: px;
+    background-color: gray;
+	padding-bottom: 20px;
+	padding-top: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: px;
+}
+
+div.internet {
+	border: 0px solid black;
+	margin-top: 20px;
+    background-color: white;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: px;
+}
+
+div.http {
+	border: 0px solid black;
+	margin-top: 20px;
+    background-color: white;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: px;
+}
   
 div.lesson1 {
     border: 0px solid black;
