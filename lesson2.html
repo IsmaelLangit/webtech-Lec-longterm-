@@ -134,44 +134,25 @@
 			<li>Method - What you're requesting the server</li>
 			<li>Request URI - Identifier for resource</li>
 			<li>HTTP protocol version</li>
-
-			<h3>Message Headers</h3>
+			<li><a href = "#msgheaders">Message Headers</a>
 				<ul>
 					 <li>HTTP 1.1 requires at least the host request header to be provided.</li>
 				</ul>
-				
-			<h3>4 categories</h3>
-					<ul>
-						<li>General header fields - Clients and Servers.</li>
-						<li>Request header fields - only Clients.</li>
-						<li>Response header fields - only Servers.</li>
-						<li>Entity header fields - Payload of Message</li>
-					</ul>
-					<li>Empty line (CRLF)</li>
-					<li>Message body a.k.a <u>payload</u>(optional)</li>
+			</li>
+			<li>Empty line (CRLF)</li>
+			<li>Message body a.k.a <u>payload</u>(optional)</li>
 				</ul>
 				
 		</ul>			
 
 	<h2>HTTP Response Message (From Server)</h2>
 			<ul>
-				<h3>Status line</h3>
-					<ul>
-						<li>HTTP protocol version</li>
-						<li>status code</li>
-						<li>Reason phrase</li>
-					</ul>
-				<h3>Message headers(general,response, and/or entity headers)</h3>
+				<li>Status line(HTTP Protocol Version, Status Code, Reason Phrase)</li>
+				<li><a href = "#msgheaders">Message headers</a></li>
 				<li>Empty line (CRLF)</li>
 				<li>Message body a.k.a <u>payload</u>(optional)</li>
-				<h2>Status Code</h2>
-					<ul>
-						<li>1XX - INFORMATION</li>
-						<li>2XX - SUCCESS</li>
-						<li>3XX - REDIRECTION</li>
-						<li>4XX - CLIENT ERROR</li>
-						<li>5XX - SERVER ERROR</li>
-					</ul>
+				<li><a href = "#statcodes">Status Code</a></li>
+				
 			</ul>			
 
 	<h2>HTTP request methods</h2>
@@ -236,7 +217,7 @@
 				</li>
 		<br>
 
-	<h2>Message Headers</h2>
+	<h2 id="msgheaders">Message Headers</h2>
 				<h3>General Header Fields</h3>
 					<ul>
 						<li>Cache Control</li>
@@ -300,7 +281,7 @@
 						<li>Last-Modified</li>	
 						</ul>
 					
-	<h2>Status Codes</h2>								
+	<h2 id="statcodes">Status Codes</h2>								
 		<h3>Informational</h3>		
 			<ul>
 				<li>100 Continue</li>
