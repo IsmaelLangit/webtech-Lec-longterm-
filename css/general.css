@@ -10,31 +10,42 @@ body {
     background-size: cover;
 }
 
+.banner {
+	width: 100%;
+	background-color: gray;
+	min-height: 100%;
+	background-size:cover;
+  	height:100vh;
+  	background-image: url("../images/background/background-sample.jpg");
+  	background-attachment: fixed;
+  	background-repeat : no-repeat;
+}
+
+.banner h1 {
+	position:absolute;
+	top:35%;
+	text-align:center;
+	width:100%;
+	color:white;
+	background-color: black;
+	opacity: .8;
+	padding: 50px 0px;
+	font-size: 55px;
+}
+
 .welcome {
-	border: 0px solid black;
-	margin-top: px;
     background-color: gray;
-	padding-bottom: 20px;
-	padding-top: 40px;
-	padding-left: 20px;
-	padding-right: 20px;
-	width: px;
+	padding-bottom: 40px 20px 20px 20px;
 }
 
 .internet, .http {
-	border: 0px solid black;
 	margin-top: 20px;
     background-color: white;
-	padding-bottom: 20px;
-	padding-top: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-	width: px;
+	padding: 20px;
 }
   
 .lesson1, .lesson2 {
     border: 0px solid black;
-	margin: auto;
     background-color: black;
 	padding-bottom: 20px;
 	padding-top: 20px;
