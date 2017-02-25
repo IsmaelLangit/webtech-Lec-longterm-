@@ -101,7 +101,7 @@
 		</li>
 	</ul>
 	
-	<h1>HTTP Resource Addressing </h1>
+	<h2>HTTP Resource Addressing </h2>
 		<h3>HTTP</h3>
 		<ul>
 		<h2>HTTP resources are identified unding URIs (RFC 3986), or, more specifically, HTTP URLs.</h2>
@@ -122,27 +122,26 @@
 				sometimes called a bookmark </li>	
 		</ul>
 		
-		<br>
-		
-			<p>Examples:</p>
+		<h4>Examples:</h4>
 		<ul>
 			<li> http://usr:pwd@server.org:81/info/profile.php?id 1234#adr </li>
 			<li> https://www.google.com </li>
 		</ul>
-	<br>
-	<h1>HTTP Request Message(From Client)</h1>
-		<h2>Request line (CRLF - terminated line consisting of three space - separated values).</h2>
+
+
+	<h2>HTTP Request Message(From Client)</h2>
+		<h3>Request line (CRLF - terminated line consisting of three space - separated values).</h3>
 		<ul>
 			<li>Method - What you're requesting the server</li>
 			<li>Request URI - Identifier for resource</li>
 			<li>HTTP protocol version</li>
 
-			<h2>Message Headers</h2>
+			<h3>Message Headers</h3>
 				<ul>
 					 <li>HTTP 1.1 requires at least the host request header to be provided.</li>
 				</ul>
 				
-				<dd><ul> <h2>4 categories</h2>
+				<p><ul> <h2>4 categories</h2>
 					<ul>
 					
 						<li>General header fields - Clients and Servers.</li>
@@ -151,22 +150,22 @@
 						<li>Entity header fields - Payload of Message</li>
 
 					</ul>
-					</dd>
+					</p>
 					<li>Empty line (CRLF)</li>
 					<li>Message body a.k.a <u>payload</u>(optional)</li>
 				</ul>
 				
 		</ul>			
-	<br>
-	<h1>HTTP Response Message (From Server)</h1>
+
+	<h2>HTTP Response Message (From Server)</h2>
 			<ul>
-				<h2>Status line</h2>
+				<h3>Status line</h3>
 					<ul>
 						<li>HTTP protocol version</li>
 						<li>status code</li>
 						<li>Reason phrase</li>
 					</ul>
-				<h2>Message headers(general,response, and/or entity headers)</h2>
+				<h3>Message headers(general,response, and/or entity headers)</h3>
 				<li>Empty line (CRLF)</li>
 				<li>Message body a.k.a <u>payload</u>(optional)</li>
 				<h2>Status Code</h2>
@@ -178,65 +177,65 @@
 						<li>5XX - SERVER ERROR</li>
 					</ul>
 			</ul>			
-	<br>
-	<h1>HTTP request methods</h1>
+
+	<h2>HTTP request methods</h2>
 			<ul>
-				<li><h2>Standard Methods: </h2>
+			<h3>Standard Methods: </h3>
 					<ul>
 						<li>GET</li>
-						<dd> - Most commonly used HTTP method</dd>
-						<dd> - Must be supported by all compliant general purpose servers</dd>
+						<p> - Most commonly used HTTP method</p>
+						<p> - Must be supported by all compliant general purpose servers</p>
 					</ul>
 					<ul>
 						<li>HEAD</li>
-						<dd> - MSame as GET except that the entity is not included in the response</dd>
-						<dd> - Used to retrieve metadata about the entity implied by the request 
+						<p> - MSame as GET except that the entity is not included in the response</p>
+						<p> - Used to retrieve metadata about the entity implied by the request 
 							without transferring the entity itself. (e.g. to test for link validity or resource
-							modification.) </dd>
-						<dd>Like GET, it must be supported by all general purpose servers.</dd>
+							modification.) </p>
+						<p>Like GET, it must be supported by all general purpose servers.</p>
 					</ul>
 					<ul>
 						<li>POST</li>
-						<dd> - Perform resource, specific processing of the entities.</dd>
-						<dd> - Typically used in submitting HTML form data.</dd>
+						<p> - Perform resource, specific processing of the entities.</p>
+						<p> - Typically used in submitting HTML form data.</p>
 					</ul>
 					<ul>
 						<li>PUT</li>
-						<dd> - Allows to upload data and store.</dd>
+						<p> - Allows to upload data and store.</p>
 					</ul>
 					<ul>
 						<li>DELETE</li>
-						<dd> - Allows to remove data in the storage.</dd>
+						<p> - Allows to remove data in the storage.</p>
 					</ul>
 					<ul>
 						<li>OPTIONS</li>
 					</ul>
 					<ul>
 						<li>TRACE</li>
-						<dd> - Request a loop-back of the request message or echo back to the client.</dd>
-						<dd> - Used for testing or diagnostics of the request or response chain.</dd>
+						<p> - Request a loop-back of the request message or echo back to the client.</p>
+						<p> - Used for testing or diagnostics of the request or response chain.</p>
 					</ul>
 					<ul>
 						<li>CONNECT</li>
-						<dd> - Used only for HTTPS.</dd>
+						<p> - Used only for HTTPS.</p>
 					</ul>
 				</li>
 				<li><h2>Extended Methods:</h2>
 					<ul>
 						<li>e.g. WebDAV(RFC 4918)</li>
-							<dd> - PROPFIND</dd>
-							<dd> - PROPPATCH</dd>
-							<dd> - MKCOL</dd>
-							<dd> - COPY</dd>
-							<dd> - MOVE</dd>
-							<dd> - LOCK</dd>
-							<dd> - UNLOCK</dd>
+							<p> - PROPFIND</p>
+							<p> - PROPPATCH</p>
+							<p> - MKCOL</p>
+							<p> - COPY</p>
+							<p> - MOVE</p>
+							<p> - LOCK</p>
+							<p> - UNLOCK</p>
 						<li>- SAFE</li>
-							<dd> - Doesn't make any changes.</dd>
+							<p> - Doesn't make any changes.</p>
 						<li>- IDEMPOTENT</li>
-							<dd> - Can use multiple times but same result.</dd>
+							<p> - Can use multiple times but same result.</p>
 						<li>- CACHEABLE</li>
-							<dd> - Response can be cache or not depend on others.</dd>
+							<p> - Response can be cache or not depend on others.</p>
 					</ul>
 				</li>
 			</ul>
@@ -244,7 +243,7 @@
 
 <h1>Message Headers</h1>
 			<ul>
-				<li><h2>General Header Fields</h2>
+				<h2>General Header Fields</h2>
 					<ul>
 						<li>Cache Control</li>
 						<li>Connection</li>
@@ -258,7 +257,7 @@
 					</ul>
 				</li>
 					
-					<li><h2>Request Header Fields</h2>
+					<h2>Request Header Fields</h2>
 						<ul>
 						<li>Accept</li>
 						<li>Accept-Charset</li>
@@ -282,7 +281,7 @@
 					</ul>
 					</li>
 					
-					<li><h2>Response Header Fields</h2>
+					<h2>Response Header Fields
 						<ul>
 						<li>Accept-Range</li>
 						<li>Age</li>
@@ -296,7 +295,7 @@
 					</ul>
 					</li>
 					
-					<li><h2>Entity Header Fields</h2>
+					<h2>Entity Header Fields
 						<ul>
 						<li>Allow</li>
 						<li>Content-Encoding</li>
