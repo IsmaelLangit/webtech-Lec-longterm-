@@ -3,10 +3,6 @@
     color:white;
     font-size: 20px;
     font-family: sans-serif;
-    position: fixed;
-    width: 100%;
-    z-index: : 10;
-    height: 50px;
 }
 
 .navClass ul li a {
