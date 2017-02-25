@@ -8,6 +8,8 @@
 body {
     background-image: url("../images/background/gray.jpg");
     background-size: cover;
+    background-attachment: fixed;
+  	background-repeat : no-repeat;
 }
 
 .banner {
@@ -48,5 +50,6 @@ body {
     background-color: black;
 	padding :20px;
 	width: 80%;
+	opacity: .8;
 }
 

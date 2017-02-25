@@ -1,4 +1,6 @@
-.welcome h1, .internet h1, .http h1 {
+/* Font of index.html */
+
+.welcome h1 {
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
@@ -14,7 +16,6 @@
     font-size: 15px;
 }
 
-
 .internet p, .http p {
     text-align: center;
     color: white;
@@ -22,23 +23,11 @@
     font-size: 15px;
 }
 
+/* Font of lessons */
+
 .lesson {
-    margin-left : 50px;
-    margin-right : 50px;
+    margin : 0 10%;
 }
-
-.lesson h1 {
-    padding-top: 60px;
-    text-align: center;
-    font-family: Special Elite;
-    color: white;
-}
-
-.lesson dd { 
-    display: block;
-    margin-left: 70px;
-}
-
 
 .lesson h2 {
     font-family: Numans;
