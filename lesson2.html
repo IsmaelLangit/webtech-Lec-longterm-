@@ -39,21 +39,22 @@
 <div class="lesson lesson2" id = "lesson2">
 	<h2>HTTP</h2>
 	<ul>
-		<li>Application layer communications protocol used to access resources (hypertext/hypermedia) on the World Wide Web.</li>
-		<li>invented by Tim Berners-Lee</li>
-		<li>jointly developed by the W3C and the IETF</li>
-		<li>version history :<br />
+	<li>Application layer communications protocol used to access resources (hypertext/hypermedia) on the World Wide Web.</li>
+	<li>invented by Tim Berners-Lee</li>
+	<li>jointly developed by the W3C and the IETF</li>
+	<li>version history :
 	<ul>
 		<li>HTTP 0.9 (1991)</li>
-		<li>HTTP 1.0 (RFC 1945, May 1996)&nbsp;</li>
-		<li>HTTP 1.1 (RFS 2068 Jan 1997, RFC 2116 Jun 1999), RFC 7230 - 7235 (Jun 2014)&nbsp;</li>
-		<li>HTTP 2 (RFC 7540 May 2015)&nbsp;
-	<ul>
-		<li>SPDY - google</li>
+		<li>HTTP 1.0 (RFC 1945, May 1996)</li>
+		<li>HTTP 1.1 (RFS 2068 Jan 1997, RFC 2116 Jun 1999), RFC 7230 - 7235 (Jun 2014)</li>
+		<li>HTTP 2 (RFC 7540 May 2015)
+
+		<ul>
+			<li>SPDY - google</li>
+		</ul>
+	</li>
 	</ul>
-		</li>
-	</ul>
-		</li>
+	</li>
 	</ul>
 	
 	<h2>Fundamentals of HTTP</h2>
@@ -179,7 +180,6 @@
 			</ul>			
 
 	<h2>HTTP request methods</h2>
-			<ul>
 			<h3>Standard Methods: </h3>
 					<ul>
 						<li>GET</li>
@@ -220,16 +220,17 @@
 						<p> - Used only for HTTPS.</p>
 					</ul>
 				</li>
-				<li><h2>Extended Methods:</h2>
-					<ul>
-						<li>e.g. WebDAV(RFC 4918)</li>
-							<p> - PROPFIND</p>
-							<p> - PROPPATCH</p>
-							<p> - MKCOL</p>
-							<p> - COPY</p>
-							<p> - MOVE</p>
-							<p> - LOCK</p>
-							<p> - UNLOCK</p>
+
+			<h3>Extended Methods: </h3>
+				<ul>
+					<li>e.g. WebDAV(RFC 4918)</li>
+						<p> - PROPFIND</p>
+						<p> - PROPPATCH</p>
+						<p> - MKCOL</p>
+						<p> - COPY</p>
+						<p> - MOVE</p>
+						<p> - LOCK</p>
+						<p> - UNLOCK</p>
 						<li>- SAFE</li>
 							<p> - Doesn't make any changes.</p>
 						<li>- IDEMPOTENT</li>
@@ -238,12 +239,10 @@
 							<p> - Response can be cache or not depend on others.</p>
 					</ul>
 				</li>
-			</ul>
-<br>
+		<br>
 
-<h1>Message Headers</h1>
-			<ul>
-				<h2>General Header Fields</h2>
+	<h2>Message Headers</h2>
+				<h3>General Header Fields</h3>
 					<ul>
 						<li>Cache Control</li>
 						<li>Connection</li>
@@ -255,9 +254,8 @@
 						<li>Via</li>
 						<li>Warning</li>
 					</ul>
-				</li>
 					
-					<h2>Request Header Fields</h2>
+					<h3>Request Header Fields</h3>
 						<ul>
 						<li>Accept</li>
 						<li>Accept-Charset</li>
@@ -279,9 +277,8 @@
 						<li>User-agent</li>
 						<li>Proxy-Authorization</li>	
 					</ul>
-					</li>
 					
-					<h2>Response Header Fields
+					<h3>Response Header Fields</h3>
 						<ul>
 						<li>Accept-Range</li>
 						<li>Age</li>
@@ -292,10 +289,9 @@
 						<li>Server</li>
 						<li>Vary</li>
 						<li>WWW-Authenticate</li>	
-					</ul>
-					</li>
+						</ul>
 					
-					<h2>Entity Header Fields
+					<h3>Entity Header Fields</h3>
 						<ul>
 						<li>Allow</li>
 						<li>Content-Encoding</li>
@@ -307,91 +303,76 @@
 						<li>Content-Type</li>
 						<li>Expires</li>
 						<li>Last-Modified</li>	
-					</ul>
-					</li>
-					
-					<h1>Status Codes</h1>
-						<ul>
-						
-						<li><h2>Informational</h2>
-						
-						<ul>
-						<li>100 Continue</li>
-						<li>101 Switching Protocol</li>
 						</ul>
-						</li>
-						
-						<li><h2>Success</h2>
-						
-						<ul>					
-						<li>200 Ok</li>
-						<li>201 Created</li>
-						<li>202 Accepted</li>
-						<li>203 Non-Authorative Information</li>
-						<li>204 No Content</li>
-						<li>205 Reset Content</li>
-						<li>206 Partial Content</li>
-						</ul>
-						</li>
-						
-						<li><h2>Redirection</h2>
-						
-						<ul>
-						<li>300 Multiple Choices</li>
-						<li>301 Moved Permanently</li>
-						<li>302 Found</li>
-						<li>303 See Other</li>
-						<li>304 Not Modified</li>
-						<li>305 Use Proxy</li>
-						<li>306 (Unused)</li>
-						<li>307 Temporary Redirect</li>
-						</ul>
-						</li>
-						
-						<li><h2>Client Error</h2>
-						
-						<ul>
-						<li>400 Bad Request</li>
-						<li>401 Unauthorized</li>
-						<li>402 Payment Required</li>
-						<li>403 Forbidden</li>
-						<li>404 Not Found</li>
-						<li>405 Method Not Allowed</li>
-						<li>406 Not Acceptable</li>
-						<li>407 Proxy Authentication Required</li>
-						<li>408 Request Time-out</li>
-						<li>409 Conflict</li>
-						<li>410 Gone</li>
-						<li>411 Length Required</li>
-						<li>412 Precondition Failed</li>
-						<li>413 Request Entity Too Large</li>
-						<li>414 Request URI Too Large</li>
-						<li>415 Unsupported Media Type</li>
-						<li>416 Requested Range Not Satisfiable</li>
-						<li>417 Expectation Failed</li>
-						<li>426 Upgrade Required</li>
-						</ul>
-						</li>
-						
-						<li><h2>Server Error(5xx)</h2>
-						<ul>
-						<li>500 Internal Server Error</li>
-						<li>501 Not Implemented</li>
-						<li>502 Bad Gateway</li>
-						<li>503 Service Unavailable</li>
-						<li>504 Gateway Time-out</li>
-						<li>505 HTTP Version Not Supported</li>
-						</ul>
-						</li>
-					</ul>
 					
-					
-					
-					
-					
+	<h2>Status Codes</h2>								
+		<h3>Informational</h3>		
+			<ul>
+				<li>100 Continue</li>
+				<li>101 Switching Protocol</li>
 			</ul>
-<br>
+					
+						
+		<h3>Success</h3>			
+			<ul>					
+				<li>200 Ok</li>
+				<li>201 Created</li>
+				<li>202 Accepted</li>
+				<li>203 Non-Authorative Information</li>
+				<li>204 No Content</li>
+				<li>205 Reset Content</li>
+				<li>206 Partial Content</li>
+			</ul>
+						
+		<h3>Redirection</h3>				
+			<ul>
+				<li>300 Multiple Choices</li>
+				<li>301 Moved Permanently</li>
+				<li>302 Found</li>
+				<li>303 See Other</li>
+				<li>304 Not Modified</li>
+				<li>305 Use Proxy</li>
+				<li>306 (Unused)</li>
+				<li>307 Temporary Redirect</li>
+			</ul>
+						
+		<h3>Client Error</h3>
+						
+			<ul>
+				<li>400 Bad Request</li>
+				<li>401 Unauthorized</li>
+				<li>402 Payment Required</li>
+				<li>403 Forbidden</li>
+				<li>404 Not Found</li>
+				<li>405 Method Not Allowed</li>
+				<li>406 Not Acceptable</li>
+				<li>407 Proxy Authentication Required</li>
+				<li>408 Request Time-out</li>
+				<li>409 Conflict</li>
+				<li>410 Gone</li>
+				<li>411 Length Required</li>
+				<li>412 Precondition Failed</li>
+				<li>413 Request Entity Too Large</li>
+				<li>414 Request URI Too Large</li>
+				<li>415 Unsupported Media Type</li>
+				<li>416 Requested Range Not Satisfiable</li>
+				<li>417 Expectation Failed</li>
+				<li>426 Upgrade Required</li>
+				</ul>
+			</li>
+						
+		<h3>Server Error(5xx)</h3>
+			<ul>
+				<li>500 Internal Server Error</li>
+				<li>501 Not Implemented</li>
+				<li>502 Bad Gateway</li>
+				<li>503 Service Unavailable</li>
+				<li>504 Gateway Time-out</li>
+				<li>505 HTTP Version Not Supported</li>
+			</ul>
+					
+
 </div>
     
-    </body>
-   </html>
+</body>
+</html>
