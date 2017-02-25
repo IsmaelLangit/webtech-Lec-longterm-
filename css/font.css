@@ -7,6 +7,11 @@
     color:bisque;
     font-family: Julius Sans One;
     font-size:3.5em;
+	position:absolute;
+    top:20%;
+    width:100%;
+    background-color: black;
+    opacity: .8;
 }
 
 .welcome p {
@@ -16,11 +21,22 @@
     font-size: 15px;
 }
 
-.internet p, .http p {
-    text-align: center;
-    color: white;
-    font-family: Coustard;
-    font-size: 15px;
+.internet h1, .http h1{
+    top:35%;
+    text-align:center;
+    width:100%;
+    color:white;
+    background-color: white;
+    opacity: .8;
+    font-size: 55px;
+	overflow: hidden;
+	display: inline-block;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.internet h1:hover, .http h1:hover{
+	opacity: 0.5;
 }
 
 /* Font of banner */
