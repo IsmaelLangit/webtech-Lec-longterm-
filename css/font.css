@@ -95,3 +95,18 @@
     font-size: 20px;
     margin : 0 50px;
 }
+
+.lesson dl, .lesson dt, .lesson dd{
+    font-family: Coustard;
+    font-size: 20px;
+    margin: 0 50px;
+}
+.lesson dt{
+    display: list-item;
+    list-style: square outside;
+}
+.lesson dl {
+    color: black;
+    background-color: white;
+    padding: 10px 30px;
+}
