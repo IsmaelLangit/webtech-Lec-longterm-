@@ -1,9 +1,11 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<title> Lesson 2 </title>
 <link rel="stylesheet" type="text/css"
-          href="https://fonts.googleapis.com/css?family=Julius+Sans+One">
+          href="https://fonts.googleapis.com/css?family=Jdlus+Sans+One">
 <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Special+Elite">
 <link rel="stylesheet" type="text/css"
@@ -104,24 +106,22 @@
 	
 	<h2>HTTP Resource Addressing </h2>
 		<h3>HTTP</h3>
-		<ul>
-			<li>HTTP resources are identified unding URIs (RFC 3986), or, more specifically, HTTP URLs.</li>
-			<li>scheme (http or https)</li>
-			<li>authority<br>
-			-user information or authentication credentials (deprecated).<br>
-			-host<br>
-			&bsp;domain name (resolved to an IP address using DNS) of the server where the resource resides (or will be created).<br>
-			-port number</li>
-			<li>path to resource(resolved relative to the document root on the server) ("/" or "\")<br>
-			-may refer to a static or dynamic resource </li>
-			<li> query
-			-typically provided as key = value pairs, with ampersand (&) separators between key/value pairs.may be URL - encoded. </li>
-			<li> fragment identifier (#)
-				typically used in the browsers end.
-				sometimes called a bookmark </li>	
-		</ul>
+		<dl>
+			<dt>HTTP resources are identified unding URIs (RFC 3986), or, more specifically, HTTP URLs.</dt>
+			<dt>Scheme (http or https)</dt>
+			<dt>authority</dt>
+				<dd>-user information or authentication credentials (deprecated).</dd>
+				<dd>-host domain name (resolved to an IP address using DNS) of the server where the resource resides (or will be created).</dd>
+				<dd>-port number</dd>
+			<dt>Path to resource(resolved relative to the document root on the server) ("/" or "\")</dt>
+				<dd>-may refer to a static or dynamic resource </dd>
+			<dt>Query </dt>
+				<dd>-typically provided as key = value pairs, with ampersand (&) separators between key/value pairs.may be URL - encoded. </dd>
+			<dt>Fragment identifier (#) </dt>
+				<dd>-typically used in the browsers end.sometimes called a bookmark </dd>
+		</dl>
 		
-		<h4>Examples:</h4>
+		<h3>Examples:</h3>
 		<ul>
 			<li> http://usr:pwd@server.org:81/info/profile.php?id 1234#adr </li>
 			<li> https://www.google.com </li>
@@ -141,9 +141,7 @@
 			</li>
 			<li>Empty line (CRLF)</li>
 			<li>Message body a.k.a <u>payload</u>(optional)</li>
-				</ul>
-				
-		</ul>			
+		</ul>		
 
 	<h2>HTTP Response Message (From Server)</h2>
 			<ul>
@@ -157,64 +155,63 @@
 
 	<h2>HTTP request methods</h2>
 			<h3>Standard Methods: </h3>
-					<ul>
-						<li>GET</li>
-						<p> - Most commonly used HTTP method</p>
-						<p> - Must be supported by all compliant general purpose servers</p>
-					</ul>
-					<ul>
-						<li>HEAD</li>
-						<p> - MSame as GET except that the entity is not included in the response</p>
-						<p> - Used to retrieve metadata about the entity implied by the request 
+					<dl>
+						<dt>GET</dt>
+							<dd>- Most commonly used HTTP method</dd>
+							<dd>- Must be supported by all compliant general purpose servers</dd>
+					</dl>
+					<dl>
+						<dt>HEAD</dt>
+							<dd>- MSame as GET except that the entity is not included in the response</dd>
+							<dd>- Used to retrieve metadata about the entity implied by the request 
 							without transferring the entity itself. (e.g. to test for link validity or resource
-							modification.) </p>
-						<p>Like GET, it must be supported by all general purpose servers.</p>
-					</ul>
-					<ul>
-						<li>POST</li>
-						<p> - Perform resource, specific processing of the entities.</p>
-						<p> - Typically used in submitting HTML form data.</p>
-					</ul>
-					<ul>
-						<li>PUT</li>
-						<p> - Allows to upload data and store.</p>
-					</ul>
-					<ul>
-						<li>DELETE</li>
-						<p> - Allows to remove data in the storage.</p>
-					</ul>
-					<ul>
-						<li>OPTIONS</li>
-					</ul>
-					<ul>
-						<li>TRACE</li>
-						<p> - Request a loop-back of the request message or echo back to the client.</p>
-						<p> - Used for testing or diagnostics of the request or response chain.</p>
-					</ul>
-					<ul>
-						<li>CONNECT</li>
-						<p> - Used only for HTTPS.</p>
-					</ul>
-				</li>
+							modification.) </dd>
+							<dd>Like GET, it must be supported by all general purpose servers.</dd>
+					</dl>
+					<dl>
+						<dt>POST</dt>
+							<dd> - Perform resource, specific processing of the entities.</dd>
+							<dd> - Typically used in submitting HTML form data.</dd>
+					</dl>
+					<dl>
+						<dt>PUT</dt>
+							<dd> - Allows to upload data and store.</dd>
+					</dl>
+					<dl>
+						<dt>DELETE</dt>
+							<dd> - Allows to remove data in the storage.</dd>
+					</dl>
+					<dl>
+						<dt>OPTIONS</dt>
+							<dd> - allows the client to determine the options and/or requirements associated with a resource </dd>
+					</dl>
+					<dl>
+						<dt>TRACE</dt>
+							<dd> - Request a loop-back of the request message or echo back to the client.</dd>
+							<dd> - Used for testing or diagnostics of the request or response chain.</dd>
+					</dl>
+					<dl>
+						<dt>CONNECT</dt>
+							<dd> - Used only for HTTPS.</dd>
+					</dl>
 
 			<h3>Extended Methods: </h3>
-				<ul>
-					<li>e.g. WebDAV(RFC 4918)</li>
-						<p> - PROPFIND</p>
-						<p> - PROPPATCH</p>
-						<p> - MKCOL</p>
-						<p> - COPY</p>
-						<p> - MOVE</p>
-						<p> - LOCK</p>
-						<p> - UNLOCK</p>
-						<li>- SAFE</li>
-							<p> - Doesn't make any changes.</p>
-						<li>- IDEMPOTENT</li>
-							<p> - Can use multiple times but same result.</p>
-						<li>- CACHEABLE</li>
-							<p> - Response can be cache or not depend on others.</p>
-					</ul>
-				</li>
+				<dl>
+					<dt>e.g. WebDAV(RFC 4918)</dt>
+						<dd> PROPFIND</dd>
+						<dd> PROPPATCH</dd>
+						<dd> MKCOL</dd>
+						<dd> COPY</dd>
+						<dd> MOVE</dd>
+						<dd> LOCK</dd>
+						<dd> UNLOCK</dd>
+						<dd>  SAFE </dd>
+						<dd> - Doesn't make any changes.</dd>
+						<dd> IDEMPOTENT</dd>
+						<dd> - Can use multiple times but same result.</dd>
+						<dd> CACHEABLE</dd>
+						<dd> - Response can be cache or not depend on others</dd>
+				</dl>
 		<br>
 
 	<h2 id="msgheaders">Message Headers</h2>
@@ -335,7 +332,6 @@
 				<li>417 Expectation Failed</li>
 				<li>426 Upgrade Required</li>
 				</ul>
-			</li>
 						
 		<h3>Server Error(5xx)</h3>
 			<ul>
@@ -346,9 +342,6 @@
 				<li>504 Gateway Time-out</li>
 				<li>505 HTTP Version Not Supported</li>
 			</ul>
-					
-
 </div>
-    
 </body>
 </html>
