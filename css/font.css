@@ -6,7 +6,7 @@
     text-align: center;
     color:bisque;
     font-family: "Julius Sans One";
-    font-size:3.5em;
+    font-size:60px;
 	position:absolute;
     top:20%;
     width:100%;
@@ -21,18 +21,19 @@
     font-size: 15px;
 }
 
-.internet h1, .http h1{
+.internet h1 a, .http h1 a{
     top:35%;
     text-align:center;
     width:100%;
-    color:white;
-    background-color: white;
+    background-color: #b8b894;
     opacity: .8;
-    font-size: 55px;
+    font-size: 50px;
 	overflow: hidden;
 	display: inline-block;
 	text-decoration: none;
 	list-style-type: none;
+	color: #003333;
+
 }
 
 .internet h1:hover, .http h1:hover{
@@ -50,7 +51,7 @@
     background-color: black;
     opacity: .8;
     padding: 50px 0px;
-    font-size: 55px;
+   
 }
 
 /* Font of lessons */
