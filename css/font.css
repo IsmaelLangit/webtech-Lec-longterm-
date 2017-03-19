@@ -7,7 +7,7 @@
     color:bisque;
     font-family: "Julius Sans One";
     font-size:60px;
-	position:absolute;
+    position:absolute;
     top:35%;
     width:100%;
     background-color: black;
@@ -29,16 +29,16 @@
     background-color: #b8b894;
     opacity: .8;
     font-size: 50px;
-	overflow: hidden;
-	display: inline-block;
-	text-decoration: none;
-	list-style-type: none;
-	color: black; /**color and font are changeable already**/
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    color: black; /**color and font are changeable already**/
 
 }
 
 .internet h1:hover, .http h1:hover{
-	opacity: 0.5;
+    opacity: 0.5;
 }
 
 /* Font of banner */
@@ -62,34 +62,7 @@
     margin : 0 10%;
 }
 
-.lesson h1 {
-	background-color: white;
-    font-family: Numans;
-    font-size: 35px;
-    color: burlywood;
-    padding: 10px 0 10px 0;
-    text-align: center;
-	margin-top: 10px;
-	margin-bottom: 10px;
-  }
-
-.lesson summary {
-	background-color: gray;
-    font-family: Numans;
-    font-size: 35px;
-    color: burlywood;
-    padding: 10px 0 10px 10px;
-    text-align: left;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.lesson summary:hover{
-	background-color: white;
-}
-  
-  
-.lesson h2 {
+.lesson h2, .aboutus h2 {
     font-family: Numans;
     font-size: 35px;
     color: burlywood;
@@ -97,7 +70,7 @@
     text-align: center;
   }
 
-.lesson h3 {
+.lesson h3, .aboutus h3{
     font-family: Numans;
     font-size: 30px;
     color: gray;
@@ -109,7 +82,7 @@
     text-align: justify;
 }
 
-.lesson p, .lesson ul {
+.lesson p, .lesson ul, .aboutus p {
     font-family: Numans;
     color: black;
     background-color: white;
