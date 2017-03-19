@@ -14,20 +14,12 @@
     opacity: .8;
 }
 
-.welcome p {
+.indexfooter p {
     text-align: center;
     color: black;
     font-family: Coustard;
     font-size: 22px;
-    padding-top: 46%;
-}
-
-.footer p {
-    text-align: center;
-    color: white;
-    font-family: Coustard;
-    font-size: 22px;
-    padding-top: 5%;
+    padding-top: 20%;
 }
 
 .internet h1 a, .http h1 a{
@@ -48,8 +40,6 @@
 .internet h1:hover, .http h1:hover{
     opacity: 0.5;
 }
-
-
 
 /* Font of banner */
 
