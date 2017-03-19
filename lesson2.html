@@ -152,151 +152,148 @@
 	
 	<details>
 	<summary>HTTP Response Message (From Server)</summary>
-			<ul>
-				<li>Status line(HTTP Protocol Version, Status Code, Reason Phrase)</li>
-				<li><a href = "#msgheaders" style="text-decoration: underline;">Message headers</a></li>
-				<li>Empty line (CRLF)</li>
-				<li>Message body a.k.a <u>payload</u>(optional)</li>
-				<li><a href = "#statcodes" style="text-decoration: underline;">Status Code</a></li>
-				
-			</ul>
+		<ul>
+			<li>Status line(HTTP Protocol Version, Status Code, Reason Phrase)</li>
+			<li><a href = "#msgheaders" style="text-decoration: underline;">Message headers</a></li>
+			<li>Empty line (CRLF)</li>
+			<li>Message body a.k.a <u>payload</u>(optional)</li>
+			<li><a href = "#statcodes" style="text-decoration: underline;">Status Code</a></li>
+		</ul>
 	</details>
 
 	<details>
 	<summary>HTTP request methods</summary>
-			<h3>Standard Methods: </h3>
-					<dl>
-						<dt>GET</dt>
-							<dd>- Most commonly used HTTP method</dd>
-							<dd>- Must be supported by all compliant general purpose servers</dd>
-					</dl>
-					<dl>
-						<dt>HEAD</dt>
-							<dd>- MSame as GET except that the entity is not included in the response</dd>
-							<dd>- Used to retrieve metadata about the entity implied by the request 
-							without transferring the entity itself. (e.g. to test for link validity or resource
-							modification.) </dd>
-							<dd>Like GET, it must be supported by all general purpose servers.</dd>
-					</dl>
-					<dl>
-						<dt>POST</dt>
-							<dd> - Perform resource, specific processing of the entities.</dd>
-							<dd> - Typically used in submitting HTML form data.</dd>
-					</dl>
-					<dl>
-						<dt>PUT</dt>
-							<dd> - Allows to upload data and store.</dd>
-					</dl>
-					<dl>
-						<dt>DELETE</dt>
-							<dd> - Allows to remove data in the storage.</dd>
-					</dl>
-					<dl>
-						<dt>OPTIONS</dt>
-							<dd> - allows the client to determine the options and/or requirements associated with a resource </dd>
-					</dl>
-					<dl>
-						<dt>TRACE</dt>
-							<dd> - Request a loop-back of the request message or echo back to the client.</dd>
-							<dd> - Used for testing or diagnostics of the request or response chain.</dd>
-					</dl>
-					<dl>
-						<dt>CONNECT</dt>
-							<dd> - Used only for HTTPS.</dd>
-					</dl>
+		<h3>Standard Methods: </h3>
+				<dl>
+					<dt>GET</dt>
+						<dd>- Most commonly used HTTP method</dd>
+						<dd>- Must be supported by all compliant general purpose servers</dd>
+				</dl>
+				<dl>
+					<dt>HEAD</dt>
+						<dd>- MSame as GET except that the entity is not included in the response</dd>
+						<dd>- Used to retrieve metadata about the entity implied by the request 
+						without transferring the entity itself. (e.g. to test for link validity or resource
+						modification.) </dd>
+						<dd>Like GET, it must be supported by all general purpose servers.</dd>
+				</dl>
+				<dl>
+					<dt>POST</dt>
+						<dd> - Perform resource, specific processing of the entities.</dd>
+						<dd> - Typically used in submitting HTML form data.</dd>
+				</dl>
+				<dl>
+					<dt>PUT</dt>
+						<dd> - Allows to upload data and store.</dd>
+				</dl>
+				<dl>
+					<dt>DELETE</dt>
+						<dd> - Allows to remove data in the storage.</dd>
+				</dl>
+				<dl>
+					<dt>OPTIONS</dt>
+						<dd> - allows the client to determine the options and/or requirements associated with a resource </dd>
+				</dl>
+				<dl>
+					<dt>TRACE</dt>
+						<dd> - Request a loop-back of the request message or echo back to the client.</dd>
+						<dd> - Used for testing or diagnostics of the request or response chain.</dd>
+				</dl>
+				<dl>
+					<dt>CONNECT</dt>
+						<dd> - Used only for HTTPS.</dd>
+				</dl>
 	</details>
 	
 	<details>
-
-			<summary>Extended Methods: </summary>
-				<dl>
-					<dt>e.g. WebDAV(RFC 4918)</dt>
-						<dd> PROPFIND</dd>
-						<dd> PROPPATCH</dd>
-						<dd> MKCOL</dd>
-						<dd> COPY</dd>
-						<dd> MOVE</dd>
-						<dd> LOCK</dd>
-						<dd> UNLOCK</dd>
-						<dd>  SAFE </dd>
-						<dd> - Doesn't make any changes.</dd>
-						<dd> IDEMPOTENT</dd>
-						<dd> - Can use multiple times but same result.</dd>
-						<dd> CACHEABLE</dd>
-						<dd> - Response can be cache or not depend on others</dd>
-				</dl>
+		<summary>Extended Methods: </summary>
+			<dl>
+				<dt>e.g. WebDAV(RFC 4918)</dt>
+					<dd> PROPFIND</dd>
+					<dd> PROPPATCH</dd>
+					<dd> MKCOL</dd>
+					<dd> COPY</dd>
+					<dd> MOVE</dd>
+					<dd> LOCK</dd>
+					<dd> UNLOCK</dd>
+					<dd>  SAFE </dd>
+					<dd> - Doesn't make any changes.</dd>
+					<dd> IDEMPOTENT</dd>
+					<dd> - Can use multiple times but same result.</dd>
+					<dd> CACHEABLE</dd>
+					<dd> - Response can be cache or not depend on others</dd>
+			</dl>
 		<br>
 	</details>
 
 
 	<h2 id="msgheaders">Message Headers</h2>
 	<details>
-				<summary>General Header Fields</summary>
-					<ul>
-						<li>Cache Control</li>
-						<li>Connection</li>
-						<li>Date</li>
-						<li>Pragma</li>
-						<li>Trailer</li>
-						<li>Transfer Encoding</li>
-						<li>Upgrade</li>
-						<li>Via</li>
-						<li>Warning</li>
-					</ul>
+		<summary>General Header Fields</summary>
+			<ul>
+				<li>Cache Control</li>
+				<li>Connection</li>
+				<li>Date</li>
+				<li>Pragma</li>
+				<li>Trailer</li>
+				<li>Transfer Encoding</li>
+				<li>Upgrade</li>
+				<li>Via</li>
+				<li>Warning</li>
+			</ul>
 	</details>
 	<details>
-					
-					<summary>Request Header Fields</summary>
-						<ul>
-						<li>Accept</li>
-						<li>Accept-Charset</li>
-						<li>Accept-Encoding</li>
-						<li>Accept-Language</li>
-						<li>Authorization</li>
-						<li>Expect</li>
-						<li>From</li>
-						<li>Host</li>
-						<li>If-Match</li>
-						<li>If-Modified-Since</li>
-						<li>If-Modified-match</li>
-						<li>If-Range</li>
-						<li>If-Unmodified-Since</li>
-						<li>Max-forward</li>
-						<li>Range</li>
-						<li>Referer</li>
-						<li>TE (Trailer Encoding)</li>
-						<li>User-agent</li>
-						<li>Proxy-Authorization</li>	
-					</ul>
+		<summary>Request Header Fields</summary>
+			<ul>
+			<li>Accept</li>
+			<li>Accept-Charset</li>
+			<li>Accept-Encoding</li>
+			<li>Accept-Language</li>
+			<li>Authorization</li>
+			<li>Expect</li>
+			<li>From</li>
+			<li>Host</li>
+			<li>If-Match</li>
+			<li>If-Modified-Since</li>
+			<li>If-Modified-match</li>
+			<li>If-Range</li>
+			<li>If-Unmodified-Since</li>
+			<li>Max-forward</li>
+			<li>Range</li>
+			<li>Referer</li>
+			<li>TE (Trailer Encoding)</li>
+			<li>User-agent</li>
+			<li>Proxy-Authorization</li>	
+		</ul>
 	</details>
 	<details>
-					<summary>Response Header Fields</summary>
-						<ul>
-						<li>Accept-Range</li>
-						<li>Age</li>
-						<li>ETag</li>
-						<li>Location</li>
-						<li>Proxy-Authenticate</li>
-						<li>Retry-after</li>
-						<li>Server</li>
-						<li>Vary</li>
-						<li>WWW-Authenticate</li>	
-						</ul>
+		<summary>Response Header Fields</summary>
+			<ul>
+			<li>Accept-Range</li>
+			<li>Age</li>
+			<li>ETag</li>
+			<li>Location</li>
+			<li>Proxy-Authenticate</li>
+			<li>Retry-after</li>
+			<li>Server</li>
+			<li>Vary</li>
+			<li>WWW-Authenticate</li>	
+			</ul>
 	</details>
 	<details>
-					<summary>Entity Header Fields</summary>
-						<ul>
-						<li>Allow</li>
-						<li>Content-Encoding</li>
-						<li>Content-Language</li>
-						<li>Content-Length</li>
-						<li>Content-Location</li>
-						<li>Content-MD5</li>
-						<li>Content-Range</li>
-						<li>Content-Type</li>
-						<li>Expires</li>
-						<li>Last-Modified</li>	
-						</ul>
+		<summary>Entity Header Fields</summary>
+			<ul>
+			<li>Allow</li>
+			<li>Content-Encoding</li>
+			<li>Content-Language</li>
+			<li>Content-Length</li>
+			<li>Content-Location</li>
+			<li>Content-MD5</li>
+			<li>Content-Range</li>
+			<li>Content-Type</li>
+			<li>Expires</li>
+			<li>Last-Modified</li>	
+			</ul>
 	</details>
 					
 	<h2 id="statcodes">Status Codes</h2>
@@ -335,10 +332,8 @@
 			</ul>
 	</details>
 	
-	<details>
-						
-		<summary>Client Error(4xx)</summary>
-						
+	<details>				
+		<summary>Client Error(4xx)</summary>				
 			<ul>
 				<li>400 Bad Request</li>
 				<li>401 Unauthorized</li>
@@ -361,8 +356,8 @@
 				<li>426 Upgrade Required</li>
 				</ul>
 	</details>
+	
 	<details>
-						
 		<summary>Server Error(5xx)</summary>
 			<ul>
 				<li>500 Internal Server Error</li>
