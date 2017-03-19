@@ -62,6 +62,22 @@
     margin : 0 10%;
 }
 
+
+.lesson summary {
+	background-color: gray;
+    font-family: Numans;
+    font-size: 35px;
+    color: burlywood;
+    padding: 10px 0 10px 10px;
+    text-align: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.lesson summary:hover{
+	background-color: white;
+}
+
 .lesson h2, .aboutus h2 {
     font-family: Numans;
     font-size: 35px;
