@@ -43,12 +43,13 @@ body {
 }
   
 .lesson {
-    background-color: black;
+  background-color: black;
   padding :20px;
   width: 80%;
   opacity: .8;
   
 }
+
 
 a {
   color: black;
@@ -84,13 +85,32 @@ a {
   background-image: none;
 }
 
-.img {
-  float: bottom;
-  width: 26%;
-  background-color: black;
-  color: #2C6700;
-  box-shadow: 10px 10px 5px #888888;
-  margin: 3.5% 
+.mit {
+  margin-top: 2.5%;
+  margin-right: 2.5%;
+  float: left;
+  width: 20%;
+  height: 20%;
+
+}
+
+.ray {
+  float: right;
+  width: 12.5%;
+  height: 12.5%;
+  margin-top: 2.5%;
+  margin-left: 3.5%;
+
+}
+
+.berners {
+  float: left;
+  width: 12.5%;
+  height: 12.5%;
+  margin-top: 2.5%;
+  margin-left: 3.5%;
+  margin-right: 3.5%;
 	
 }
+
 
