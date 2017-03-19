@@ -62,7 +62,34 @@
     margin : 0 10%;
 }
 
-.lesson h2, .aboutus h2 {
+.lesson h1 {
+	background-color: white;
+    font-family: Numans;
+    font-size: 35px;
+    color: burlywood;
+    padding: 10px 0 10px 0;
+    text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+  }
+
+.lesson summary {
+	background-color: gray;
+    font-family: Numans;
+    font-size: 35px;
+    color: burlywood;
+    padding: 10px 0 10px 10px;
+    text-align: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.lesson summary:hover{
+	background-color: white;
+}
+  
+  
+.lesson h2 {
     font-family: Numans;
     font-size: 35px;
     color: burlywood;
@@ -70,7 +97,7 @@
     text-align: center;
   }
 
-.lesson h3, .aboutus h3{
+.lesson h3 {
     font-family: Numans;
     font-size: 30px;
     color: gray;
@@ -82,7 +109,7 @@
     text-align: justify;
 }
 
-.lesson p, .lesson ul, .aboutus p {
+.lesson p, .lesson ul {
     font-family: Numans;
     color: black;
     background-color: white;

@@ -35,73 +35,80 @@
   <h1 class = "title-header">CHAPTER 2: Hypertext Transfer Protocol (HTTP)</h1>
 </div>      
       
-<div class="lesson lesson2" id = "lesson2-content">
-	<h2>HTTP</h2>
-	<ul>
-	<li>Application layer communications protocol used to access resources (hypertext/hypermedia) on the World Wide Web.</li>
-	<li>invented by Tim Berners-Lee</li>
-	<li>jointly developed by the W3C and the IETF</li>
-	<li>version history :
-	<ul>
-		<li>HTTP 0.9 (1991)</li>
-		<li>HTTP 1.0 (RFC 1945, May 1996)</li>
-		<li>HTTP 1.1 (RFS 2068 Jan 1997, RFC 2116 Jun 1999), RFC 7230 - 7235 (Jun 2014)</li>
-		<li>HTTP 2 (RFC 7540 May 2015)
+<div class="lesson lesson2" id = "lesson2">
 
+	<h2> HTTP</h2>
+	<details>
+		<summary>About HTTP</summary>
 		<ul>
-			<li>SPDY - google</li>
+			<li>Application layer communications protocol used to access resources (hypertext/hypermedia) on the World Wide Web.</li>
+			<li>invented by Tim Berners-Lee</li>
+			<li>jointly developed by the W3C and the IETF</li>
+			<li>version history :
+		<ul>
+			<li>HTTP 0.9 (1991)</li>
+			<li>HTTP 1.0 (RFC 1945, May 1996)</li>
+			<li>HTTP 1.1 (RFS 2068 Jan 1997, RFC 2116 Jun 1999), RFC 7230 - 7235 (Jun 2014)</li>
+			<li>HTTP 2 (RFC 7540 May 2015)
+
+			<ul>
+				<li>SPDY - google</li>
+			</ul>
+		</li>
 		</ul>
-	</li>
-	</ul>
-	</li>
-	</ul>
+		</li>
+		</ul>
+	</details>
 	
-	<h2>Fundamentals of HTTP</h2>
-	<ul>
-		<li>HTTP runs on top of TCP/IP, using TCP port 80 by default or TCP port 443 for HTPPS (HTPPS over SSL/TLS)</li>
-		<li>HTTP is based on a client - server achitecture
-	<ul>
-		<li>Client, a.k.a. user agents (UA) :
-	<ul>
-		<li>web browseras, web crawlers/spider, other end user tools and applications</li>
-	</ul>
-		</li>
-		<li>Servers :
-	<ul>
-		<li>Origin Servers&nbsp;</li>
-		<li>Proxy Servers, gateways, tunnels</li>
-	</ul>
-		</li>
-	</ul>
-		</li>
-		<li>HTTP uses a request-response standard protocol&nbsp;
-	<ul>
-		<li>the clients sends an HTTP request message to the server</li>
-		<li>the servers processes the request and replies with an HTTP response</li>
-	</ul>
-		</li>
-		<li>HTTP is a stateless communications protocol
-	<ul>
-		<li>Servers do not keep information about clients in-between request</li>
-	</ul>
-		</li>
-		<li>HTTP provides support for other functionalities, such as :
-	<ul>
-		<li>cache control</li>
-		<li>control media type (MIME) specification</li>
-		<li>language and character set specification</li>
-		<li>content/transfer coding</li>
-		<li>content negotiation</li>
-		<li>client-server protocol negotiations</li>
-		<li>persistent connection </li>
-		<li>request pipelining </li>
-		<li>authentication/authorization</li>
-		<li>etc.</li>
-    </ul>
-		</li>
-	</ul>
+	<details>
+		<summary>Fundamentals of HTTP</summary>
+		<ul>
+			<li>HTTP runs on top of TCP/IP, using TCP port 80 by default or TCP port 443 for HTPPS (HTPPS over SSL/TLS)</li>
+			<li>HTTP is based on a client - server achitecture
+		<ul>
+			<li>Client, a.k.a. user agents (UA) :
+		<ul>
+			<li>web browseras, web crawlers/spider, other end user tools and applications</li>
+		</ul>
+			</li>
+			<li>Servers :
+		<ul>
+			<li>Origin Servers&nbsp;</li>
+			<li>Proxy Servers, gateways, tunnels</li>
+		</ul>
+			</li>
+		</ul>
+			</li>
+			<li>HTTP uses a request-response standard protocol&nbsp;
+		<ul>
+			<li>the clients sends an HTTP request message to the server</li>
+			<li>the servers processes the request and replies with an HTTP response</li>
+		</ul>
+			</li>
+			<li>HTTP is a stateless communications protocol
+		<ul>
+			<li>Servers do not keep information about clients in-between request</li>
+		</ul>
+			</li>
+			<li>HTTP provides support for other functionalities, such as :
+		<ul>
+			<li>cache control</li>
+			<li>control media type (MIME) specification</li>
+			<li>language and character set specification</li>
+			<li>content/transfer coding</li>
+			<li>content negotiation</li>
+			<li>client-server protocol negotiations</li>
+			<li>persistent connection </li>
+			<li>request pipelining </li>
+			<li>authentication/authorization</li>
+			<li>etc.</li>
+		</ul>
+			</li>
+		</ul>
+	</details>
 	
-	<h2>HTTP Resource Addressing </h2>
+	<details>
+	<summary>HTTP Resource Addressing </summary>
 		<h3>HTTP</h3>
 		<dl>
 			<dt>HTTP resources are identified unding URIs (RFC 3986), or, more specifically, HTTP URLs.</dt>
@@ -123,25 +130,28 @@
 			<li> http://usr:pwd@server.org:81/info/profile.php?id 1234#adr </li>
 			<li> https://www.google.com </li>
 		</ul>
+	</details>
 
+	<details>
+		<summary>HTTP Request Message(From Client)</summary>
 
-	<h2>HTTP Request Message(From Client)</h2>
-		
 		<ul>
 			<li>Request line (CRLF - terminated line consisting of three space - separated values).</li>
 			<li>Method - What you're requesting the server</li>
 			<li>Request URI - Identifier for resource</li>
 			<li>HTTP protocol version</li>
 			<li><a href = "#msgheaders" style="text-decoration: underline;">Message Headers</a>
-				<ul>
-					 <li>HTTP 1.1 requires at least the host request header to be provided.</li>
-				</ul>
-			</li>
+		<ul>
+			<li>HTTP 1.1 requires at least the host request header to be provided.</li>
+		</ul>
+		</li>
 			<li>Empty line (CRLF)</li>
 			<li>Message body a.k.a <u>payload</u>(optional)</li>
-		</ul>		
-
-	<h2>HTTP Response Message (From Server)</h2>
+		</ul>
+	</details>
+	
+	<details>
+	<summary>HTTP Response Message (From Server)</summary>
 			<ul>
 				<li>Status line(HTTP Protocol Version, Status Code, Reason Phrase)</li>
 				<li><a href = "#msgheaders" style="text-decoration: underline;">Message headers</a></li>
@@ -149,9 +159,11 @@
 				<li>Message body a.k.a <u>payload</u>(optional)</li>
 				<li><a href = "#statcodes" style="text-decoration: underline;">Status Code</a></li>
 				
-			</ul>			
+			</ul>
+	</details>
 
-	<h2>HTTP request methods</h2>
+	<details>
+	<summary>HTTP request methods</summary>
 			<h3>Standard Methods: </h3>
 					<dl>
 						<dt>GET</dt>
@@ -192,8 +204,11 @@
 						<dt>CONNECT</dt>
 							<dd> - Used only for HTTPS.</dd>
 					</dl>
+	</details>
+	
+	<details>
 
-			<h3>Extended Methods: </h3>
+			<summary>Extended Methods: </summary>
 				<dl>
 					<dt>e.g. WebDAV(RFC 4918)</dt>
 						<dd> PROPFIND</dd>
@@ -211,9 +226,12 @@
 						<dd> - Response can be cache or not depend on others</dd>
 				</dl>
 		<br>
+	</details>
+
 
 	<h2 id="msgheaders">Message Headers</h2>
-				<h3>General Header Fields</h3>
+	<details>
+				<summary>General Header Fields</summary>
 					<ul>
 						<li>Cache Control</li>
 						<li>Connection</li>
@@ -225,8 +243,10 @@
 						<li>Via</li>
 						<li>Warning</li>
 					</ul>
+	</details>
+	<details>
 					
-					<h3>Request Header Fields</h3>
+					<summary>Request Header Fields</summary>
 						<ul>
 						<li>Accept</li>
 						<li>Accept-Charset</li>
@@ -248,8 +268,9 @@
 						<li>User-agent</li>
 						<li>Proxy-Authorization</li>	
 					</ul>
-					
-					<h3>Response Header Fields</h3>
+	</details>
+	<details>
+					<summary>Response Header Fields</summary>
 						<ul>
 						<li>Accept-Range</li>
 						<li>Age</li>
@@ -261,8 +282,9 @@
 						<li>Vary</li>
 						<li>WWW-Authenticate</li>	
 						</ul>
-					
-					<h3>Entity Header Fields</h3>
+	</details>
+	<details>
+					<summary>Entity Header Fields</summary>
 						<ul>
 						<li>Allow</li>
 						<li>Content-Encoding</li>
@@ -275,16 +297,19 @@
 						<li>Expires</li>
 						<li>Last-Modified</li>	
 						</ul>
+	</details>
 					
-	<h2 id="statcodes">Status Codes</h2>								
-		<h3>Informational</h3>		
+	<h2 id="statcodes">Status Codes</h2>
+	<details>
+		<summary>Informational(1xx)</summary>		
 			<ul>
 				<li>100 Continue</li>
 				<li>101 Switching Protocol</li>
 			</ul>
+	</details>
 					
-						
-		<h3>Success</h3>			
+	<details>	
+		<summary>Success(2xx)</summary>			
 			<ul>					
 				<li>200 Ok</li>
 				<li>201 Created</li>
@@ -294,8 +319,10 @@
 				<li>205 Reset Content</li>
 				<li>206 Partial Content</li>
 			</ul>
-						
-		<h3>Redirection</h3>				
+	</details>
+	
+	<details>
+		<summary>Redirection(3xx)</summary>				
 			<ul>
 				<li>300 Multiple Choices</li>
 				<li>301 Moved Permanently</li>
@@ -306,8 +333,11 @@
 				<li>306 (Unused)</li>
 				<li>307 Temporary Redirect</li>
 			</ul>
+	</details>
+	
+	<details>
 						
-		<h3>Client Error</h3>
+		<summary>Client Error(4xx)</summary>
 						
 			<ul>
 				<li>400 Bad Request</li>
@@ -330,8 +360,10 @@
 				<li>417 Expectation Failed</li>
 				<li>426 Upgrade Required</li>
 				</ul>
+	</details>
+	<details>
 						
-		<h3>Server Error(5xx)</h3>
+		<summary>Server Error(5xx)</summary>
 			<ul>
 				<li>500 Internal Server Error</li>
 				<li>501 Not Implemented</li>
@@ -340,6 +372,7 @@
 				<li>504 Gateway Time-out</li>
 				<li>505 HTTP Version Not Supported</li>
 			</ul>
+	</details>
 </div>
 </body>
 </html>
