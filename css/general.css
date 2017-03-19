@@ -109,8 +109,18 @@ a {
   height: 12.5%;
   margin-top: 2.5%;
   margin-left: 3.5%;
-  margin-right: 3.5%;
+  margin-right: 2.5%;
+
 	
 }
 
+.date {
+	text-align: right;
+	margin-left: 80%;
+}
+
+.date2 {
+	text-align: right;
+	margin-right: 80%;
+}
 
