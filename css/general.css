@@ -84,5 +84,13 @@ a {
   background-image: none;
 }
 
-.img
+.img {
+  float: bottom;
+  width: 26%;
+  background-color: black;
+  color: #2C6700;
+  box-shadow: 10px 10px 5px #888888;
+  margin: 3.5% 
+	
+}
 
