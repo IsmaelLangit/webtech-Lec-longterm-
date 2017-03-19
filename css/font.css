@@ -62,7 +62,7 @@
     margin : 0 10%;
 }
 
-.lesson h2 {
+.lesson h2, .aboutus h2 {
     font-family: Numans;
     font-size: 35px;
     color: burlywood;
@@ -70,7 +70,7 @@
     text-align: center;
   }
 
-.lesson h3 {
+.lesson h3, .aboutus h3{
     font-family: Numans;
     font-size: 30px;
     color: gray;
@@ -82,7 +82,7 @@
     text-align: justify;
 }
 
-.lesson p, .lesson ul {
+.lesson p, .lesson ul, .aboutus p {
     font-family: Numans;
     color: black;
     background-color: white;
