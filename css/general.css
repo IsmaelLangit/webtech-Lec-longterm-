@@ -48,6 +48,17 @@ body {
     background-repeat : no-repeat;
 }
 
+.lessonfooter {
+  color:black;
+  width: 100%;
+  min-height: 100%;
+  background-size:cover;
+    height:50vh;
+    background-image: url("../images/background/background-sample.jpg");
+    background-attachment: fixed;
+    background-repeat : no-repeat;
+}
+
 .internet, .http {
   margin-top: 15px;
     background-color: black;
