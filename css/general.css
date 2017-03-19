@@ -55,5 +55,9 @@ a {
 }
 
 .aboutus {
+	background-color: black;
+	padding :20px;
+	width: 80%;
+	opacity: .8;
 	
 }
