@@ -16,10 +16,10 @@
 
 .indexfooter p {
     text-align: center;
-    color: black;
+    color: white;
     font-family: Coustard;
     font-size: 22px;
-    padding-top: 20%;
+    padding-top: 10%;
 }
 
 .lessonfooter p {
@@ -30,8 +30,7 @@
     padding-top: 20%;
 }
 
-.internet h1 a, .http h1 a{
-    top:35%;
+.internet h1 a, .indexhttp h1 a{
     text-align:center;
     width:100%;
     background-color: #b8b894;
@@ -45,7 +44,7 @@
 
 }
 
-.internet h1:hover, .http h1:hover{
+.internet h1:hover, .indexhttp h1:hover{
     opacity: 0.5;
 }
 

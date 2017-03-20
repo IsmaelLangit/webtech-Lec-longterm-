@@ -44,11 +44,8 @@ body {
 
 .indexfooter {
   width: 100%;
-  min-height: 50%;
+  min-height: 20%;
   background-size:cover;
-    height:50vh;
-    background-image: url("http://wallpaperxyz.com/wp-content/uploads/Technology-Wallpapers-Full-HD-Free-Download-Wallpaperxyz.com-2.jpg");
-    background-image: url("https://wallpaperscraft.com/image/keyboard_backlit_black_blue_31057_1920x1080.jpg");
   background-image: url("../images/background/home-sample.jpg");
     background-attachment: fixed;
     background-repeat : no-repeat;
@@ -87,8 +84,9 @@ footer .lessonfooter p{
    -webkit-text-stroke-color: black;
 }
 
-.internet, .http {
+.internet, .indexhttp {
   margin-top: 15px;
+  margin-bottom: 15px;
     background-color: black;
   padding: 15px;
   opacity: .9;
