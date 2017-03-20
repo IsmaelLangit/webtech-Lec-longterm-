@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url("../images/background/gray.jpg");
+    background-image: url("https://www.xmple.com/wallpaper/graph-paper-white-black-grid-1920x1080-c2-000000-f8f8ff-l2-5-150-a-0-f-20.svg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat : no-repeat;
@@ -45,6 +45,7 @@ body {
     margin: auto;
     z-index: 99;
     padding-top:10%;
+    padding-bottom: 5%;
 
 }
 .logo {
@@ -56,7 +57,7 @@ body {
 	width: 100%;
 	min-height: 20%;
 	background-size:cover;
-	background-image: url("../images/background/home-sample.jpg");
+	background-image: url("../images/background/home.jpg");
 	background-attachment: fixed;
 	background-repeat : no-repeat;
 }
@@ -67,19 +68,11 @@ body {
 	min-height: 100%;
 	background-size:cover;
     height:40vh;
-    background-image: url("../images/background/background-sample.jpg");
-    background-attachment: fixed;
-    background-repeat : no-repeat;
-}
 
-.httpfoot {
-    background-image: url("../images/background/http.jpg");
-    background-attachment: fixed;
-    background-repeat : no-repeat;
 }
 
 .copy {
-	background-color: gray;
+	background-color: white;
 	color: black;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: black;

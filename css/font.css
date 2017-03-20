@@ -14,12 +14,41 @@
     opacity: .6;
 }
 
+.contents p {
+    color: white;
+    text-align: center;
+    font-family: "Comfortaa";
+    font-size:40px;
+    margin-top:1%;
+    margin-bottom: 1%;
+    z-index: 99;
+}
+.contents {
+    height: 2em;
+    position: relative;
+}
+.button a{
+    font-family: "Comfortaa";
+    font-size: 130%;
+    color: black;
+    text-decoration: none;
+    background-color: rgb(63, 191, 191);
+    padding: 15px;
+    border-radius: 30px;
+    text-align: center;
+    margin-left: 50%;
+}
+.button a:hover {
+    opacity: 0.5;
+}
+
 .indexfooter p {
     text-align: center;
     color: white;
     font-family: Coustard;
     font-size: 22px;
     padding-top: 20%;
+
 }
 
 .lessonfooter p {
@@ -28,20 +57,23 @@
     font-family: Coustard;
     font-size: 22px;
 	margin-top: 20%;
+    background-color: black; 
 }
 
 .internet h1 a, .indexhttp h1 a{
-    top:35%;
+    top:30%;
     text-align:center;
     width:100%;
-    background-color: #b8b894;
+    background-color: white;
     opacity: .8;
-    font-size: 50px;
+    font-size: 23px;
+    font-family: "Inconsolata";
     overflow: hidden;
     display: inline-block;
+    padding: 2px;
     text-decoration: none;
     list-style-type: none;
-    color: black; /**color and font are changeable already**/
+    color: blak; 
 
 }
 
@@ -71,10 +103,10 @@
 
 
 .lesson summary {
-	background-color: gray;
-    font-family: Numans;
-    font-size: 35px;
-    color: burlywood;
+	background-color: white;
+    font-family: "Inconsolata";
+    font-size: 28px;
+    color: black;
     padding: 10px 0 10px 10px;
     text-align: left;
 	margin-top: 10px;
@@ -82,21 +114,22 @@
 }
 
 .lesson summary:hover{
-	background-color: white;
+	background-color:rgb(63, 191, 191) ;
+    opacity: 0.8;
 }
 
 .lesson h2, .aboutus h2 {
-    font-family: Numans;
+    font-family: "Arvo";
     font-size: 35px;
-    color: burlywood;
+    color: black;
     padding: 30px 0 10px 0;
     text-align: center;
   }
 
 .lesson h3, .aboutus h3{
-    font-family: Numans;
+    font-family: "Special Elite";
     font-size: 30px;
-    color: gray;
+    color: rgb(204, 255, 255);
     padding: 15px 0;
     text-align: center;
   }
@@ -106,7 +139,7 @@
 }
 
 .lesson p, .lesson ul, .aboutus p {
-    font-family: Numans;
+    font-family: "Julius Sans One";
     color: black;
     background-color: white;
     padding: 10px 30px;
@@ -117,13 +150,13 @@
 }
 
 .lesson p, .lesson ul, .lesson li{
-    font-family: Coustard;
+    font-family: "Coustard";
     font-size: 20px;
     margin : 0 50px;
 }
 
 .lesson dl, .lesson dt, .lesson dd{
-    font-family: Coustard;
+    font-family: "Coustard";
     font-size: 20px;
     margin: 0 50px;
 }
@@ -135,4 +168,8 @@
     color: black;
     background-color: white;
     padding: 10px 30px;
+}
+.intro-about h1{
+    font-family: "Arvo";
+    color: black;
 }
