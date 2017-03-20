@@ -59,6 +59,16 @@ body {
     background-repeat : no-repeat;
 }
 
+.copy {
+  color: white;
+	-webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+   font-size: 20px;
+   text-align: center;
+vertical-align: middle;
+line-height: 90px;
+}
+
 footer .lessonfooter p{
 	color: white;
 	-webkit-text-stroke-width: 1px;
