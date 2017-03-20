@@ -23,6 +23,12 @@ body {
     background-repeat : no-repeat;
 }
 
+.http {
+    background-image: url("../images/background/http.jpg");
+    background-attachment: fixed;
+    background-repeat : no-repeat;
+}
+
 .welcome {
 
   width: 100%;
@@ -55,6 +61,12 @@ body {
   background-size:cover;
     height:50vh;
     background-image: url("../images/background/background-sample.jpg");
+    background-attachment: fixed;
+    background-repeat : no-repeat;
+}
+
+.httpfoot {
+    background-image: url("../images/background/http.jpg");
     background-attachment: fixed;
     background-repeat : no-repeat;
 }
