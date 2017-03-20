@@ -51,9 +51,14 @@ body {
 }
 
 .lessonfooter {
-	  color: black;
-	  width: 100%;
-	  background-color: white;
+	color: black;
+	width: 100%;
+	min-height: 100%;
+	background-size:cover;
+    height:40vh;
+    background-image: url("../images/background/background-sample.jpg");
+    background-attachment: fixed;
+    background-repeat : no-repeat;
 }
 
 .httpfoot {
@@ -63,13 +68,14 @@ body {
 }
 
 .copy {
-	color: white;
+	background-color: gray;
+	color: black;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: black;
 	font-size: 20px;
 	text-align: center;
 	vertical-align: middle;
-	line-height: 90px;
+	line-height: 50px;
 }
 
 footer .lessonfooter p{
