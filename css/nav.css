@@ -5,9 +5,9 @@ nav {
 }
 
 .navClass ul {
-    background-color: rgba(0,0,0,.9);
+    background-color: rgba(0,0,0,.0);
     color:white;
-    font-size: 20px;
+    font-size: 18px;
     font-family: sans-serif;
 }
 
@@ -25,7 +25,8 @@ nav {
 
 .navClass li:hover {
 	background-color: gray;
-	color : yellow;
+    border-radius: 25px;
+    transition: all 0.50s;
 }
 
 
@@ -42,8 +43,8 @@ ul.navlesson {
 }
 
 ul.navlesson li {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .navClass li:hover .navlesson {

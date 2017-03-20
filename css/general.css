@@ -36,9 +36,20 @@ body {
 	height:100vh;
 	background-image: url("http://wallpaperxyz.com/wp-content/uploads/Technology-Wallpapers-Full-HD-Free-Download-Wallpaperxyz.com-2.jpg");
 	background-image: url("https://wallpaperscraft.com/image/keyboard_backlit_black_blue_31057_1920x1080.jpg");
-	background-image: url("../images/background/home-sample.jpg");
+	background-image: url("../images/background/home.jpg");
 	background-attachment: fixed;
 	background-repeat : no-repeat;
+}
+.logo img{
+    display: block;
+    margin: auto;
+    z-index: 99;
+    padding-top:10%;
+
+}
+.logo {
+    height: 10em;
+    position: relative;
 }
 
 .indexfooter {
