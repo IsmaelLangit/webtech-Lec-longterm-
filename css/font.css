@@ -27,7 +27,7 @@
     color: black;
     font-family: Coustard;
     font-size: 22px;
-    padding-top: 20%;
+	margin-top: 10%;
 }
 
 .internet h1 a, .indexhttp h1 a{
@@ -60,13 +60,12 @@
     opacity: .8;
     padding: 50px 0px;
     font-size: 55px;
-   
 }
 
 /* Font of lessons */
 
 .lesson {
-    margin : 0 10%;
+    margin : 5% 10%;
 }
 
 
