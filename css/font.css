@@ -164,3 +164,7 @@ a {
     background-color: black;
     opacity: .6;
 }
+
+.intro h2 {
+    color : black;
+}
