@@ -5,10 +5,12 @@ nav {
 }
 
 .navClass ul {
-    background-color: rgba(0,0,0,.0);
+    background-color: black;
     color:white;
     font-size: 18px;
     font-family: sans-serif;
+    opacity: .9;
+    padding-left: 2.5%;
 }
 
 .navClass ul li a {
@@ -19,7 +21,7 @@ nav {
 .navClass ul li {
 	list-style-type: none;
 	display: inline-block;
-	padding: 14px 16px;
+	padding: 14px 25px;
 	position: relative;
 }
 
@@ -43,8 +45,8 @@ ul.navlesson {
 }
 
 ul.navlesson li {
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding : 4px;
+    display: block;
 }
 
 .navClass li:hover .navlesson {

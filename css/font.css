@@ -1,19 +1,5 @@
 /* Font of index.html */
 
-.welcome h1 {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    text-align: center;
-    color:white;
-    font-family: "Comfortaa";
-    font-size:70px;
-    position:absolute;
-    height:100%;
-    width:100%;
-    background-color: black;
-    opacity: .6;
-}
-
 .contents p {
     color: white;
     text-align: center;
@@ -42,23 +28,6 @@
     opacity: 0.5;
 }
 
-.indexfooter p {
-    text-align: center;
-    color: white;
-    font-family: Coustard;
-    font-size: 22px;
-    padding-top: 20%;
-
-}
-
-.lessonfooter p {
-    text-align: center;
-    color: black;
-    font-family: Coustard;
-    font-size: 22px;
-	margin-top: 20%;
-    background-color: black; 
-}
 
 .internet h1 a, .indexhttp h1 a{
     top:30%;
@@ -83,7 +52,7 @@
 
 /* Font of banner */
 
-.banner h1 {
+#lesson1-banner h1, #lesson2-banner h1 {
     position:absolute;
     top:35%;
     text-align:center;
@@ -172,4 +141,19 @@
 .intro-about h1{
     font-family: "Arvo";
     color: black;
+}
+
+a {
+      color: black;
+      text-decoration: underline;
+}
+
+.home h1 {
+    padding-top: 8%;
+    text-align: center;
+    color:white;
+    font-family: "Comfortaa";
+    font-size:70px;
+    background-color: black;
+    opacity: .6;
 }

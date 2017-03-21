@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url("https://www.xmple.com/wallpaper/graph-paper-white-black-grid-1920x1080-c2-000000-f8f8ff-l2-5-150-a-0-f-20.svg");
+    background-image: url("../images/background/main.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat : no-repeat;
@@ -18,34 +18,27 @@ body {
 	min-height: 100%;
 	background-size:cover;
 	height:100vh;
-	background-image: url("../images/background/background-sample.jpg");
 	background-attachment: fixed;
 	background-repeat : no-repeat;
 }
 
-.http {
+#lesson1-banner {
+	background-image: url("../images/background/www.jpg");
+}
+
+#lesson2-banner {
 	background-image: url("../images/background/http.jpg");
-	background-attachment: fixed;
-	background-repeat : no-repeat;
 }
 
-.welcome {
-	width: 100%;
-	min-height: 50%;
-	background-size:cover;
-	height:100vh;
-	background-image: url("http://wallpaperxyz.com/wp-content/uploads/Technology-Wallpapers-Full-HD-Free-Download-Wallpaperxyz.com-2.jpg");
-	background-image: url("https://wallpaperscraft.com/image/keyboard_backlit_black_blue_31057_1920x1080.jpg");
+#home-banner {
 	background-image: url("../images/background/home.jpg");
-	background-attachment: fixed;
-	background-repeat : no-repeat;
+
 }
+
 .logo img{
     display: block;
     margin: auto;
-    z-index: 99;
-    padding-top:10%;
-    padding-bottom: 5%;
+    padding-top:3%;
 
 }
 .logo {
@@ -53,40 +46,16 @@ body {
     position: relative;
 }
 
-.indexfooter {
-	width: 100%;
-	min-height: 20%;
-	background-size:cover;
-	background-image: url("../images/background/home.jpg");
-	background-attachment: fixed;
-	background-repeat : no-repeat;
-}
 
-.lessonfooter {
-	color: black;
-	width: 100%;
-	min-height: 100%;
-	background-size:cover;
-    height:40vh;
-
-}
-
-.copy {
-	background-color: white;
-	color: black;
-	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: black;
-	font-size: 20px;
+footer {
+	clear :both;
+	background-color : white;
+	letter-spacing : 10px;
+	color : black;
+	padding: 10px;
 	text-align: center;
-	vertical-align: middle;
-	line-height: 50px;
 }
 
-footer .lessonfooter p{
-	color: white;
-	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: black;
-}
 
 .internet, .indexhttp {
 	margin-top: 15px;
@@ -103,19 +72,13 @@ footer .lessonfooter p{
 	opacity: .8;
 }
 
-
-a {
-	  color: black;
-	  text-decoration: underline;
-}
-
 .aboutcontent{
 	float: left;
-	width: 25%;
+	width: 23%;
 	background-color: black;
 	color: #2C6700;
 	box-shadow: 10px 10px 5px #888888;
-	margin: 3.5% 
+	margin: 5%; 
 }
 
 .aboutcontent img {
