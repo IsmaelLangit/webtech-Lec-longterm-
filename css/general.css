@@ -6,10 +6,17 @@
 }
 
 body {
-    background-image: url("../images/background/main.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat : no-repeat;
+}
+
+#index-body {
+    background-image: url("../images/background/main.jpg");
+}
+
+#lesson1-body, #lesson2-body {
+	background-image: url("../images/background/gray.jpg");
 }
 
 .banner {
