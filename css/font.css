@@ -30,19 +30,17 @@
 
 
 .internet h1 a, .indexhttp h1 a{
-    top:30%;
     text-align:center;
-    width:100%;
+    width:50%;
+    margin: 0 25%;
     background-color: white;
     opacity: .8;
-    font-size: 23px;
+    font-size: 28px;
     font-family: "Inconsolata";
     overflow: hidden;
     display: inline-block;
-    padding: 2px;
     text-decoration: none;
     list-style-type: none;
-    color: blak; 
 
 }
 
