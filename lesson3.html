@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> Chapter 1 </title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Julius+Sans+One">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Special+Elite">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Coustard">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Numans">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Arvo">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <Link rel="stylesheet" href="css/nav.css" />
+    <Link rel="stylesheet" href="css/general.css" />
+    <Link rel="stylesheet" href="css/font.css" />
+    <Link rel="icon" href="images/icon.png">
+</head>
+
+   <body id ="lesson3-body">
+      <nav class="navClass">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>Prelims
+            <ul class="navlesson">
+                <li><a href ="lesson1.html">Internet and the WWW</a></li>
+                <li><a href ="lesson2.html">HTTP</a></li>
+            </ul>
+              <span class="arrow"> &#9660; </span>
+         </li>
+		 <li>Midterms
+            <ul class="navlesson">
+                <li><a href ="lesson3.html">HTTP Elements and Attributes</a></li>
+                <li><a href ="lesson4.html">CSS (CASCADING STYLE SHEETS )</a></li>
+            </ul>
+              <span class="arrow"> &#9660; </span>
+         </li>
+          <li><a href="aboutus.html"> About Us </a></li>
+        </ul>
+      </nav>
+      
+<div class = "banner" id = "lesson3-banner">
+  <h1 class = "title-header"> CHAPTER 3: HTTP Elements and Attributes </h1>
+</div>
+
+
+<div class="lesson lesson1" id = "lesson1">
+	<h2>HTML Elements and Attributes</h2>
+	<details>
+		<summary>Elements</summary>
+		<p> <ul>
+			<li> < html > - root element (parent element) 
+			<ul>
+				<li> < head > (child element) 
+				<ul>
+					<li> < title > </li>
+					<li> < base > </li>
+					<li> < link > </li>
+					<li> < meta > info about the author or version (authoring tool) </li>
+					<li> < style > css </li>
+				</ul>
+				</li>
+				<li> < body > actual content of the document (child element) 
+				<ul> 
+				<li> < article > < aside > < nav > < section > < header > < footer > (main html 5) </li>
+				<li>  address > < div > </li>
+				<li> < h1 > < h2 > < h3 > < h4 > < h5 > < h6 > (headings) </li>
+				<li> < p > </li>
+				<li> < hr > thematic break (documenting) </li>
+				<li> < pre > preformatted text </li>
+				<li> < blockquote > in line citations (larger block) </li>
+				<li> < ol > < ul > ordered and unordered list 
+					<ul> <li> < li > </li> </ul>
+				</li>
+				<li> < dl > description list 
+					<ul> <li> < dt > < dd > simple markup </li> </ul>
+				</li> 
+				<li> < figure > embedded function 
+					<ul> <li> < figcaption > embedded function </li> </ul>
+				</li> 	
+				<li> < a > </li>
+				<li> < em > emphasis </li>
+				<li> < strong > bold </li>
+				<li> < small > side comment </li>
+				<li> < s > obsoleted text </li>
+				<li> < cite > citation </li>
+				<li> < q > (quote) </li>
+				<li> < dfn > defining instance </li>
+				<li> < abbr > subsequent usage </li>
+				<li> < ruby > < rb > < rt > < rte > < rp > assign language annotation </li>
+				<li> < data > < time > embed machine readable data </li>
+				<li> < code > < var > </li>
+				<li> < samp > sample output </li>
+				<li> < kbd > sample input </li>
+				<li> < sub > < sup > subscript and superscript </li>
+				<li> < i > < b > < u > </li>
+				<li> < bdi > < bdo > mark bidirectional </li>
+				<li> < span > generic divider like dive, embedded with block of text </li>
+				<li> < br > line break </li>
+				<li> < wbr > break opportunity (narrow) </li>
+				<li> < ins > < del > insertion and deletion </li>				
+				</ul>
+				</li>
+			<li> < table >
+				<ul> <li> < caption> < colgroup> < col > < thread > < tbody > < tfoot > </li>
+					 <li> < tr > 
+						<ul> 
+							<li> < th > < ta > </li>
+						</ul>
+					 </li>
+				</ul>
+			</li>
+			<li> < form > 
+				<ul> <li> < label > < input > < button > < select >  </li> </ul>
+			</li>
+			<li> < picture > < img > < iframe > < embed > < object > < param > < audio > < video > < source > </li>
+			</ul>	
+			</li>
+			<li> < track > 
+				<ul>
+					<li> < map > < area > </li>
+					<li> < svg > not html (scalable vector graphics) </li>
+					<li> < canvas > </li>
+					<li> < script > < noscript > </li>
+					<li> < template > </li>
+				</ul>
+			</li>
+		</ul> </p>
+	</details>
+
+	<details>
+		<summary> Attributes </summary>>
+		<p>
+		<ul>
+			<li> Global elements – specific attributes </li>
+			<li> Data -* Attributes
+				<ul><li> < p data-name = “O” > </li></ul>
+			</li>
+			<li> Role, ARIA - * Attributes – rich accessibility  </li>
+			<li> WAI-ARIA, WCAG 2.0 </li>
+		</ul>
+		</p>	
+	</details>	
+	
+</div>
+
+    <footer>
+    <p>IT 324  |  Webtech Lecture  |  9421A | &copy; 2017</p>
+	</footer>
+
+   </body>
+</html>
