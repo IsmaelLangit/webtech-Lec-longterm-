@@ -50,7 +50,7 @@
 
 /* Font of banner */
 
-#lesson1-banner h1, #lesson2-banner h1 {
+.banner-lessons h1 {
     position:absolute;
     top:35%;
     text-align:center;
