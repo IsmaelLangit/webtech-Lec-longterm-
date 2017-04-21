@@ -1,0 +1,854 @@
+commit 6131afd26b77914b2fc0eaa9b71e78592b9ef914
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Tue Mar 21 23:43:43 2017 +0800
+
+    Modified lesson 2
+
+commit e19e046dfff5b7fc5b8d69d49ae793d296263d8f
+Author: johnraeo <2154041@slu.edu.ph>
+Date:   Tue Mar 21 23:35:08 2017 +0800
+
+    Remove <ul> child errors Errors in lesson2.html
+
+commit 181db9ac14b929e8949e0145c8e87f110eb78a4b
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Tue Mar 21 23:15:17 2017 +0800
+
+    Edited background banner on lesson1.html
+
+commit e578cc0fbaeb50e2c032fab74e06dca672086d74
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Tue Mar 21 23:11:01 2017 +0800
+
+    Modified homepage
+
+commit c170ad4b473c9ce80b0da4abce73e9fa06756fce
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Tue Mar 21 22:46:17 2017 +0800
+
+    Modified backgrouds in css
+
+commit 148a9f2059138356429e805c98fe7d8da71d585d
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Tue Mar 21 22:31:15 2017 +0800
+
+    MOdified footer, edited title
+
+commit 8253e7af7082299b021d46ec4380ac2ee61a4be2
+Merge: 0ca2bfe 647075d
+Author: mau <geraldezmau@gmail.com>
+Date:   Tue Mar 21 22:18:15 2017 +0800
+
+    Merge https://github.com/IsmaelLangit/webtech_Lec
+    
+    Merge conflict
+
+commit 0ca2bfe0db39deadbdccc948757621ff07c37b84
+Author: mau <geraldezmau@gmail.com>
+Date:   Tue Mar 21 22:17:39 2017 +0800
+
+    Changed title of index.html
+
+commit 647075deeac988a7d2abbdc98555dd344d9cd9c6
+Author: jamesabalos <2154189@slu.edu.ph>
+Date:   Tue Mar 21 22:08:54 2017 +0800
+
+    Added contents to README.txt
+    
+    Added contents to README.txt
+
+commit f776f3d63e4466c907bb55b39e7edb5e7c293396
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Tue Mar 21 22:04:50 2017 +0800
+
+    Put indentation in html to avoid confusion, and removed not relevant codes
+
+commit 7921b4dbfd2e2762ea674b193c0a211956c822b7
+Author: mau <geraldezmau@gmail.com>
+Date:   Tue Mar 21 21:41:06 2017 +0800
+
+    Changed wrong evaluation form
+
+commit 4779365f06b58f464d1710a67b981f16dd758d78
+Author: mau <geraldezmau@gmail.com>
+Date:   Tue Mar 21 21:21:42 2017 +0800
+
+    Added Consolidated Evaluation Form
+
+commit 9a8c44b9d362973b6307bece277303c8de42da91
+Author: mau <geraldezmau@gmail.com>
+Date:   Tue Mar 21 21:06:37 2017 +0800
+
+    Edited about in index.html
+
+commit b7291dafdbed1fb0c52125d0131aebac3ce4f4fe
+Author: mau <geraldezmau@gmail.com>
+Date:   Tue Mar 21 20:47:24 2017 +0800
+
+    Added about in index.html
+
+commit d5936819707e9f62d07feaaf1d525d6450068102
+Author: mau <geraldezmau@gmail.com>
+Date:   Tue Mar 21 20:44:28 2017 +0800
+
+    changed maureen.jpg
+
+commit cf4ad95cfabebd8ff4090aef705ec9b44209aefb
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Tue Mar 21 20:30:56 2017 +0800
+
+    Added photo in about us
+
+commit 86e4cda6dfeaf08dc753a1c942e3c7747edd641c
+Author: mau <geraldezmau@gmail.com>
+Date:   Tue Mar 21 20:15:13 2017 +0800
+
+    removed webtech folder
+
+commit de9c23cfa0bc34a5418593e6cc8647928a74bd6f
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Tue Mar 21 20:01:06 2017 +0800
+
+    Modified headings
+
+commit fbc350bb95c7bd364e1c9967e07c31d4e87f1a72
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Tue Mar 21 19:55:04 2017 +0800
+
+    Modified the codes of all html, remove redudancy in css, and corrected tags in html
+
+commit 7c9605470e362fb36346fbef07d10a2c2c1460cf
+Author: maryknollnazareth <omgmaryknoll@gmail.com>
+Date:   Tue Mar 21 02:26:51 2017 +0800
+
+    edited designs on all html and css files.
+
+commit 57645ad468547e5d054c0f3ebb4f0c1a925f5e42
+Author: maryknollnazareth <omgmaryknoll@gmail.com>
+Date:   Tue Mar 21 00:29:13 2017 +0800
+
+    changed designs(background, navbar,fonts)
+
+commit 73e256e372eec3d0083f3593c93ab9d999dd3e06
+Author: maryknollnazareth <omgmaryknoll@gmail.com>
+Date:   Tue Mar 21 00:07:25 2017 +0800
+
+    added logo on index.html lesson1.html and lesson2.html
+
+commit 431fdf653140ad26106e20efa05c96c70abb73a3
+Author: jamesabalos <2154189@slu.edu.ph>
+Date:   Mon Mar 20 23:45:51 2017 +0800
+
+    Edited footer of lesson1.html and lesson2.html
+
+commit be3b86dc422c15c9eeac5b33c43a017cd02f151c
+Author: johnraeo <2154041@slu.edu.ph>
+Date:   Mon Mar 20 23:20:00 2017 +0800
+
+    Modified lesson1.html, lessont.html, font.css, general.css, fixed spaces
+
+commit 75a8cbe22f4419bbd96b166161c9fe3c59af569c
+Author: johnraeo <2154041@slu.edu.ph>
+Date:   Mon Mar 20 23:17:33 2017 +0800
+
+    Modified lesson1.html, lesson2.html, font.css, general.css
+
+commit 8e28bca1d87fc0c724a9f5341f7842ceee8d44a9
+Author: johnraeo <2154041@slu.edu.ph>
+Date:   Mon Mar 20 23:06:10 2017 +0800
+
+    Added a picture
+
+commit 27b8f16414008fec63175cd6d953fa3c397ba45f
+Author: johnraeo <2154041@slu.edu.ph>
+Date:   Mon Mar 20 23:03:11 2017 +0800
+
+    Modify homepage
+
+commit fcbd37bd2166f30abe74fb2b73dcac85870060b4
+Author: jamesabalos <2154189@slu.edu.ph>
+Date:   Mon Mar 20 22:20:21 2017 +0800
+
+    Added README.txt file
+
+commit 4df2b6f12379c781dcb6652621ffcf8ff6865e06
+Author: mau <geraldezmau@gmail.com>
+Date:   Mon Mar 20 20:39:09 2017 +0800
+
+    changed background in http
+
+commit 5bc9eda6fe3566618a5d6e0908241997282d3faf
+Merge: 1ec3d33 5e478a8
+Author: mau <geraldezmau@gmail.com>
+Date:   Mon Mar 20 20:37:10 2017 +0800
+
+    Merge https://github.com/IsmaelLangit/webtech_Lec
+
+commit 1ec3d33ad5caf4097cb3c50be845d46b5d335879
+Author: mau <geraldezmau@gmail.com>
+Date:   Mon Mar 20 20:35:55 2017 +0800
+
+    changed background in http
+
+commit 5e478a8bd2d42afdcd0d57e4dabed4f9f03745ac
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Mon Mar 20 20:20:21 2017 +0800
+
+    Added photos
+
+commit dcf6835b50c6f8d569ad078aea8f40bb130c8c4b
+Merge: 4fba858 9665b7f
+Author: mau <geraldezmau@gmail.com>
+Date:   Mon Mar 20 19:56:37 2017 +0800
+
+    Merge https://github.com/IsmaelLangit/webtech_Lec
+    
+    Merge conflict
+
+commit 9665b7ff02e91adf0c5416cbda53782ba534faf1
+Author: jlouisss28 <genjanbylouis@gmail.com>
+Date:   Mon Mar 20 19:56:18 2017 +0800
+
+    added .copy styles for class=copy in lesson 1 and 2 .html
+    
+    added .copy styles for class=copy in lesson 1 and 2 .html
+
+commit a8ea8cf9d586113d4465c68dec8f24d899e0d6fa
+Author: jlouisss28 <genjanbylouis@gmail.com>
+Date:   Mon Mar 20 19:55:08 2017 +0800
+
+    added copyright in lesson 1 and 2.html
+    
+    added <div class="copy"> Webtech Lecture  &copy; 2017  | Design by: JMJIMJ</a></div>
+
+commit 4fba858f7364e0f0109581e58b120b6409429930
+Author: mau <geraldezmau@gmail.com>
+Date:   Mon Mar 20 19:39:42 2017 +0800
+
+    Edited my caption in aboutus.html
+
+commit 4e5511cc11d9506fde7140f334d0476cdf3f1b9f
+Author: jlouisss28 <genjanbylouis@gmail.com>
+Date:   Mon Mar 20 19:35:45 2017 +0800
+
+    added footer .lessonfooter p
+    
+    added footer .lessonfooter p so that the footer could be readable
+
+commit 5a4dbdc2db51b44ed1708fdbc8db3f657631e77a
+Author: jamesabalos <2154189@slu.edu.ph>
+Date:   Sun Mar 19 23:44:45 2017 +0800
+
+    Added footer on lesson1.html and lesson2.html
+
+commit 3bec0c4e205c5c473b83c63947d7e7cea7b7b88d
+Merge: 1048276 d373436
+Author: jamesabalos <2154189@slu.edu.ph>
+Date:   Sun Mar 19 23:40:56 2017 +0800
+
+    Merge branch 'master' of https://github.com/IsmaelLangit/webtech_Lec
+
+commit 1048276fecbcb2691f0810cd6bf85c709816760e
+Author: jamesabalos <2154189@slu.edu.ph>
+Date:   Sun Mar 19 23:38:22 2017 +0800
+
+    Modified footer on index.html
+
+commit d373436eb57e56b764ff90335741e173b7d8ae56
+Author: johnraeo <2154041@slu.edu.ph>
+Date:   Sun Mar 19 23:27:41 2017 +0800
+
+    Added about a brief description about me.
+
+commit fcdb11ee4c3691db07dac4d696edfcc876602f6d
+Author: jamesabalos <2154189@slu.edu.ph>
+Date:   Sun Mar 19 23:09:13 2017 +0800
+
+    Added footer on index.html
+
+commit d7b7396e23f578aa9ba81bdc89779ae582721dfd
+Author: maryknollnazareth <omgmaryknoll@gmail.com>
+Date:   Sun Mar 19 22:39:28 2017 +0800
+
+    modified aboutus.html
+
+commit 4255bd964a2e5c531faf7cc4cf321e10614ae55c
+Author: maryknollnazareth <omgmaryknoll@gmail.com>
+Date:   Sun Mar 19 22:33:19 2017 +0800
+
+    modified aboutus.html
+
+commit 3cba7ec31c321cc2ba2bf0012e7b151d70fbee04
+Merge: 6b38e00 4f12c34
+Author: mau <geraldezmau@gmail.com>
+Date:   Sun Mar 19 22:04:15 2017 +0800
+
+    Merge https://github.com/IsmaelLangit/webtech_Lec
+    
+    merge conflict
+
+commit 6b38e007a6dfa1c7f3aacb57ace94ef4813722c7
+Author: mau <geraldezmau@gmail.com>
+Date:   Sun Mar 19 22:03:38 2017 +0800
+
+    aligned the years in lesson1.html
+
+commit 4f12c345002fe501e3e4b4d787211cf5cdbef7cd
+Merge: 040fbf0 7d9535b
+Author: jamesabalos <2154189@slu.edu.ph>
+Date:   Sun Mar 19 21:46:36 2017 +0800
+
+    Merge branch 'master' of https://github.com/IsmaelLangit/webtech_Lec
+
+commit 040fbf0588b6c2cdc4f1c0fce1bb3ef0874a3e87
+Author: jamesabalos <2154189@slu.edu.ph>
+Date:   Sun Mar 19 21:45:41 2017 +0800
+
+    added description on aboutus.html
+
+commit 7d9535b1eb3fe01b1610c0d5a47888266749e49b
+Merge: 389db67 968465d
+Author: mau <geraldezmau@gmail.com>
+Date:   Sun Mar 19 21:39:54 2017 +0800
+
+    Merge https://github.com/IsmaelLangit/webtech_Lec
+    
+    Conflict with saving work
+
+commit 389db674839de20d5a8e3efb8256d1bfdb8fc941
+Author: mau <geraldezmau@gmail.com>
+Date:   Sun Mar 19 21:38:03 2017 +0800
+
+    fixed position of pictures in lesson1.html
+
+commit 968465d44287ed347349c3ad82df6d5508d332a9
+Author: jamesabalos <2154189@slu.edu.ph>
+Date:   Sun Mar 19 21:24:27 2017 +0800
+
+    added my picture on aboutus.html
+
+commit 89947053373bbce421f3a24e899e54c54591c7b7
+Author: mau <geraldezmau@gmail.com>
+Date:   Sun Mar 19 20:32:01 2017 +0800
+
+    edited the layout of pictures
+
+commit 52cf65693ff34858cfae70d344446cf2c64580b2
+Author: mau <geraldezmau@gmail.com>
+Date:   Sun Mar 19 20:18:44 2017 +0800
+
+    added pictures to lesson1.html
+
+commit 9a2202905725755e15d0425032e22e97b9abd888
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sun Mar 19 19:13:56 2017 +0800
+
+    I modified the html for lesson 1
+
+commit c9a56252e8c70252ad7f0f571e0685130f65c3ee
+Author: johnraeo <2154041@slu.edu.ph>
+Date:   Sun Mar 19 19:08:41 2017 +0800
+
+    Added HTML summary Tag
+
+commit 4490cdefd1158d65b43a3ca124d694dfbcb38cc2
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sun Mar 19 18:51:49 2017 +0800
+
+    Modified aboutus.html specifically in figure
+
+commit a386d8a89edf94b5b207a3aa66117a6e993b43b1
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sun Mar 19 18:22:52 2017 +0800
+
+    Modified the errors
+
+commit cebb067b70e853cf70864c8ab96ad2b6d8535a3f
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sun Mar 19 18:11:26 2017 +0800
+
+    Revert "Modified css for photos of about.html to be responsive"
+    Puting back htmls to old version
+    This reverts commit 2266cd25bd8813c30ae414443b25002d6c04a220.
+
+commit 0a36a586e29ed5c0229957356851304013ba57e3
+Merge: 2266cd2 53e7040
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sun Mar 19 17:52:03 2017 +0800
+
+    Merge branch 'master' of https://github.com/IsmaelLangit/webtech_Lec
+    Resolve conflict
+
+commit 53e7040b4e6dc9b792089ce05865298b4c749495
+Author: johnraeo <2154041@slu.edu.ph>
+Date:   Sun Mar 19 17:49:55 2017 +0800
+
+    Fixed spacing
+
+commit 2266cd25bd8813c30ae414443b25002d6c04a220
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sun Mar 19 17:47:01 2017 +0800
+
+    Modified css for photos of about.html to be responsive
+
+commit 536b5516e9dab7c9573c68c1ab595d50554022ba
+Author: johnraeo <2154041@slu.edu.ph>
+Date:   Sun Mar 19 17:45:58 2017 +0800
+
+    Summarizes h2 in HTML summary tag
+
+commit 6f2cef1ec6d70bbaf362d0f6f7bed6d6248c31fb
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sun Mar 19 17:33:48 2017 +0800
+
+    Corrected all errors. I based it from html validator
+
+commit e06f504a7b4790d47d6f3ade4acfc78a440f950b
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sun Mar 19 17:25:50 2017 +0800
+
+    Modified head of all html
+
+commit e96c2ca54e23badcd3154d5e9db0759166cb96dc
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sun Mar 19 17:03:30 2017 +0800
+
+    Modified the layout of aboutus.html through css and modified the codes in html
+
+commit c8b50a8267578609956e5053d8ca699c8c591b2a
+Author: mau <geraldezmau@gmail.com>
+Date:   Sun Mar 19 14:29:12 2017 +0800
+
+    Added description to my part in About Us.html
+
+commit 68d5fe1f55abf077fffda9c77b15a6b9c4626892
+Author: mau <geraldezmau@gmail.com>
+Date:   Sun Mar 19 14:26:16 2017 +0800
+
+    Added my picture and my brief description, and made template for other groupmates.
+
+commit 19508f659abd4e0fca0542911eaa2274c8de722e
+Author: mau <geraldezmau@gmail.com>
+Date:   Sun Mar 19 13:48:11 2017 +0800
+
+    Added about the creators in About Us.html
+
+commit 63fd44db3d3d02adf94295d9cdd334f5316039a7
+Author: mau <geraldezmau@gmail.com>
+Date:   Sun Mar 19 13:41:35 2017 +0800
+
+    Added a brief introduction to About Us.html
+
+commit d0aae255e9917eed964992362a5b19711fc6a4bd
+Author: mau <geraldezmau@gmail.com>
+Date:   Sun Mar 19 13:11:42 2017 +0800
+
+    Added objectives to About Us.html
+
+commit 6524b69e3e32e5f68f25cdcb1cd3af92a1baa2c9
+Author: mau <geraldezmau@gmail.com>
+Date:   Sun Mar 19 13:06:37 2017 +0800
+
+    Added About Us Page and edited links in index.html, lesson1.html, lesson2.html
+
+commit 38c20ed566c44b1f6012630735f12407d42a47d9
+Author: mau <geraldezmau@gmail.com>
+Date:   Sun Mar 19 12:56:02 2017 +0800
+
+    Edited the lists and headers.
+
+commit 38d66430e02679760104ee52f786cae5e7e4c82e
+Author: maryknollnazareth <omgmaryknoll@gmail.com>
+Date:   Sun Mar 19 02:26:31 2017 +0800
+
+    finalized all changes and modifications and rechecked if theres no validation error
+
+commit d8b3f1b3bd9156f03807723507b93b2139ba1a6d
+Author: maryknollnazareth <omgmaryknoll@gmail.com>
+Date:   Sun Mar 19 02:20:22 2017 +0800
+
+    fixed validation errors on general.css
+
+commit 01b3285180c19b571e0a1543f3b21a6051985f79
+Author: maryknollnazareth <omgmaryknoll@gmail.com>
+Date:   Sun Mar 19 01:55:47 2017 +0800
+
+    modified font.css to change some font settings
+
+commit 44b4373d7fc2281cc7fa3767fcd3795605950711
+Author: maryknollnazareth <omgmaryknoll@gmail.com>
+Date:   Sun Mar 19 01:25:59 2017 +0800
+
+    modified font.css
+
+commit 609212b37c5f0ccdbd07f16220eacddbeb66d618
+Author: maryknollnazareth <omgmaryknoll@gmail.com>
+Date:   Sun Mar 19 01:13:40 2017 +0800
+
+    modified font.css to match changes on lesson2.html
+
+commit 38bf45c6441543f6535e6de9012d1e9e7becf1cb
+Author: maryknollnazareth <omgmaryknoll@gmail.com>
+Date:   Sun Mar 19 01:11:02 2017 +0800
+
+    fixed validation errors on lesson2.html
+
+commit 83ce41fbcad4da98a7aa55045e83999bb8a809af
+Author: maryknollnazareth <omgmaryknoll@gmail.com>
+Date:   Sat Mar 18 23:32:21 2017 +0800
+
+    fixed validation error of lesson1.html
+
+commit d20621ebc4f58a4e52ae27de1eca5dadb5f1829b
+Author: maryknollnazareth <omgmaryknoll@gmail.com>
+Date:   Sat Mar 18 23:08:54 2017 +0800
+
+    fixed validation error of index.html
+
+commit 0e17979c628fa5283f68e1deb8e017ee2a841b08
+Author: johnraeo <2154041@slu.edu.ph>
+Date:   Sun Feb 26 03:22:36 2017 +0800
+
+    Edited homepage
+
+commit 50241264b6103455674c542d2de438bef23f8aff
+Author: mau <geraldezmau@gmail.com>
+Date:   Sat Feb 25 14:19:56 2017 +0800
+
+    Edited lists, made links to message headers and status codes, updated notes
+
+commit 9ec168eec7173a09bb3124feb6497472a96849aa
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sat Feb 25 12:31:20 2017 +0800
+
+    Removed h tag in one phrase and replace to list
+
+commit d9b8e33f091f41dc62a42dddad26dfcb62944fe1
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sat Feb 25 12:15:44 2017 +0800
+
+    Modified list in lesson 2, corrected header
+
+commit 952f3c438810583f13468c99398852e3672541f5
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sat Feb 25 12:12:40 2017 +0800
+
+    Fixed list in lesson2
+
+commit b39b89dca926570083d26c1973c14446848ba53f
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sat Feb 25 11:58:19 2017 +0800
+
+    Replace dd tag to p
+
+commit 5d17106320c7bd2aa3ccdd5960c74341f688c173
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sat Feb 25 11:44:21 2017 +0800
+
+    Justified p tag
+
+commit 03ce8e8e880053644673c80223c68a919b5e2aab
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sat Feb 25 11:41:09 2017 +0800
+
+    Modified css (p tags, ul tags, li tags)
+
+commit 33d0d79e298c19003f4d4ba9d0e029f8fe1389c0
+Merge: 431b0ab c4a73e6
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sat Feb 25 11:39:55 2017 +0800
+
+    Modified css (p tags, ul tags, li tags)
+
+commit 431b0abd8b613092b9d2b6941c49fd563a6072c8
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sat Feb 25 11:39:10 2017 +0800
+
+    Modified css (p tags, ul tags, li tags)
+
+commit a61f2d1802039d24c9e727c843c782c5fd7c6963
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sat Feb 25 11:16:17 2017 +0800
+
+    Modified dropdown in nav
+
+commit f71743d55fc84a5ada3f2ddef5355e2659e5946d
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sat Feb 25 11:15:01 2017 +0800
+
+    Modified lesson body
+
+commit c4a73e6ae52addfc1db916a390b10001d011592f
+Author: mau <geraldezmau@gmail.com>
+Date:   Sat Feb 25 11:12:47 2017 +0800
+
+    Edited HTTP page lists
+
+commit 7619e7fc79ddb21003d52ff33b9b6f75e739bf8f
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sat Feb 25 11:00:01 2017 +0800
+
+    Added banner on lesson 2
+
+commit 6d3862922066b9842942317137914f39a75f400e
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sat Feb 25 10:44:37 2017 +0800
+
+    Modified lesson html, add banner, added code in css
+
+commit 7fa242fd03b7d921d507393f5919219cfd44f6e3
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sat Feb 25 10:07:16 2017 +0800
+
+    Made nav as fixed
+
+commit 185483501e2fd9efe91b6c1e6fd0b9b514065dc8
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Sat Feb 25 09:37:06 2017 +0800
+
+    Removed duplications, specifically on classes
+
+commit d8ed47c4996a8ee18843d0eb5ee80dfa87b68932
+Author: johnraeo <2154041@slu.edu.ph>
+Date:   Fri Feb 24 15:57:58 2017 +0800
+
+    Added minor homepage modifications
+
+commit 67dea56ba36bac748d6c3688d6006f9faefe77f5
+Author: mau <geraldezmau@gmail.com>
+Date:   Fri Feb 24 15:14:11 2017 +0800
+
+    Added Header Fields and put together the topics for http.
+
+commit 9f3cd30a786a1d497baae33cfe31cd6fd5c5926f
+Author: johnraeo <2154041@slu.edu.ph>
+Date:   Tue Feb 21 17:38:20 2017 +0800
+
+    Modified font.css
+
+commit c340026587f0fff935f4113a8386e163831f0cbd
+Author: johrnaeo <2154041@slu.edu.ph>
+Date:   Tue Feb 21 17:14:04 2017 +0800
+
+    Modified general.css
+
+commit 6c5382e270b12806fc4890159253fac9b1324066
+Author: jlouisss28 <genjanbylouis@gmail.com>
+Date:   Mon Feb 20 23:07:34 2017 +0800
+
+    added lesson6 styles on font.css
+
+commit 5a6c6fe5c935186db19cfab2e643fd672b1ec6b5
+Author: jlouisss28 <genjanbylouis@gmail.com>
+Date:   Mon Feb 20 23:06:48 2017 +0800
+
+    added lesson6.html and its components
+
+commit 2aef1fd3426ae005f7e836809d044bff7aaa1f49
+Author: jlouisss28 <genjanbylouis@gmail.com>
+Date:   Mon Feb 20 23:04:41 2017 +0800
+
+    changed the lesson number in h1
+
+commit 58718040a1afe0818a3bc367be80b588b64d6045
+Author: jlouisss28 <genjanbylouis@gmail.com>
+Date:   Mon Feb 20 23:00:41 2017 +0800
+
+    added lesson4 and 5 styles on font.css
+    
+    added lesson4 and 5 styles on css
+
+commit 86c1791b5f56e68e76475f73536e222b62760129
+Author: jlouisss28 <genjanbylouis@gmail.com>
+Date:   Mon Feb 20 22:59:59 2017 +0800
+
+    added lesson5.html and its components
+    
+    added lesson5.html and its components
+
+commit 3415147dd8816f1bd57e290638b2ecf671a64473
+Author: jlouisss28 <genjanbylouis@gmail.com>
+Date:   Mon Feb 20 22:59:03 2017 +0800
+
+    lesson4.html
+    
+    added lesson4.html and its components
+
+commit e97d4555ff3c7ab85890e94c9a5de7a2346ea71b
+Author: jlouisss28 <genjanbylouis@gmail.com>
+Date:   Mon Feb 20 22:57:48 2017 +0800
+
+    lesson3.html
+    
+    fixed lesson3 and separate the lesson4 from it
+
+commit 51b6e5b98278c754dfca71afdb6941cced04643a
+Author: maryknollnazareth <omgmaryknoll@gmail.com>
+Date:   Thu Feb 9 23:21:16 2017 +0800
+
+    I added notes on History of the Internet on lesson1.html
+
+commit 8998f1135456dbe7b5c4bec8041fc0a160320554
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Thu Feb 9 21:17:27 2017 +0800
+
+    Modified nav, and removed br tags
+
+commit b44039f9bfd67a1770ae3bd296fdb320208687f7
+Merge: 96ae1ab 1d83c4c
+Author: jamesabalos <2154189@slu.edu.ph>
+Date:   Tue Feb 7 20:46:05 2017 +0800
+
+    Merge branch 'master' of https://github.com/IsmaelLangit/webtech_Lec
+
+commit 96ae1aba2cb997219d916fb524335e96aceada84
+Author: jamesabalos <2154189@slu.edu.ph>
+Date:   Tue Feb 7 20:40:30 2017 +0800
+
+    Updated lesson3.html & style.css
+
+commit 1d83c4c1b009334df8b036ae3f47a0a0351de8f3
+Author: jamesabalos <2154189@slu.edu.ph>
+Date:   Tue Feb 7 20:40:30 2017 +0800
+
+    "Updated lesson3.html & style.css"
+
+commit 0c9f12c8577d4e17da7bffdd67d3e7ff33c7d4b1
+Author: jlouisss28 <genjanbylouis@gmail.com>
+Date:   Mon Feb 6 11:43:09 2017 +0800
+
+    Update lesson3.html
+
+commit 6bb63962f3e0e49099a5daa48deb9bbad0d776fc
+Author: johnraeo <2154041@slu.edu.ph>
+Date:   Mon Feb 6 11:25:11 2017 +0800
+
+    Fix spacing
+
+commit 88ef4373cd996f5a8a96d7e586bef2e9c30a9df7
+Author: johnraeo <2154041@slu.edu.ph>
+Date:   Mon Feb 6 11:21:29 2017 +0800
+
+    Fix spacing
+
+commit e120ebea9b9f0ad19341b5ef21ccdb216778ede3
+Author: johnraeo <2154041@slu.edu.ph>
+Date:   Mon Feb 6 11:05:00 2017 +0800
+
+    Added style in style.css
+
+commit 876a478ec6589332d37e27602d94a0fbdba09f2f
+Author: jlouisss28 <genjanbylouis@gmail.com>
+Date:   Fri Feb 3 20:36:41 2017 +0800
+
+    Updated lesson2.html
+
+commit 9584ae433b706ace17ee9ab50b7b74689e4a4cd0
+Author: jlouisss28 <genjanbylouis@gmail.com>
+Date:   Fri Feb 3 20:26:00 2017 +0800
+
+    Added lesson3.html
+
+commit 7134765900e3c4ce9507e8432e2afe700e64dea7
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Tue Jan 31 17:26:51 2017 +0800
+
+    I modified some part of the source code of all files
+
+commit 51465801ff825ea703d9a72ea7ef58ed424ac503
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Tue Jan 31 15:51:03 2017 +0800
+
+    Add files via upload
+    
+    I made lesson2.html with content, please add if there is
+
+commit ee2bb5eb88ef9677d4e4bfe81628cd7dbe4d9968
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Tue Jan 31 00:11:52 2017 +0800
+
+    I accidently undo the old version of index.html, and commited it.
+
+commit 1f976018e7be49ea8b0aed923efc50a0e4c00228
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Tue Jan 31 00:08:04 2017 +0800
+
+    I modified the navaigator
+
+commit 00eb65f7a1c2cd541f9f62b8fabc533e4bfb4aa8
+Merge: 8c30189 5c3214c
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Mon Jan 30 23:31:44 2017 +0800
+
+    Merge branch 'master' of https://github.com/IsmaelLangit/webtech_Lec
+
+commit 8c301896a671949e8e4f5c3f08a4cd10b56f8129
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Mon Jan 30 23:22:51 2017 +0800
+
+    Added hyperlinks in class navlesson
+
+commit 850bd04baf1c648a94ea4ec6d9d45c21c606504e
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Mon Jan 30 23:16:22 2017 +0800
+
+    I edit the code for the nav
+
+commit 5c3214c887d4cd0ff68b92e60ee37c69769c2df3
+Merge: 7efc67d 91b2604
+Author: johnraeo <2154041@slu.edu.ph>
+Date:   Mon Jan 30 22:25:08 2017 +0800
+
+    fixed conflicts
+
+commit 7efc67d9c58388c72bb2d11c9a959c8453518a69
+Author: johnraeo <2154041@slu.edu.ph>
+Date:   Mon Jan 30 22:14:44 2017 +0800
+
+    Added History of the Internet in index.html
+
+commit 91b26049b168ebf99ce2c095b47da55966b7e22e
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Mon Jan 30 22:13:29 2017 +0800
+
+    I made index.html as the home page, no lessons on the index.html, only nav is hyperlink to specific html files. For now, lesson 1 only (lesson1.html) , also I changed the class name of the lesson 1 code, from fonts to lesson1, to  avoid confusion on css codes on the future
+
+commit c89bea83a67ec677ef7fafb369278b9d586ec8da
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Mon Jan 30 22:00:31 2017 +0800
+
+    Delete README.md
+    
+    Not needed on the project
+
+commit 290f1fdbc940886e884a506f8d9d07f51cd1fa9e
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Mon Jan 30 21:58:51 2017 +0800
+
+    I separated the css code and the html code.
+
+commit ec2a1724ce3d1e557a204d081f8a6988f03b2076
+Author: maryknollnazareth <omgmaryknoll@gmail.com>
+Date:   Mon Jan 30 20:00:03 2017 +0800
+
+    I made the css and fixed navigation bar on index.html.
+
+commit bc52a628c029709e21245c5dae633dbcaecd8e6c
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Fri Jan 27 15:44:46 2017 +0800
+
+    Delete Dense-Regular.zip
+    
+    I deleted it because it is a zip file
+
+commit c19f7480fd6f02434a39351dd13139624fff2e44
+Author: mau <geraldezmau@gmail.com>
+Date:   Fri Jan 27 15:37:38 2017 +0800
+
+    First Index
+
+commit 9371eb935d3fa5756cc7600e117ae72b854f0ed7
+Author: IsmaelLangit <ismaelcruzlangit@gmail.com>
+Date:   Wed Jan 25 21:48:57 2017 +0800
+
+    Initial commit
