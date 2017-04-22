@@ -1,54 +1,49 @@
 /* Font of index.html */
 
-.contents p {
-    color: white;
-    text-align: center;
-    font-family: "Comfortaa";
-    font-size:40px;
-    margin-top:1%;
-    margin-bottom: 1%;
-    z-index: 99;
-}
-.contents {
-    height: 2em;
-    position: relative;
-}
+
 .button a{
     font-family: "Comfortaa";
-    font-size: 130%;
+    font-size: 3vmin;
     color: black;
     text-decoration: none;
     background-color: rgb(63, 191, 191);
-    padding: 15px;
     border-radius: 30px;
     text-align: center;
-    margin-left: 50%;
+    padding : 13px;
+}
+
+.button p {
+    display: inline-block;
+    margin: 50px 40% 0 40%;
 }
 .button a:hover {
     opacity: 0.5;
 }
 
-
-.internet h1 a, .indexhttp h1 a{
-    text-align:center;
-    width:50%;
-    margin: 0 25%;
-    background-color: white;
-    opacity: .8;
-    font-size: 28px;
-    font-family: "Inconsolata";
-    overflow: hidden;
-    display: inline-block;
-    text-decoration: none;
-    list-style-type: none;
-
-}
-
-.internet h1:hover, .indexhttp h1:hover{
-    opacity: 0.5;
-}
-
 /* Font of banner */
+
+.top-page h1 {
+    color : #d6f5f5;
+    font-size : 8vmin;
+    font-weight : bold;
+    letter-spacing :2vmin;
+    line-height : 1;
+    padding : 2vmin 0;
+    font-family: sans-serif;
+    text-align: center;
+    }
+
+.top-page h2 {
+    margin-top: 10px;
+    background-color : #132020;
+    color : #bfd9d9;
+    font-size : 2.8vmin;
+    opacity : 0.8;
+    letter-spacing : 1vmin;
+    padding: 3vmin 0;
+    text-align: center;
+    font-family: sans-serif;
+}
 
 .banner-lessons h1 {
     position:absolute;
@@ -119,12 +114,6 @@
     padding: 10px 30px;
 }
 
-.lesson pre, .lesson code {
-    color: black;
-    background-color: white;
-    padding: 10px 30px;
-}
-
 .lesson li{
     list-style: square outside;
 }
@@ -149,28 +138,25 @@
     background-color: white;
     padding: 10px 30px;
 }
-.intro-about h1{
-    font-family: "Arvo";
-    color: black;
-}
 
 a {
       color: black;
       text-decoration: underline;
 }
 
-.home h1 {
-    padding-top: 8%;
-    text-align: center;
-    color:white;
-    font-family: "Comfortaa";
-    font-size:70px;
-    background-color: black;
-    opacity: .6;
+.left h2, .right h2 {
+    color : black;
+    font-size: 5vmin;
 }
 
-.intro h2 {
-    color : black;
+.left p{
+    font-size: 3vmin;
+    padding-top: 10px;
+}
+
+.right p{
+    font-size: 3.2vmin;
+    padding-top: 10px;
 }
 
 .example p {
