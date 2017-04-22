@@ -575,28 +575,79 @@
 			</div>	
 
 		</details>
-
-
-
-
-
-		
 	</details>
 
 
 	<details>
-		<summary>Object</summary>				
-			<ul>
-				<li>300 Multiple Choices</li>
-				<li>301 Moved Permanently</li>
-				<li>302 Found</li>
-				<li>303 See Other</li>
-				<li>304 Not Modified</li>
-				<li>305 Use Proxy</li>
-				<li>306 (Unused)</li>
-				<li>307 Temporary Redirect</li>
-			</ul>
+		<summary>OBJECT</summary>
+		<p> Use the prototype object oriented </p>
+		
+		<h3>Creating an Object</h3>
+		<ul>
+		<li>The same as Javascript variables, it is also case sensitive. On defining a property of an object, just assign it with a value.</li>
+		<li>Example:</li>
+		</ul>
+
+		<div class = "example">
+		<p>var flower= new Object();</p>
+		<p>flower.name = ‘rose’;</p>
+		<p>flower.color = ‘red’</p>
+		<p>flower.description = ‘beautiful’;</p>
+		</div>
+
+		<h3>Deleting properties from an Object</h3>
+		<ul>
+		<li>By using the delete operator, we can remove a property from an Object.</li>
+		</ul>
+
+		<div class = "example">
+		<p>var flower= new Object();</p>
+		<p>flower.name = ‘rose’</p>
+		<p>flower.color = ‘red’;</p>
+		<p>flower.description = ‘beautiful’;</p>
+		<p></p>
+		<p>delete flower.color; // returns “true”</p>
+		<p>console.log (flower);</p>
+		<p>//Result : Object {name: "rose", description: "beautiful"}</p>
+		</div>
+
+		<h3>Using JavaScript Object Notation (JSON)</h3>
+		<ul>
+		<li>Used for storing data.</li>
+		<li>An object can composed of an array, set of objects, an array inside an array or an object, or an object inside an array or another object. Data storing could be complex.</li>
+		<li>Example of JSON file:</li>
+		</ul>
+
+		<div class = "example">
+			<p>flower= [</p>
+			<p>{</p>
+			<p>"name" : "Rose",</p>
+			<p>"color" :"red",</p>
+			<p>"description" : “beautiful”</p>
+			<p>},</p>
+			<p>{</p>
+			<p>"name" : "Rose",</p>
+			<p>"color" :"red",</p>
+			<p>"description" : “beautiful”</p>
+			<p>}</p>
+			<p>]</p>
+		</div>
+
+		<h3>Storing JSON on a local storage</h3>
+		<ul>
+		<li>By using localStorage property, we can store and retrieve a local storage object</li>
+		<div class = "example">
+			<p>var sampleJSON = JSON.stringify(flower);</p>
+			<p>localStorage.setItem(“data”, sampleJSON);</p>
+		</div>
+		<li>Example of retrieving data:</li>
+		<div class = "example">
+			<p>var retrievedJSON =  localStorage.getItem("data");</p>
+			<p>var flower = JSON.parse(retrievedJSON);</p>
+		</div>
+		</ul>
 	</details>
+
 
 
 
