@@ -176,4 +176,10 @@ a {
 .example p {
     font-family: "INCONSOLATA";
     padding-left: 10%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.example p:last-child {
+    padding-bottom: 25px;
 }
