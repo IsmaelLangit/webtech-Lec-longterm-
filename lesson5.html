@@ -50,7 +50,7 @@
 
 <h2>JAVASCRIPT</h2>
 	<details>
-		<summary>EXTERNALLY LINKED SCRIPT (JAVASCRIPT)</summary>
+		<summary>EXTERNALLY LINKED SCRIPT</summary>
 		<ul>
 		<li>Gets part of an array to another location on the array. And returns the array (with the same length)<br /><br /></li>
 		<li>Syntax:
@@ -62,10 +62,10 @@
 	</details>
 	
 	<details>
-		<summary>EMBEDDED SCRIPT (JAVASCRIPT)</summary>
+		<summary>EMBEDDED SCRIPT</summary>
 		<ul>
 		<li>
-		<p>Between a pair of <tt class="literal">&lt;script&gt;</tt> and <tt class="literal">&lt;/script&gt;</tt> tags</p>
+		<p>Between a pair of and <tt class="literal">&lt;/script&gt;</tt> tags</p>
 		</li>
 		<li>
 		<p>From an external file specified by the <tt class="literal">src</tt> attribute of a <tt class="literal">&lt;script&gt;</tt> tag</p>
@@ -79,7 +79,7 @@
 	</details>
 	
 	<details>
-		<summary>INLINE SCRIPT (JAVASCRIPT)</summary>
+		<summary>INLINE SCRIPT</summary>
 		<ul>
 		<li>Normally the HTML event attributes</a> are used to call functions specified elsewhere in script tags.<br /></li>
 		<li>Syntax:&nbsp;
@@ -91,31 +91,31 @@
 	</details>
 	
 	<details>
-		<summary>TOP LEVEL / GLOBAL (JAVASCRIPT)</summary>
+		<summary>TOP LEVEL / GLOBAL</summary>
 		<ul>
-		<li>_dump (JavaScript)
+		<li>_dump 
 		<p>Prints a string representation of an object to the log file.</p>
 		</li>
-		<li>eval (JavaScript)
+		<li>eval 
 		<p>Evaluates an expression or statements.</p>
 		</li>
-		<li>isNaN (JavaScript)
+		<li>isNaN 
 		<p>Determines whether the result of a string parsed by parseInt or parseFloat is a valid number.</p>
 		</li>
-		<li>parseFloat (JavaScript)
+		<li>parseFloat 
 		<p>Parses a string and returns a floating point number.</p>
 		</li>
-		<li>parseInt (JavaScript)
+		<li>parseInt
 		<p>Parses a string and returns an integer of the specified radix or base.</p>
 		</li>
-		<li>print (JavaScript)
+		<li>print
 		<p>Prints a string to the log file.</p>
 		</li>
 		</ul>
 	</details>
 	
 	<details>
-		<summary>FUNCTION (JAVASCRIPT)</summary>
+		<summary>FUNCTION</summary>
 		<ul>
 		<li>A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().</li>
 		<li>Syntax:
@@ -125,6 +125,106 @@
 		</li>
 		</ul>
 	</details>
+
+	<details>
+		<summary>ARRAY</summary>
+			<details>
+				<summary class = "sub">Some Characterictics </summary>		
+					<ul>
+					<li>Allow mixed elements.</li>
+					</ul>
+					<div class = "example">
+					<p>Ex. array1 = [10, true, 'hello'];</p>
+					</div>
+					<ul>
+					<li>Allow to change the size of the array</li>
+					</ul>
+					<div class = "example">
+					<p>Ex. var array1 = new Array(5);</p>
+					<p>array1.length = 4;</p>
+					</div>
+					<ul>
+					<li>Array indices can be contiguous</li>
+					</ul>
+					<div class = "example">
+					<p>Ex. var array1 = [1, 2, 3, 4, 5];</p>
+					<p>array1[8] = 8;</p>
+					<p>console.log(array1);</p>
+					<p>//Result : [1, 2, 3, 4, 5, undefined, undefined, 8]</p>
+					</div>
+			</details>
+			
+		<details  class = "sub">	
+			<summary>Mutator Methods</summary>	
+			<p>Modifies the target array</p>		
+
+			<details class = "sub">	
+				<summary>Array.prototype.copyWithin()</summary>	
+				<p>Gets part of an array to another location on the array. And returns the array (with the same length).</p>
+				<p> Syntax: </p>
+				<div class = "example">
+					<p>arr.copyWithin(target)</p>
+					<p>arr.copyWithin(target, start)</p>
+					<p>arr.copyWithin(target, start, end)</p>
+				</div>
+				<p> Example: </p>	
+				<div class = "example">
+					<p>var sample = ['ichi' 'san', 'yon', 'go', 'ni'].copyWithin(2, 0);</p>
+					<p>console.log(sample);</p>
+					<p>// Result : ["ichi", "san", "ichi", "san", "yon"]</p>
+				</div>	
+			</details>
+
+			<details class = "sub">	
+				<summary>Array.prototype.fill()</summary>	
+				<p>Fills an array with elements from the start to the end index with a static value.</p>
+				<p> Syntax: </p>
+				<div class = "example">
+					<p>arr.fill(value)</p>
+					<p>arr.fill(value, start)</p>
+					<p>arr.fill(value, start, end)</p>
+				</div>
+				<p> Example: </p>	
+				<div class = "example">
+					<p>var sample = [8, 9, 3]</p>
+					<p>sample.fill(10);</p>
+					<p>//Result: [10, 10, 10]</p>
+				</div>	
+			</details>
+
+		<details class = "sub">	
+			<summary>Array.prototype.pop()</summary>	
+				<p>Removes the last element of an array.</p>
+				<p> Syntax: </p>
+				<div class = "example">
+					<p>array.pop()</p>
+				</div>
+				<p> Example: </p>	
+				<div class = "example">
+					<p>var sample = [‘cat’, ‘dog’, ‘fish’];</p>
+					<p>sample.pop();</p>
+					<p>// Results: [‘cat’, ‘dog’]</p>
+				</div>	
+		</details>
+
+		</details>
+
+	</details>
+
+	<details>
+		<summary>Object</summary>				
+			<ul>
+				<li>300 Multiple Choices</li>
+				<li>301 Moved Permanently</li>
+				<li>302 Found</li>
+				<li>303 See Other</li>
+				<li>304 Not Modified</li>
+				<li>305 Use Proxy</li>
+				<li>306 (Unused)</li>
+				<li>307 Temporary Redirect</li>
+			</ul>
+	</details>
+
 
 
 </div>

@@ -167,6 +167,18 @@ footer {
 	height:600px;
 }
 
-.sub {
-	width: 95%;
+.sub{
+	width: 94%;
 	margin-left : 5%;
+}
+
+.sub1{
+	width: 89%;
+	margin-left : 10%;
+}
+
+
+.sub2,  .sub2 p{
+	width: 84%;
+	margin-left : 15%;
+}

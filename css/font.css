@@ -119,6 +119,12 @@
     padding: 10px 30px;
 }
 
+.lesson pre, .lesson code {
+    color: black;
+    background-color: white;
+    padding: 10px 30px;
+}
+
 .lesson li{
     list-style: square outside;
 }
@@ -165,4 +171,9 @@ a {
 
 .intro h2 {
     color : black;
+}
+
+.example p {
+    font-family: "INCONSOLATA";
+    padding-left: 10%;
 }
