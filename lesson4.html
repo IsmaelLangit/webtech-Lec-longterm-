@@ -641,6 +641,107 @@
 		</div>
 		</ul>
 	</details>
+	
+		<details>
+		<summary>JAVA VS JAVASCRIPT</summary>
+		<table>
+			<tbody>
+				<tr>
+					<td>
+					<p><strong>JavaScript</strong></p>
+					</td>
+					<td>
+					<p><strong>Java</strong></p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Object-oriented. No distinction between types of objects. Inheritance is through the 
+					       prototype mechanism, and properties and methods can be added to any object dynamically.</p>
+					</td>
+					<td>
+					<p>Class-based. Objects are divided into classes and instances with all inheritance through 
+						   the class hierarchy. Classes and instances cannot have properties or methods added dynamically.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Dynamic typing &ndash; Variable data types are not declared</p>
+					</td>
+					<td>
+					<p>Static typing &ndash; Variable data types must be declared</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Cannot automatically write to hard disk.</p>
+					</td>
+					<td>
+					<p>Can automatically write to hard disk.</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</details>
+	
+	<details>
+		<summary>JAVASCRIPT VARIABLE</summary>
+		<p>Variable declarations, wherever they occur, are processed before any code is executed.
+		   The scope of a variable declared with var is its current <em>execution context</em>, which is
+		   either the enclosing function or, for variables declared outside any function, global.
+		   If you re-declare a JavaScript variable, it will not lose its value.</p>
+		
+		
+		<h3>Declaring and initializing two variables</h3>
+		<div class = "example">
+		<p>var a = 0, b = 0;</p>
+		</div>
+
+		<h3>Assigning two variables with single string value</h3>
+		<div class = "example">
+		<p>var a = 'A';</p>
+		<p>var b = a;</p>
+		<p>// Equivalent to:</p>
+		<p>var a, b = a = 'A';</p>
+		</div>
+		
+		
+		<p><strong>let</strong> allows you to declare variables that are limited in scope to the block,
+		 statement, or expression on which it is used. This is unlike the var keyword, which defines a 
+		 variable globally, or locally to an entire function regardless of block scope.</p>
+		 
+		<p>The <strong>const </strong>declaration creates a read-only reference to a value. It does not 
+		   mean the value it holds is immutable, just that the variable identifier cannot be reassigned. 
+		   For instance, in case the content is an object, this means the object itself can still be altered.</p>
+	 </details>
+	   
+	<details>
+	<summary>JAVASCRIPT DATA TYPES AND DATA STRUCTURES</summary>
+	<details class = "sub">
+		<summary>Simple/Primitive values</summary>
+		<p>All types except objects define immutable values (values, which are incapable of being changed).
+		 For example and unlike to C, Strings are immutable. We refer to values of these types as "primitive values".</p>
+		<ul>
+		<li>Boolean type</li>
+		<li>Null type</li>
+		<li>Undefined type</li>
+		<li>Number type</li>
+		<li>String type</li>
+		<li>Symbol type</li>
+		</ul>
+	</details>
+	
+	<details class = "sub">
+		<summary>Structure/Objects</summary>
+		<p>In JavaScript, objects can be seen as a collection of properties. With the object literal
+		   syntax a limited set of properties are initialized then properties can be added and removed.</p>
+		   
+		<p>There are two types of object properties which have certain attributes:</p>
+		<ul>
+		<li>Data property</li>
+		<li>Accessor property</li>
+		</ul>
+	</details>
 
 
 
