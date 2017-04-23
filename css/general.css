@@ -55,7 +55,7 @@ body {
 	background-image: url("../images/background/http.jpg");
 }
 #lesson5-banner {
-	background-image: url("../images/background/www.jpg");
+	background-image: url("../images/background/javascript.gif");
 }
 
 
@@ -88,13 +88,18 @@ footer {
 	margin-right: 17%;
 	background-color: white;
 	text-align: center;
-	font-family: sans-serif;
+	font-family: "Comfortaa";
 	border-radius: 50px;
+	opacity: .7;
+
 }
 
 .left {
 	padding-top: 70px;
 	margin-bottom: 50px;
+}
+.right a {
+	text-decoration: none;
 }
 
 #logotitle {
@@ -171,6 +176,7 @@ footer {
 
 .italic {
 	font-style: italic;
+	color: maroon;
 }
 
 
