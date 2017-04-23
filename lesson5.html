@@ -620,7 +620,6 @@
 		<p>The <strong>const </strong>declaration creates a read-only reference to a value. It does not 
 		   mean the value it holds is immutable, just that the variable identifier cannot be reassigned. 
 		   For instance, in case the content is an object, this means the object itself can still be altered.</p>
-	 </details>
 	   
 	<details>
 	<summary>JAVASCRIPT DATA TYPES AND DATA STRUCTURES</summary>
@@ -717,6 +716,7 @@
 		</ul>
 	</details>
 	</details>
+	</details>
 	
 	<details>
 	
@@ -732,22 +732,23 @@
 	<p>For example, the standard DOM specifies that the getElementsByTagName method in the code below must return a list of all the &lt;P&gt; elements in the document:</p>
 
 	<p>HTML:</p>
+	<div class="example">
 	<p>&lt;p&gt; The quick brown fox jumped over the lazy dog.&lt;/p&gt;</p>
 	<p>&lt;p&gt; Clean clams crammed in clean cans.&lt;/p&gt;</p>
+	</div>
 	
 	<p>JAVASCRIPT:</p>
-	<p>Var paragraphs = document.getElementsByTagName(&ldquo;p&rdquo;);</p>
+	<div class="example">
+	<p>var paragraphs = document.getElementsByTagName(&ldquo;p&rdquo;);</p>
 	<p>//Paragraph[0] is the paragraph containing &ldquo;Hello World&rdquo;</p>
 	<p>//Paragraph[1] is the paragraph containing &ldquo;This is a paragraph&rdquo;</p>
-
-	<p><strong>Paragraph[0]:</strong></p>
-	<p>&lt;p&gt; The quick brown fox jumped over the lazy dog.&lt;/p&gt;</p>
-
-	<p><strong>paragraphs[1].nodeName :</strong></p>
-	<p>&ldquo;P&rdquo;</p>
-
-	<p><strong>paragraphs[1].innerText:</strong></p>
-	<p>&ldquo;Clean clams crammed in clean cans.&rdquo;</p>
+	<p>Paragraph[0]</p>
+	<p>//Result :&lt;p&gt; The quick brown fox jumped over the lazy dog.&lt;/p&gt;</p>
+	<p>paragraphs[1].nodeName</p>
+	<p>//Result :&ldquo;P&rdquo;</p>
+	<p>paragraphs[1].innerText</p>
+	<p>//Result :&ldquo;Clean clams crammed in clean cans.&rdquo;</p>
+	</div>
 
 	<p><strong>Important Data types</strong></p>
 	<p>There are a number of different data types that is being passed around the API that you should be aware of. These are the following important data types:</p>
@@ -780,40 +781,58 @@
 
 	<p>The following is a brief list of common APIs in web and XML page scripting using the DOM.</p>
 		<ul>
-			<li><a href="https://developer.mozilla.org/en-US/docs/DOM/document.getElementById">document.getElementById</a>(id)</li>
+			<h3><a href="https://developer.mozilla.org/en-US/docs/DOM/document.getElementById">document.getElementById</a>(id)</h3>
 		</ul>
 	<p>SYNTAX:</p>
+	<div class="example">
 	<p>Element = document.getElementById(id);</p>
+	</div>
 
 	<p>HTML:</p>
-	<p>&lt;body&gt;</p>
-	<p>&lt;p id=&rdquo;btns&rdquo;&gt;</p>
-	<p>&lt;button onclick=&rdquo;saySomething(&lsquo;hello&rsquo;);&rdquo;&gt;Click to say hello&lt;/button&gt;</p>
-	<p>&lt;button onclick=&rdquo;saySomething(&lsquo;hi&rsquo;);&rdquo;&gt;Click to say hi&lt;/button&gt;</p>
-	<p>&lt;/p&gt;</p>
-	<p>&lt;/body&gt;</p>
+	<div class="example">
+		<p>&lt;body&gt;</p>
+		<p>&lt;p id=&rdquo;btns&rdquo;&gt;</p>
+		<p>&lt;button onclick=&rdquo;saySomething(&lsquo;hello&rsquo;);&rdquo;&gt;Click to say hello&lt;/button&gt;</p>
+		<p>&lt;button onclick=&rdquo;saySomething(&lsquo;hi&rsquo;);&rdquo;&gt;Click to say hi&lt;/button&gt;</p>
+		<p>&lt;/p&gt;</p>
+		<p>&lt;/body&gt;</p>
+	</div>
+
 	<p>JAVASCRIPT:</p>
-	<p>Function saySomething(newString) {</p>
-	<p>Var elem = document.getElementById(&lsquo;btns&rsquo;);</p>
-	<p>Elem.style.color = newString;</p>
-	<p>}</p>
+	<div class="example">
+		<p>Function saySomething(newString) {</p>
+		<p>Var elem = document.getElementById(&lsquo;btns&rsquo;);</p>
+		<p>Elem.style.color = newString;</p>
+		<p>}</p>
+	</div>
 
 		<ul>
-			<li>document.<a href="https://developer.mozilla.org/en-US/docs/Web/API/Element.getElementsByTagName">getElementsByTagName</a>(name)</li>
+			<h3>document.<a href="https://developer.mozilla.org/en-US/docs/Web/API/Element.getElementsByTagName">getElementsByTagName</a>(name)</h3>
 		</ul>
 	<p>SYNTAX:</p>
+	<div class="example">
 	<p>Elements = element.getElementsByTagName(tagName)</p>
+	</div>
 
 	<p>JAVASCRIPT:</p>
-	<p>// check the alignment on a number of cells in a table. <br /> var table = document.getElementById("table1"); <br /> var cells = table.getElementsByTagName("td"); </p>
-	<p><br /> for (var i = 0; i &lt; cells.length; i++) { <br /> var status = cells[i].getAttribute("stat); <br /> if ( status == "open" ) { <br /> // get data <br /> }<br /> }</p>
+	<div class="example">
+	<p>// check the alignment on a number of cells in a table.</p>
+	<p>var table = document.getElementById("table1");</p> 
+	<p>var cells = table.getElementsByTagName("td"); </p>
+	<p>for (var i = 0; i &lt; cells.length; i++) { </p>
+	<p>&nbsp;var status = cells[i].getAttribute("stat);</p>
+	<p>&nbsp;&nbsp;if ( status == "open" ) { </p>
+	<p>// get data </p>
+	<p>&nbsp;&nbsp;}</p>
+	<p>}</p>
+	</div>
 
 		<ul>
-			<li><a href="https://developer.mozilla.org/en-US/docs/DOM/document.createElement">&nbsp;document.createElement</a>(name)</li>
+			<h3><a href="https://developer.mozilla.org/en-US/docs/DOM/document.createElement">&nbsp;document.createElement</a>(name)</h3>
 		</ul>
 	<p>SYNTAX:</p>
 	<p>Var element = document.createElement(tagName, [options]);</p>
-	<p><strong>Tagname </strong>-specifies the type of element that will be created.</p>
+	<p>Tagname </strong>-specifies the type of element that will be created.</p>
 	<p><strong>Options</strong> - optional ElementCreationOptions object that contains a single property called <strong>is</strong>, where the value of <strong>is</strong> is the tage name for a particular element previously defined.</p>
 	<p>document.body.onload = addElement;<br /><br />function addElement () { <br /> // create a new p element <br /> // and give it some content <br /> var newParagraph = document.createElement("p"); <br /> var newContent = document.createTextNode("Hi there and greetings!"); <br /> newParagraph.appendChild(newContent); //add the text to paragraph. <br /><br /> // add the newly created element and its content into the DOM <br /> var currentParagraph = document.getElementById("paragraph1"); <br /> document.body.insert(newParagraph, currentParagraph); <br />}</p>
 
