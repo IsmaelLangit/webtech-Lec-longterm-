@@ -718,7 +718,7 @@
 	</details>
 	</details>
 	
-	<details>
+		<details>
 	
 	<summary>DOM (Document Object Model)</summary>
 	<p>DOM(Document Object Model), according to Mozilla Developer Network, is a programming interface for HTML and XML documents. &ldquo;It provides a structured representation of the document and it defines a way that the structure can be accessed from programs so that they can change the document structure, style and content.&rdquo; </p>
@@ -831,35 +831,60 @@
 			<h3><a href="https://developer.mozilla.org/en-US/docs/DOM/document.createElement">&nbsp;document.createElement</a>(name)</h3>
 		</ul>
 	<p>SYNTAX:</p>
+	<div class="example">
 	<p>Var element = document.createElement(tagName, [options]);</p>
-	<p>Tagname </strong>-specifies the type of element that will be created.</p>
-	<p><strong>Options</strong> - optional ElementCreationOptions object that contains a single property called <strong>is</strong>, where the value of <strong>is</strong> is the tage name for a particular element previously defined.</p>
-	<p>document.body.onload = addElement;<br /><br />function addElement () { <br /> // create a new p element <br /> // and give it some content <br /> var newParagraph = document.createElement("p"); <br /> var newContent = document.createTextNode("Hi there and greetings!"); <br /> newParagraph.appendChild(newContent); //add the text to paragraph. <br /><br /> // add the newly created element and its content into the DOM <br /> var currentParagraph = document.getElementById("paragraph1"); <br /> document.body.insert(newParagraph, currentParagraph); <br />}</p>
-
+	</div>
+	<p>Tagname-specifies the type of element that will be created.</p>
+	<p>Options - optional ElementCreationOptions object that contains a single property called is, where the value of is is the tage name for a particular element previously defined.</p>
+	
+	<div class="example">
+	<p>document.body.onload = addElement;
+	<p>function addElement () {</p>
+	<p>// create a new p element</p>
+	<p>// and give it some content</p>
+	<p>var newParagraph = document.createElement("p");</p>
+	<p>var newContent = document.createTextNode("Hi there and greetings!");</p>
+	<p>newParagraph.appendChild(newContent); //add the text to paragraph.</p>
+	<p>// add the newly created element and its content into the DOM </p>
+	<p>var currentParagraph = document.getElementById("paragraph1");</p>
+	<p>document.body.insert(newParagraph, currentParagraph);</p>
+	<p>}</p>
+	</div>
+	
 		<ul>
 			<h3>parentNode.<a href="https://developer.mozilla.org/en-US/docs/DOM/Node.appendChild">appendChild</a>(node)</h3>
 		</ul>
 	<p>SYNTAX:</p>
+	<div class="example">
 	<p>Var aChild = element.appendChild(aChild);</p>
+	</div>
 	<p>JAVASCRIPT:</p>
+	<div class="example">
 	<p>Var par = document.createElement(&ldquo;p&rdquo;);</p>
 	<p>document.body.appendChild(par);</p>
+	</div>
 		<ul>
 			<h3>element.<a href="https://developer.mozilla.org/en-US/docs/DOM/element.innerHTML">innerHTML</a></h3>
 		</ul>
 	<p>SYNTAX:</p>
+	<div class="example">
 	<p>Const content = element.innerHTML;</p>
 	<p>element.innerHTML = content;</p>
-
+	</div>
+	
 	<p>HTML: </p>
+	<div class="example">
 	<p>&lt;body&gt;</p>
 	<p>&lt;p id=&rdquo;text1&rdquo;&gt;The quick brown fox jumps over the lazy dog. &lt;/p&gt;</p>
 	<p>&lt;/body&gt;</p>
-
+	</div>
+	
 	<p>JAVASCRIPT:</p>
+	<div class="example">
 	<p>Var p = document.getElementById(&ldquo;text1&rdquo;);</p>
 	<p>console.log(p.innerText);</p>
-
+	</div>
+	
 		<ul>
 			<h3>Element.<a href="https://developer.mozilla.org/en-US/docs/DOM/element.style">style</a>.left</h3>
 		<ul>
@@ -868,27 +893,39 @@
 			<h3> element.<a href="https://developer.mozilla.org/en-US/docs/DOM/element.setAttribute">setAttribute</a></h3>
 		</ul>
 	<p>SYNTAX:</p>
+	<div class="example">
 	<p>Element.setAttribute(name, value)</p>
+	</div>
+	
 	<p><strong>Name </strong>- name of attribute to be set</p>
 	<p><strong>Value</strong> - value to assign to the attribute</p>
 
 	<p>HTML:</p>
+	<div class="example">
 	<p>&lt;button&gt;Click here&lt;/button&gt;</p>
+	</div>
+	
 	<p>JAVASCRIPT:</p>
+	<div class="example">
 	<p>Var b = document.querySelector(&ldquo;button&rdquo;)</p>
-
 	<p>b.setAttribute(&ldquo;name&rdquo;, &ldquo;clickButton&rdquo;);</p>
 	<p>b.setAttribute(&ldquo;disabled&rdquo;, &ldquo;&rdquo;);</p>
+	</div>
+	
 		<ul>
 			<h3>element.<a href="https://developer.mozilla.org/en-US/docs/DOM/element.getAttribute">getAttribute</a></h3>
 		</ul>
 	<p>SYNTAX:</p>
+	<div class="example">
 	<p>Var attribute = element.getAttribute(attributename);</p>
-
+	</div>
+	
 	<p>JAVASCRIPT:</p>
+	<div class="example">
 	<p>Var div1 = document.getElementById(&ldquo;div1&rdquo;);</p>
 	<p>Var style=div1.getAttribute(&ldquo;style&rdquo;);</p>
-
+	</div>
+	
 		<ul>
 			<h3>element.<a href="https://developer.mozilla.org/en-US/docs/DOM/element.addEventListener">addEventListener</a></h3>
 		<ul>
@@ -896,8 +933,9 @@
 		</ul>
 		</ul>
 	<p>JAVASCRIPT:</p>
+	<div class="example">
 	<p>window.addEventListner(&ldquo;test&rdquo;, null, options);</p>
-
+	</div>
 		<ul>
 			<h3><a href="https://developer.mozilla.org/en-US/docs/DOM/window.content">Window.content</a></h3>
 		<ul>
@@ -905,30 +943,42 @@
 		</ul>
 		</ul>
 	<p>SYNTAX:</p>
+	<div class="example">
 	<p>Var windowObject = window.content;</p>
+	</div>
+	
 		<ul>
 			<h3><a href="https://developer.mozilla.org/en-US/docs/DOM/window.onload"> Window.onload</a></h3>
 		</ul>
 	<p>SYNTAX:</p>
+	<div class="example">
 	<p>Window.onload = funcRef;</p>
+	</div>
+	
 	<p>JAVASCRIPT:</p>
+	<div class="example">
 	<p>Window.onload = function() {</p>
 	<p>init();</p>
 	<p>doSomethingElse();</p>
 	<p>}</p>
+	</div>
 
 		<ul>
 			<h3><a href="https://developer.mozilla.org/en-US/docs/DOM/window.dump"> window.dump</a></h3>
 		</ul>
 	<p>SYNTAX:</p>
+	<div class="example">
 	<p>window.dump(message);</p>
 	<p>dump(message);</p>
+	</div>
+	
 		<ul>
 			<h3><a href="https://developer.mozilla.org/en-US/docs/DOM/window.scrollTo"> window.scrollTo</a></h3>
 		</ul>
 	<p>SYNTAX:</p>
+	<div class="example">
 	<p>window.scrollTo(x-coord, y-coord)</p>
-
+	</div>
 </details>
 
 
