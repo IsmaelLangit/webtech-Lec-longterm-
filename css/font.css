@@ -117,7 +117,7 @@
     text-align: justify;
 }
 
-.lesson p, .lesson ul, .aboutus p {
+.lesson p, .lesson ul, .aboutus p, .lesson pre{
     font-family: "Julius Sans One";
     color: black;
     background-color: white;
@@ -128,16 +128,10 @@
     list-style: square outside;
 }
 
-.lesson p, .lesson ul, .lesson li{
+.lesson p, .lesson ul, .lesson li, .lesson dl, .lesson dt, .lesson dd{
     font-family: "Coustard";
     font-size: 20px;
     margin : 0 50px;
-}
-
-.lesson dl, .lesson dt, .lesson dd{
-    font-family: "Coustard";
-    font-size: 20px;
-    margin: 0 50px;
 }
 .lesson dt{
     display: list-item;
