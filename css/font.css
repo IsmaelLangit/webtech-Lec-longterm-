@@ -198,3 +198,12 @@ strong {
     font-family: "Arvo";
 }
 
+.lesson h3{
+    color : black !important;
+}
+
+.lesson ul h3{
+    color : black !important;
+}
+
+
