@@ -15,11 +15,6 @@ nav {
     padding-bottom: 3px;
 }
 
-.navClass ul li a {
-    color: white;
-    text-decoration: none;
-}
-
 .navClass ul li {
     list-style-type: none;
     display: inline-block;
@@ -46,13 +41,40 @@ ul.navlesson {
     padding-bottom: 5px;
 }
 
-ul.navlesson li {
+.navlesson li {
     padding : 7px;
-    display: block;
+    display: inline-block;
     width: 200px;
     text-align: center;
 }
 
 .navClass li:hover .navlesson {
     opacity: 1;
+}
+
+.navlesson li:nth-child(odd) {
+    background-color: white;
+    color: black;
+}
+
+.navlesson li:nth-child(even) {
+    background-color: yellow;
+    color: black;
+}
+
+.navlesson li:hover {
+    margin : 4px 1px;
+}
+
+
+.main li a {
+    color: white;
+    text-decoration: none;
+}
+.navlesson li a {
+     color: black;
+}
+
+.navlesson {
+    padding: 5px;
 }
