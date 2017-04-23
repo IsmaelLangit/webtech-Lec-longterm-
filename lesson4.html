@@ -107,7 +107,187 @@
 
 	<details>
 		<summary>CSS STATEMENTS</summary>
+		<ul>
+			<li> At &ndash; Rules</li>
+			<li> Charset &ndash; &ldquo;utf-8&rdquo;</li>
+			<li> Import &ndash; allow to get another CSS file inclusion (not supported)</li>
+			<li> Media &ndash; media plays</li>
+			<li> Name Space</li>
+			<li> Document &ndash; block</li>
+			<li> Font &ndash; face</li>
+			<li> Key &ndash; frame animation</li>
+		</ul>
+	</details>
 
+	<details>
+		<summary>CSS SELECTORS</summary>
+		<p> Structure used as a condition in a CSS rule to determine which elements in the document tree are matched by the selector and are thus targeted by the formatting specified in the CSS rule declaration block. The matched elements are called the subjects of the selector.</p>
+
+		<h3>Selector-syntax</h3>
+		<p>Chain of one or more sequences of simple selectors separated by combinators with one pseudo-element possibly appended to the last sequence</p>
+
+		<p>Example</p>
+		<div class = "example">
+			<p>Dir#abc&gt;p.xyz[title]+span:last-of-type::after</p>
+			<p>//Dir (type)</p>
+			<p>//Dir#abc (sequence child of)</p>
+			<p>//&gt; (combinator)</p>
+			<p>//P (paragraph)</p>
+			<p>//.xyz (class)</p>
+			<p>//[title] (title attribute)</p>
+			<p>//P.xyz (sequence adjacent)</p>
+			<p>//[title]+span combinatory)</p>
+			<p>//:last-of-type (pseudo class)</p>
+			<p>//::after (pseudo element)</p>
+		</div>
+
+		<h3>Sequence of Simple Selectors</h3>
+		<ul>
+			<li>Chain of simple selectors not separated by combinators</li>
+			<li>Always starts with a type selector or a universal selector</li>
+			<li>Cannot contain other type selectors or universal selectors</li>
+		</ul>
+
+		<h3>Group of Selectors</h3>
+		<p>Comma-separated list of selectors representing the union of all elements selected by each of the selectors in the list. (e.g h1,h2,h3 – group selectors separated by comma)</p>
+
+		<details>
+			<summary class = "sub">Simple/Basic Selectors</summary>
+			<ul>
+				<li> Type selector &ndash; type of element you are targeting (all the elements)</li>
+				<li> Universal &ndash; represented by the asterisk (*) matches everything</li>
+				<li> Attribute
+				<ul>
+				<li>[attr] &ndash; class attribute (name of a string)</li>
+				<li>[attr] &ndash; class attribute (name of a string)</li>
+				<li>[attr=value] &ndash; must be exactly the same</li>
+				<li>[attr~=value] &ndash; this value is just one value in a set of values that are space separated.&nbsp;Or one that is exactly match</li>
+				<li>[attr|value] &ndash; used to target the language attribute (lang|=en)</li>
+				<li>[attr^=value] &ndash; beginning value (CSS3)</li>
+				<li>[attr$=value]- end value (CSS3)</li>
+				<li>[attr*=value] value that is found anywhere (CSS3)</li>
+				</ul>
+				</li>
+			</ul>
+
+			<h3>Class selectors</h3>
+			<p>full stop (“.”) and a class value</p>
+			<p>Syntax</p>
+			<div class = "example">
+				<p>.x // universal selector</p>
+				<p>p.x //type selector</p>
+			</div>
+			<div class = "example">
+				<p>.sampleClass {</p>
+				<p>&nbsp;margin : 20px;</p>
+				<p>&nbsp;background-color : white;</p>
+				<p>&nbsp;color : black;</p>
+				<p>}</p>
+			</div>
+
+
+			<h3>ID selector</h3>
+			<p>Pound sign (#) and ID value</p>
+			<p>Syntax</p>
+			<div class = "example">
+				<p>#a</p>
+			</div>
+			<div class = "example">
+				<p>#sampleID {</p>
+				<p>&nbsp;padding : 0 50px;</p>
+				<p>&nbsp;background-color : white;</p>
+				<p>}</p>
+				<p></p>
+			</div>
+		</details>
+
+		<details>
+			<summary class = "sub">Pseudo-classes</summary>
+			<p>Implicit class that is associated with the inherited classes or mark up (fake class)</p>
+
+			<ul>
+			<li>Dynamic pseudo class
+			<ul>
+			<li>Link pseudo classes
+			<ul>
+			<li>:link</li>
+			<li>:visited</li>
+			</ul>
+			</li>
+			</ul>
+			</li>
+			<li>User action pseudo classes
+			<ul>
+			<li>&nbsp;:hover</li>
+			<li>:active</li>
+			<li>:focus</li>
+			</ul>
+			</li>
+			<li>Target pseudo class (targeting element)
+			<ul>
+			<li>:target (CSS3)</li>
+			</ul>
+			</li>
+			<li>Language pseudo class
+			<ul>
+			<li>:lang()</li>
+			</ul>
+			</li>
+			<li>UI element states pseudo classes
+			<ul>
+			<li>:enabled (CSS3)</li>
+			<li>:disabled (CSS3)</li>
+			<li>:checked (CSS3)</li>
+			<li>:indeterminate (CSS3)</li>
+			</ul>
+			</li>
+			<li>Structural pseudo classes
+			<ul>
+			<li>:root (CSS3)</li>
+			<li>:first-child (CSS3)</li>
+			<li>:last-child (CSS3)</li>
+			<li>:only-child (CSS3)</li>
+			<li>:nth-child() (numbers and literals &ndash; 2n+1) (CSS3)</li>
+			<li>:nth-last-child() (count on the last child &ndash;reverse) (CSS3)</li>
+			<li>:first-of-type (CSS3)</li>
+			<li>:last-of-type (CSS3)</li>
+			<li>:only-of-type (CSS3)</li>
+			<li>:nth-of-type()(CSS3)</li>
+			<li>:nth-last-of-type()(CSS3)</li>
+			<li>:empty (element that doesn&rsquo;t contain anything) (CSS3)</li>
+			</ul>
+			</li>
+			<li>Negation pseudo class
+			<ul>
+			<li>:not() &ndash; simple selector (negates the logic of the selector)</li>
+			</ul>
+			</li>
+			<li>Combinators
+			<ul>
+			<li>Descendant combinators (whitespace, ie. Space, tab, linefeed, carriage return, form feed)
+			<ul>
+			<li>Child combinatory (&gt;) direct descendant</li>
+			<li>Siblings combinators &ndash; at the same level
+			<ul>
+			<li>Adjacent sibling combinators (+)</li>
+			<li>General sibling combinators (~)</li>
+			</ul>
+			</li>
+			</ul>
+			</li>
+			</ul>
+			</li>
+			<li>Pseudo-elements
+			<ul>
+			<li>::first-letter (CSS3) :first-letter</li>
+			<li>::first-line (CSS3) :first-line</li>
+			<li>::before (CSS3) :before</li>
+			<li>::after (CSS3) :after</li>
+			</ul>
+			</li>
+			</ul>
+			
+		</details>
 	</details>
 	
 	<details>
@@ -117,6 +297,47 @@
 
 	<details>
 		<summary>CSS RULE DECLARATION</summary>
+		<h3>Properties</h3>
+		<ul>
+		<li>Shorthand properties (e.g background,font) and longhand properties (background)</li>
+		<li>Vendor specific extensions (a.ka. vendor prefixes)</li>
+		<li>Experimental Properties<br />
+		<ul>
+		<li>-webkit-transform-origin;</li>
+		<li>-moz-tranzform-origin; (Mozilla-ghetto</li>
+		<li>-ms-transform-origin;(Edge)</li>
+		<li>-o-transform-transform-origin;(Opera-presto)</li>
+		</ul>
+		</li>
+		<li>Values<br />
+		<ul>
+		<li>Keywords</li>
+		<li>Numbers</li>
+		<li>Dimensions</li>
+		<li>Length Units<br />
+		<ul>
+		<li>Font-relative</li>
+		<li>Viewport-percentage</li>
+		<li>Absolute lengths</li>
+		<li>Angle Units</li>
+		<li>Duration Units</li>
+		<li>Frequency Units</li>
+		<li>Resolution Units</li>
+		</ul>
+		</li>
+		<li>Percentages</li>
+		<li>URL&rsquo;s and URI&rsquo;s</li>
+		<li>Colors <br />
+		<ul>
+		<li>RGB Functions</li>
+		<li>Alpha channel color</li>
+		<li>Hue, saturation, lightness</li>
+		</ul>
+		</li>
+		<li>Functions</li>
+		</ul>
+		</li>
+		</ul>
 
 	</details>	
 </div>
