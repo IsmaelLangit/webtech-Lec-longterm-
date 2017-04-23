@@ -163,6 +163,10 @@ a {
     padding-top: 10px;
 }
 
+li.example{
+    list-style-type: none;
+}
+
 .example p {
     font-family: "INCONSOLATA";
     padding-left: 10%;

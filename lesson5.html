@@ -50,10 +50,10 @@
 		<summary>EMBEDDED SCRIPT</summary>
 		<ul>
 		<li>
-		<p>Between a pair of and <tt class="literal">&lt;/script&gt;</tt> tags</p>
+		<p>Between a pair of and &lt;/script&gt; tags</p>
 		</li>
 		<li>
-		<p>From an external file specified by the <tt class="literal">src</tt> attribute of a <tt class="literal">&lt;script&gt;</tt> tag</p>
+		<p>From an external file specified by the src attribute of a &lt;script&gt; tag</p>
 		</li>
 		<li>Syntax:&nbsp;
 		<ul>
@@ -66,7 +66,7 @@
 	<details>
 		<summary>INLINE SCRIPT</summary>
 		<ul>
-		<li>Normally the HTML event attributes</a> are used to call functions specified elsewhere in script tags.<br /></li>
+		<li>Normally the HTML event attributes are used to call functions specified elsewhere in script tags.</li>
 		<li>Syntax:&nbsp;
 		<ul>
 		<li>&lt;p&gt;&lt;a href="#" onClick="alert('Hello');"&gt;Click Me&lt;/a&gt;&lt;/p&gt;</li>
@@ -637,6 +637,7 @@
 		<li>Symbol type</li>
 		</ul>
 	</details>
+	</details>
 	
 	<details class = "sub">
 		<summary>Structure/Objects</summary>
@@ -704,15 +705,15 @@
 		<h3>Storing JSON on a local storage</h3>
 		<ul>
 		<li>By using localStorage property, we can store and retrieve a local storage object</li>
-		<div class = "example">
+		<li class = "example">
 			<p>var sampleJSON = JSON.stringify(flower);</p>
 			<p>localStorage.setItem(“data”, sampleJSON);</p>
-		</div>
+		</li>
 		<li>Example of retrieving data:</li>
-		<div class = "example">
+		<li class = "example">
 			<p>var retrievedJSON =  localStorage.getItem("data");</p>
 			<p>var flower = JSON.parse(retrievedJSON);</p>
-		</div>
+		</li>
 		</ul>
 	</details>
 
