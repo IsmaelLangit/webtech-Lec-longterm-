@@ -292,6 +292,57 @@
 	
 	<details>
 		<summary>CSS RULE PRECEDENCE</summary>
+		<ol>
+		<li>
+		<h3>By origin and importance</h3>
+		<ul>
+		<li>User agent important declaration</li>
+		<li>User important declaration</li>
+		<li>Author important declaration</li>
+		<li>Author normal declaration</li>
+		<li>User normal declaration</li>
+		<li>User agent normal declaration</li>
+		<p>Example</p>
+		<div class = "example">
+			<p>p {</p>
+			<p>&nbsp;color = red !important;</p>	
+			<p>}</p>
+			<p>p {</p>
+			<p>&nbsp;color = green;</p>	
+			<p>}</p>
+		</div>
+		</ul>
+		</li>
+		<li>
+		<h3>By specificity</h3>
+		<ul>
+		<li>Inline style</li>
+		<li>example</li>
+		<li>Number of ID selectors</li>
+		<li>Number of class selectors, attributes selectors, and pseudo classes</li>
+		<li>Number of type selectors and pseudo-element</li>
+		</ul>
+		</li>
+		<li>
+		<h3>By order</h3>
+		<ul>
+		<li>The later the declaration the higher the priority</li>
+		<p>Example</p>
+		<div class = "example">
+			<p>h1 {</p>
+			<p>&nbsp;color : red</p>
+			<p>}</p>
+			<p></p>
+			<p>h1 {</p>
+			<p>&nbsp;color : green</p>
+			<p>}</p>
+			<p></p>
+			<p>//h1 will be color green</p>
+
+		</div>
+		</ul>
+		</li>
+		</ol>
 
 	</details>	
 

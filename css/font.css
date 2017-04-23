@@ -174,3 +174,13 @@ a {
     padding-bottom: 25px;
 }
 
+.lesson h4 {
+    font-size: 20px;
+    margin : 0 50px;
+    font-family: "Julius Sans One";
+    color: black;
+    background-color: white;
+    padding: 10px 30px;
+}
+}
+
