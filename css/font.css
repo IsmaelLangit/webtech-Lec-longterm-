@@ -169,6 +169,9 @@ a {
     padding-top: 2px;
     padding-bottom: 2px;
 }
+.example p:first-child {
+    padding-top: 25px;
+}
 
 .example p:last-child {
     padding-bottom: 25px;
