@@ -715,7 +715,201 @@
 		</div>
 		</ul>
 	</details>
+	</details>
+	
+	<details>
+	
+	<summary>DOM (Document Object Model)</summary>
+	<p>DOM(Document Object Model), according to Mozilla Developer Network, is a programming interface for HTML and XML documents. &ldquo;It provides a structured representation of the document and it defines a way that the structure can be accessed from programs so that they can change the document structure, style and content.&rdquo; </p>
 
+	<p>DOM Standards</p>
+		<ul>
+			<li>W3C DOM</li>
+			<li>WHATWG DOM</li>
+		</ul>
+
+	<p>For example, the standard DOM specifies that the getElementsByTagName method in the code below must return a list of all the &lt;P&gt; elements in the document:</p>
+
+	<p>HTML:</p>
+	<p>&lt;p&gt; The quick brown fox jumped over the lazy dog.&lt;/p&gt;</p>
+	<p>&lt;p&gt; Clean clams crammed in clean cans.&lt;/p&gt;</p>
+	
+	<p>JAVASCRIPT:</p>
+	<p>Var paragraphs = document.getElementsByTagName(&ldquo;p&rdquo;);</p>
+	<p>//Paragraph[0] is the paragraph containing &ldquo;Hello World&rdquo;</p>
+	<p>//Paragraph[1] is the paragraph containing &ldquo;This is a paragraph&rdquo;</p>
+
+	<p><strong>Paragraph[0]:</strong></p>
+	<p>&lt;p&gt; The quick brown fox jumped over the lazy dog.&lt;/p&gt;</p>
+
+	<p><strong>paragraphs[1].nodeName :</strong></p>
+	<p>&ldquo;P&rdquo;</p>
+
+	<p><strong>paragraphs[1].innerText:</strong></p>
+	<p>&ldquo;Clean clams crammed in clean cans.&rdquo;</p>
+
+	<p><strong>Important Data types</strong></p>
+	<p>There are a number of different data types that is being passed around the API that you should be aware of. These are the following important data types:</p>
+		<ul>
+			<li>Document</li>
+		<ul>
+			<li>When an object of type document is returned, this object will be the root document itself.</li>
+		</ul>
+			<li>Element</li>
+		<ul>
+			<li>This refers to the node of type element returned by a member of the DOM API. a method returns an element that is created in the DOM.</li>
+		</ul>
+			<li>nodeList</li>
+		<ul>
+			<li>An array of elements that are accessed by index in either:</li>
+		<ul>
+			<li>list.item(1)</li>
+			<li>list[1]</li>
+		</ul>
+		</ul>
+			<li>Attribute</li>
+		<ul>
+			<li>These are nodes in the DOM that when returned as an object, exposes special interface for attributes</li>
+		</ul>
+			<li>namedNodeMap</li>
+		<ul>
+			<li>Similar to an array but the items in it are accessed by name or by index.</li>
+		</ul>
+		</ul>
+
+	<p>The following is a brief list of common APIs in web and XML page scripting using the DOM.</p>
+		<ul>
+			<li><a class="lesson" href="https://developer.mozilla.org/en-US/docs/DOM/document.getElementById">document.getElementById</a>(id)</li>
+		</ul>
+	<p>SYNTAX:</p>
+	<p>Element = document.getElementById(id);</p>
+
+	<p>HTML:</p>
+	<p>&lt;body&gt;</p>
+	<p>&lt;p id=&rdquo;btns&rdquo;&gt;</p>
+	<p>&lt;button onclick=&rdquo;saySomething(&lsquo;hello&rsquo;);&rdquo;&gt;Click to say hello&lt;/button&gt;</p>
+	<p>&lt;button onclick=&rdquo;saySomething(&lsquo;hi&rsquo;);&rdquo;&gt;Click to say hi&lt;/button&gt;</p>
+	<p>&lt;/p&gt;</p>
+	<p>&lt;/body&gt;</p>
+	<p>JAVASCRIPT:</p>
+	<p>Function saySomething(newString) {</p>
+	<p>Var elem = document.getElementById(&lsquo;btns&rsquo;);</p>
+	<p>Elem.style.color = newString;</p>
+	<p>}</p>
+
+		<ul>
+			<li>document.<a href="https://developer.mozilla.org/en-US/docs/Web/API/Element.getElementsByTagName">getElementsByTagName</a>(name)</li>
+		</ul>
+	<p>SYNTAX:</p>
+	<p>Elements = element.getElementsByTagName(tagName)</p>
+
+	<p>JAVASCRIPT:</p>
+	<p>// check the alignment on a number of cells in a table. <br /> var table = document.getElementById("table1"); <br /> var cells = table.getElementsByTagName("td"); </p>
+	<p><br /> for (var i = 0; i &lt; cells.length; i++) { <br /> var status = cells[i].getAttribute("stat); <br /> if ( status == "open" ) { <br /> // get data <br /> }<br /> }</p>
+
+		<ul>
+			<li><a href="https://developer.mozilla.org/en-US/docs/DOM/document.createElement">&nbsp;document.createElement</a>(name)</li>
+		</ul>
+	<p>SYNTAX:</p>
+	<p>Var element = document.createElement(tagName, [options]);</p>
+	<p><strong>Tagname </strong>-specifies the type of element that will be created.</p>
+	<p><strong>Options</strong> - optional ElementCreationOptions object that contains a single property called <strong>is</strong>, where the value of <strong>is</strong> is the tage name for a particular element previously defined.</p>
+	<p>document.body.onload = addElement;<br /><br />function addElement () { <br /> // create a new p element <br /> // and give it some content <br /> var newParagraph = document.createElement("p"); <br /> var newContent = document.createTextNode("Hi there and greetings!"); <br /> newParagraph.appendChild(newContent); //add the text to paragraph. <br /><br /> // add the newly created element and its content into the DOM <br /> var currentParagraph = document.getElementById("paragraph1"); <br /> document.body.insert(newParagraph, currentParagraph); <br />}</p>
+
+		<ul>
+			<li>parentNode.<a href="https://developer.mozilla.org/en-US/docs/DOM/Node.appendChild">appendChild</a>(node)</li>
+		</ul>
+	<p>SYNTAX:</p>
+	<p>Var aChild = element.appendChild(aChild);</p>
+	<p>JAVASCRIPT:</p>
+	<p>Var par = document.createElement(&ldquo;p&rdquo;);</p>
+	<p>document.body.appendChild(par);</p>
+		<ul>
+			<li>element.<a href="https://developer.mozilla.org/en-US/docs/DOM/element.innerHTML">innerHTML</a></li>
+		</ul>
+	<p>SYNTAX:</p>
+	<p>Const content = element.innerHTML;</p>
+	<p>element.innerHTML = content;</p>
+
+	<p>HTML: </p>
+	<p>&lt;body&gt;</p>
+	<p>&lt;p id=&rdquo;text1&rdquo;&gt;The quick brown fox jumps over the lazy dog. &lt;/p&gt;</p>
+	<p>&lt;/body&gt;</p>
+
+	<p>JAVASCRIPT:</p>
+	<p>Var p = document.getElementById(&ldquo;text1&rdquo;);</p>
+	<p>console.log(p.innerText);</p>
+
+		<ul>
+			<li>Element.<a href="https://developer.mozilla.org/en-US/docs/DOM/element.style">style</a>.left</li>
+		<ul>
+			<li>HTMLElement.style property is used to get, also, the inline style of an element</li>
+		</ul>
+			<li> element.<a href="https://developer.mozilla.org/en-US/docs/DOM/element.setAttribute">setAttribute</a></li>
+		</ul>
+	<p>SYNTAX:</p>
+	<p>Element.setAttribute(name, value)</p>
+	<p><strong>Name </strong>- name of attribute to be set</p>
+	<p><strong>Value</strong> - value to assign to the attribute</p>
+
+	<p>HTML:</p>
+	<p>&lt;button&gt;Click here&lt;/button&gt;</p>
+	<p>JAVASCRIPT:</p>
+	<p>Var b = document.querySelector(&ldquo;button&rdquo;)</p>
+
+	<p>b.setAttribute(&ldquo;name&rdquo;, &ldquo;clickButton&rdquo;);</p>
+	<p>b.setAttribute(&ldquo;disabled&rdquo;, &ldquo;&rdquo;);</p>
+		<ul>
+			<li>element.<a href="https://developer.mozilla.org/en-US/docs/DOM/element.getAttribute">getAttribute</a></li>
+		</ul>
+	<p>SYNTAX:</p>
+	<p>Var attribute = element.getAttribute(attributename);</p>
+
+	<p>JAVASCRIPT:</p>
+	<p>Var div1 = document.getElementById(&ldquo;div1&rdquo;);</p>
+	<p>Var style=div1.getAttribute(&ldquo;style&rdquo;);</p>
+
+		<ul>
+			<li>element.<a href="https://developer.mozilla.org/en-US/docs/DOM/element.addEventListener">addEventListener</a></li>
+		<ul>
+			<li>A method that adds the specified EventListener-compatible object to the event listeners of the event type on the even target on which it&rsquo;s called.</li>
+		</ul>
+		</ul>
+	<p>JAVASCRIPT:</p>
+	<p>window.addEventListner(&ldquo;test&rdquo;, null, options);</p>
+
+		<ul>
+			<li><a href="https://developer.mozilla.org/en-US/docs/DOM/window.content">Window.content</a></li>
+		<ul>
+			<li>A window=object is returned for the primary content window.</li>
+		</ul>
+		</ul>
+	<p>SYNTAX:</p>
+	<p>Var windowObject = window.content;</p>
+		<ul>
+			<li><a href="https://developer.mozilla.org/en-US/docs/DOM/window.onload"> Window.onload</a></li>
+		</ul>
+	<p>SYNTAX:</p>
+	<p>Window.onload = funcRef;</p>
+	<p>JAVASCRIPT:</p>
+	<p>Window.onload = function() {</p>
+	<p>init();</p>
+	<p>doSomethingElse();</p>
+	<p>}</p>
+
+		<ul>
+			<li><a href="https://developer.mozilla.org/en-US/docs/DOM/window.dump"> window.dump</a></li>
+		</ul>
+	<p>SYNTAX:</p>
+	<p>window.dump(message);</p>
+	<p>dump(message);</p>
+		<ul>
+			<li><a href="https://developer.mozilla.org/en-US/docs/DOM/window.scrollTo"> window.scrollTo</a></li>
+		</ul>
+	<p>SYNTAX:</p>
+	<p>window.scrollTo(x-coord, y-coord)</p>
+
+</details>
 
 
 
