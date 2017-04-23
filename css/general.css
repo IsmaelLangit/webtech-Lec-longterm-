@@ -202,3 +202,7 @@ footer {
 	width: 33%;
 	background-color: white;
 }
+
+.html-table p {
+	text-align: center !important;
+}
