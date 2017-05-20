@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> Chapter 8 </title>
+    <Link rel="stylesheet" href="css/nav.css" />
+    <Link rel="stylesheet" href="css/general.css" />
+    <Link rel="stylesheet" href="css/font.css" />
+    <Link rel="icon" href="images/icon.png">
+</head>
+
+   <body id ="lesson5-body">
+      <nav class="navClass">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">LESSONS</a>
+              <div class="dropdown-content">
+                <a href ="lesson1.html">Internet and the WWW</a>
+                <a href ="lesson2.html">HTTP (HyperText Markup Language)</a>
+                <a href ="lesson3.html">HTML (Hypertext Transfer Protocol)</a>
+                <a href ="lesson4.html">CSS (Cascading Style Sheets)</a>
+                <a href ="lesson5.html">Javascript</a>
+              </div>
+           <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+      </nav>
+              
+<div class = "banner banner-lessons" id = "lesson5-banner">
+  <h1 class = "title-header">CHAPTER #: PHP Server Side Scripting</h1>
+</div>      
+      
+<div class="lesson" id = "lesson8">
+
+<h2>Node JS</h2>
+	<details>
+		<summary>PHP</summary>
+		<p>PHP originally stood for <b>Personal Home Page</b>, but it now stands for the recursive acronym <b> PHP:Hypertext Preprocessor.</b> PHP code may be embedded into HTML or HTML5 markup, or it can be used in combination with various web template systems, web content management systems and web frameworks.It is also the most popular server-side language on the web, PHP is designed to pull and edit information in the database. It’s most commonly bundled with databases written in the SQL language.
+
+		</p>
+	</details>
+	
+	<details>
+		<summary>WHAT CAN PHP DO?</summary>
+		<ul>
+		<li>
+		<p> generate dynamic page content </p>
+		</li>
+		
+		<li>
+		<p>  create, open, read, write, delete, and close files on the server</p>
+		</li>
+		
+		<li>
+		<p> collect form data</p>
+		</li>
+		
+		<li>
+		<p>send and receive cookies</p>
+		</li>
+		
+		<li>
+		<p> add, delete, modify data in your database</p>
+		</li>
+		
+		<li>
+		<p> used to control user-access </p>
+		</li>
+		
+		<li>
+		<p> encrypt data</p>
+		</li>
+		</ul>
+	</details>
+	<details>
+	<summary>PHP Server Side Scripting Code Example</summary>
+	<p>#!/usr/local/bin/php -q <br>
+	<?php <br>
+	error_reporting(E_ALL);<br>
+	/* Allow the script to hang around waiting for connections. */<br>
+	set_time_limit(0);<br>
+	<br>
+	/* Turn on implicit output flushing so we see what we're getting<br>
+ 	* as it comes in. */<br>
+	ob_implicit_flush();<br>
+	<br>
+	$address = '192.168.1.53';<br>
+	$port = 10000;<br>
+	<br>
+	if (($sock = socket_create(AF_INET, SOCK_STREAM, SOL_TCP)) === false) {<br>
+    echo "socket_create() failed: reason: " . socket_strerror(socket_last_error()) . "\n";<br>
+}<br>
+<br>
+if (socket_bind($sock, $address, $port) === false) {<br>
+    echo "socket_bind() failed: reason: " . socket_strerror(socket_last_error($sock)) . "\n";<br>
+}<br>
+<br>
+if (socket_listen($sock, 5) === false) {<br>
+    echo "socket_listen() failed: reason: " . socket_strerror(socket_last_error($sock)) . "\n";<br>
+}<br>
+<br>
+do {<br>
+    if (($msgsock = socket_accept($sock)) === false) {<br>
+        echo "socket_accept() failed: reason: " . socket_strerror(socket_last_error($sock)) . "\n";<br>
+        break;<br>
+    }<br>
+    /* Send instructions. */<br>
+    $msg = "\nWelcome to the PHP Test Server. \n" .<br>
+        "To quit, type 'quit'. To shut down the server type 'shutdown'.\n";<br>
+    socket_write($msgsock, $msg, strlen($msg));<br>
+    <br>
+    do {<br>
+        if (false === ($buf = socket_read($msgsock, 2048, PHP_NORMAL_READ))) {<br>
+            echo "socket_read() failed: reason: " . socket_strerror(socket_last_error($msgsock)) . "\n";<br>
+            break 2;<br>
+        <br>
+        }<br>
+        if (!$buf = trim($buf)) {<br>
+            continue;<br>
+        <br>
+        }<br>
+        if ($buf == 'quit') {<br>
+            break;<br>
+        <br>
+        }<br>
+        if ($buf == 'shutdown') {<br>
+            socket_close($msgsock);<br>
+            break 2;<br>
+        <br>
+        }<br>
+        $talkback = "PHP: You said '$buf'.\n";<br>
+        socket_write($msgsock, $talkback, strlen($talkback));<br>
+        echo "$buf\n";<br>
+        <br>
+    } while (true);<br>
+    socket_close($msgsock);<br>
+} while (true);<br>
+<br>
+socket_close($sock);<br>
+?><br>
+	</p>
+	<br>
+	<p>This example shows a simple talkback server. Change the address and port variables to suit your setup and execute. You may then connect to the server with a command similar to: telnet 192.168.1.53 10000 (where the address and port match your setup). Anything you type will then be output on the server side, and echoed back to you. To disconnect, enter 'quit'.</p>
+
+	<p>References:<br> http://php.net/manual/en/sockets.examples.php
+https://www.w3schools.com/php/php_intro.asp</p>
+	</details>
+
+</div>
+
+
+<footer>
+    <p>IT 324  |  Webtech Lecture  |  9421A | &copy; 2017</p>
+</footer>
+</body>
+
+</html>
