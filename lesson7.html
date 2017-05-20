@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> Chapter 7 </title>
+    <Link rel="stylesheet" href="css/nav.css" />
+    <Link rel="stylesheet" href="css/general.css" />
+    <Link rel="stylesheet" href="css/font.css" />
+    <Link rel="icon" href="images/icon.png">
+</head>
+
+   <body id ="lesson5-body">
+      <nav class="navClass">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">LESSONS</a>
+              <div class="dropdown-content">
+                <a href ="lesson1.html">Internet and the WWW</a>
+                <a href ="lesson2.html">HTTP (HyperText Markup Language)</a>
+                <a href ="lesson3.html">HTML (Hypertext Transfer Protocol)</a>
+                <a href ="lesson4.html">CSS (Cascading Style Sheets)</a>
+                <a href ="lesson5.html">Javascript</a>
+				<a href ="lesson7.html">Java Server-side Scripting</a>
+              </div>
+           <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+      </nav>
+	  
+	  <div class="lesson" id="lesson7">
+	  <p><strong>Java Server-side Scripting</strong></p>
+		<p>Java is a descendant of C language. It comes with a background of software components. Java is a platform-independent because of Java Virtual Machine. Java could also be used in Server-side scripting with the use of Java servlets and JSP supported by Java Enterprise Edition.</p>
+		<p><strong>Java Servlets</strong></p>
+		<p>According to the oracle documentation of Java EE 6 Tutorial, &ldquo;A servlet is a Java programming language used to extend the capabilities of servers that host applications accessed by means of a request-response programming model.&rdquo; Java servlets are used to expand the capabilities of the application hosted by web servers.</p>
+		<p>Javax.servlet and javax.servlet.http are the packages that provide interfaces and classes to be used in programming with servlets. Servlet interface defines the lifecycle methods which is why it must be implemented in all servlets.</p>
+		<p><strong>Servlet Lifecycle</strong></p>
+		<p>A container where the servlet is deployed is what controls the lifecycle of a servlet.</p>
+		<ol>
+			<li>If the instance does not exist, the container:</li>
+		</ol>
+		<ol>
+			<li>Loads the servlet class.</li>
+			<li>Creates an instance of the servlet class.</li>
+			<li>Initializes the servlet instance by init().</li>
+		</ol>
+		<ol start="2">
+			<li>Invokes the service method, passing request, and response objects.</li>
+		</ol>
+		<p><strong>Handling Servlet Lifecycle Events</strong></p>
+		<p>By defining listener objects, you can monitor and react to the events in a servlet&rsquo;s lifecycle. The methods of the listener objects methods get invoked when lifecycle events occur. The listener class must be defined and specified to be used.</p>
+		<p><strong>Defining the Listener Class</strong></p>
+		<p>A listener class is defined as an implementation of a listener interface. The table below will show the events and the corresponding interface that must be implemented.</p>
+		<p><strong><strong><br /><br /></strong></strong></p>
+	
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<p>Object</p>
+					</td>
+					<td>
+						<p>Event</p>
+					</td>
+					<td>
+						<p>Listener Interface and Event Class</p>
+					</td>
+					</tr>
+				<tr>
+					<td>
+						<p>Web Context</p>
+					</td>
+					<td>
+						<p>Initialization and destruction</p>
+					</td>
+					<td>
+						<ul>
+							<li>javax.servlet.ServletContextListener</li>
+							<li>ServletContextEvent</li>
+						</ul>
+					</td>
+					</tr>
+				<tr>
+					<td>
+						<p>Web Context</p>
+					</td>
+					<td>
+						<p>Attribute added, removed, or replaced</p>
+					</td>
+					<td>
+						<ul>
+							<li>javax.servlet.ServletContextAttributeListener</li>
+							<li>ServletContextAttributeEvent</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Session</p>
+					</td>
+					<td>
+						<p>Creation, invalidation, activation, passivation, and timeout</p>
+					</td>
+					<td>
+						<ul>
+							<li>javax.servlet.http.HttpSessionListener</li>
+							<li>javax.servlet.http.HttpSessionActivationListener</li>
+							<li>HttpSessionEvent</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Session</p>
+					</td>
+					<td>
+						<p>Attribute added, removed, or replaced</p>
+					</td>
+					<td>
+						<ul>
+							<li>javax.servlet.http.HttpSessionAttributeListener</li>
+							<li>HttpSessionBindingEvent</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Request</p>
+					</td>
+					<td>
+						<p>A servlet request has started being processed by web components</p>
+					</td>
+					<td>
+						<ul>
+							<li>javax.servlet.ServletRequestListener</li>
+							<li>ServletRequestEvent</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Request</p>
+					</td>
+					<td>
+						<p>Attribute added, removed, or replaced</p>
+					</td>
+					<td>
+						<ul>
+							<li>javax.servlet.ServletRequestAttributeListener</li>
+							<li>ServletRequestAttributeEvent</li>
+						</ul>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+	<p><strong><strong><br /><br /><br /></strong></strong></p>
+	<p><strong>Creating and Initializing a Servlet</strong></p>
+	<p>@WebServlet is the annotation used to define a servlet in a web application. It is specified on a class and it contains metadata about the declared servlet. It also must contain at least one URL pattern by using urlPatterns or value attribute.</p>
+	<p>Classes that are annotated with @WebServlet must extend the javax.servlet.http.HttpServlet class. For example, the following code snippet defines a servlet with the URL pattern:</p>
+	<p>import javax.servlet.annotation.WebServlet;</p>
+	<p>import javax.servlet.http.HttpServlet;</p>
+	<p>@WebServlet (/&rdquo;report&rdquo;)</p>
+	<p>Public class SampleServlet extends HttpServlet {</p>
+	<p>&hellip;</p>
+	<p>After the loading and instantiating the servlet class, the web container initializes a servlet. It then delivers the request from the clients.</p>
+	<p><strong>Writing Service Methods</strong></p>
+	<p>The service method of a GenericServlet implements the service provided by a servlet. The <strong>service method</strong> is used for any method in a servlet class that provides service to a client.</p>
+	<p>The pattern for a service method is first, extract information from the request. Second, access external resources, then populate the response based on the information. The procedure for populating the response is:</p>
+	
+		<ol>
+			<li>Retrieve an output stream from the response.</li>
+			<li>Fill in the response headers.</li>
+			<li>Write any body content to the output stream.</li>
+		</ol>
+		
+		<p>Response headers are always first before the response has been committed. Any attempt to set or add headers after the response has been committed will be ignored by the web container.</p>
+		<p><strong><strong><br /><br /></strong></strong></p>
+		<p><strong>Getting Information from Requests</strong></p>
+
+		<ul>
+			<li>Parameters - used to convey information between clients and servlets.</li>
+			<li>Object-Value attributes - used to pass information between web container and a servlet in collaborating servlets.</li>
+			<li>Information about the protocol used to communicate the request and about the client and server involved in the request.</li>
+			<li>Information that are important to localization.</li>
+		</ul>
+		
+	<p>HTTP servlets are passed in an HTTP request object HttpServletRequest. It contains the request URL, HTTP Headers, query string, etc. An HTTP request URL contains the following parts:</p>
+	<p><a href="http://[host]:[port][request-path]?[query-string">http://[host]:[port][request-path]?[query-string</a>]</p>
+	<p>The request path is composed of:</p>
+
+	<ul>
+		<li>Context path - a concatenation of forward slash with the context root of the servlet&rsquo;s web application.</li>
+		<li>Servlet path - path section that corresponds to the component alias that activated this request. It starts with a forward slash.</li>
+		<li>Path info - The part of the request path which is not part of the context path or the servlet path.</li>
+	</ul>
+	
+	<p><strong>Filtering Requests and Responses</strong></p>
+	<p>A filter is an object that can transform and content of a request response.</p>
+	<p>The main tasks of a filter are:</p>
+	
+	<ol>
+		<li>Query the request and act accordingly</li>
+		<li>Block the request-and-response pair from passing any further.</li>
+		<li>Modify the request headers and data. By providing a customized version of the request, you can do this.</li>
+		<li>Modify the response headers and data by giving a customized version of the request.</li>
+		<li>Interact with external resources.</li>
+	</ol>
+	
+	<p>Filters can be applied in authentication, logging, image conversion, data compression, encryption, tokenizing streams, XML transformations, etc.</p>
+	<p>Reference: http://docs.oracle.com/javaee/6/tutorial/doc/gkcpg.html</p>
+
+
+	<p><strong><strong><br /><br /></strong></strong></p>
+	<p><strong>JSP (JavaServer Pages)</strong></p>
+	<p>This technology provides simplified and fast way to create dynamic web content. It enables the fast development of web-based applications that are server- and platform- independent.</p>
+	<p>A JSP page is a text document which contains two types of text: static and dynamic content. The file extension for JSP is .jsp.</p>
+	<p>JSP uses tags that are similar to to XML which encapsulates the logic that generates the content for the page. It is an extension of the Java Servlet technology.</p>
+	<p>A JSP page is a typical mixture of static HTML markup and JSP elements. JSP constructs examples:</p>
+		<ul>
+			<li>Page Directives</li>
+		</ul>
+	<p>&lt;%@page &hellip;. %&gt;</p>
+		<ul>
+			<li>Library Directives</li>
+		</ul>
+			<p>&lt;%@taglib&hellip;%&gt;</p>
+		<ul>
+			<li>jsp:useBean is an element that creates an object that contains a collection of locales and it initializes an identifier that points to that object.</li>
+			<li>JSP expression language expression</li>
+		</ul>
+			<p>( $ { } )</p>
+		<ul>
+			<li>Custom Tags set a variable and iterates over a collection of locale names and conditionally insert HTML text into the response.</li>
+		</ul>
+			<p>c:forEach, c:if, c:when, c:otherwise</p>
+		<ul>
+			<li>jsp:setProperty is another standard element which sets the calue of an object property.</li>
+			<li>Function (f:equals) tests the quality of an attribute and the current item of a collection.</li>
+		</ul>
+		
+		<p><strong><strong><br /><br /><br /></strong></strong></p>
+		<p>Here is a sample JSP page:</p>
+		<p>&lt;%@page contentType="text/html" pageEncoding="UTF-8"%&gt;</p>
+		<p>&lt;%@page import = "java.sql.*" %&gt;</p>
+		<p>&lt;!DOCTYPE html&gt;</p>
+		<p>&lt;html&gt;</p>
+		<p>&lt;head&gt;</p>
+		<p>&lt;title&gt;Home&lt;/title&gt;</p>
+		<p>&lt;link rel="stylesheet" href="styles/style.css"&gt;</p>
+		<p>&lt;Link rel="icon" href="styles/images/icon.png"&gt;</p>
+		<p>&lt;meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"&gt;</p>
+		<p>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;</p>
+		<p>&lt;meta name="HandheldFriendly" content="true"&gt;</p>
+		<p>&lt;/head&gt;</p>
+		<p>&lt;body&gt;</p>
+		<p>&lt;%</p>
+		<p>String getService = request.getParameter("search");</p>
+		<p>try {</p>
+		<p>if (getService.contains("cleaning")</p>
+		<p>|getService.contains("nail trimming")</p>
+		<p>| getService.contains("sanitary trim")</p>
+		<p>| getService.contains("teeth brushing")</p>
+		<p>| getService.contains("haircut")</p>
+		<p>| getService.contains("blowdry")</p>
+		<p>| getService.contains("shampoo")</p>
+		<p>| getService.contains("bath")</p>
+		<p>| getService.contains("pedicure")</p>
+		<p>| getService.contains("ear cleaning")) {</p>
+		<p>response.sendRedirect("pawgroom.jsp");</p>
+		<p>}</p>
+		<p>if (getService.contains("grooming")</p>
+		<p>| getService.contains("Dentistry")</p>
+		<p>| getService.contains("surgeries")</p>
+		<p>| getService.contains("prescription")</p>
+		<p>| getService.contains("medication")</p>
+		<p>| getService.contains("diets")</p>
+		<p>| getService.contains("deworming")</p>
+		<p>| getService.contains("health certificates")</p>
+		<p>| getService.contains("vaccination")</p>
+		<p>| getService.contains("consultations")</p>
+		<p>| getService.contains("senior pet health")</p>
+		<p>| getService.contains("confinements")) {</p>
+		<p>response.sendRedirect("pawmed.jsp");</p>
+		<p>}</p>
+		<p>} catch (Exception ex) {</p>
+		<p>ex.getMessage();</p>
+		<p>}</p>
+		<p>%&gt;</p>
+		<p>&lt;/body&gt;</p>
+		<p>&lt;/html&gt;</p>
+		
+		<p><strong><strong><br /><br /></strong></strong></p>
+		<p>This program is search.jsp where in the index.jsp, a user enters a certain keyword in a text box and when entered, the user will be redirected to another page that shows the user what he/she is looking for.</p>
+
+		<p>References: <a href="http://docs.oracle.com/javaee/5/tutorial/doc/bnagy.html">http://docs.oracle.com/javaee/5/tutorial/doc/bnagy.html</a></p>
+
+		<p>http://www.oracle.com/technetwork/java/overview-138580.html</p>
+
+		<p>The <a href="http://htmlcheatsheet.com/" rel="nofollow">online HTML CheatSheet</a> website shoult be the first bookmark of every web developer. It is the best one-page resource to generate the desired markup.</p>
+		
+	  </div>
+              
+	</body>
+
+</html>
