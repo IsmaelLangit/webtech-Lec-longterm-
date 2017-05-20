@@ -15,7 +15,7 @@ body {
     background-image: url("../images/background/main.jpg");
 }
 
-#lesson1-body, #lesson2-body, #lesson3-body, #lesson4-body , #lesson5-body {
+#lesson1-body, #lesson2-body, #lesson3-body, #lesson4-body , #lesson5-body, #lesson10-body{
 	background-image: url("../images/background/gray.jpg");
 }
 
