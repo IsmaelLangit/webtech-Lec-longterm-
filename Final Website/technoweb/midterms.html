@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>TechnoWeb |Midterms</title>
+		<!-- Bootstrap Core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<!-- Fonts -->
+		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="css/animate.css" rel="stylesheet" />
+		<!-- Squad theme CSS -->
+		<link href="css/style.css" rel="stylesheet">
+		<link href="color/default.css" rel="stylesheet">
+		<!-- =======================================================
+			Theme Name: Squadfree
+			Theme URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
+			Author: BootstrapMade
+			Author URL: https://bootstrapmade.com
+			======================================================= -->
+	</head>
+	<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+		<!-- Preloader -->
+		<!--<div id="preloader">
+			<div id="load"></div>
+			</div>-->
+		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header page-scroll">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+					<i class="fa fa-bars"></i>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<h1>TECHNOWEB</h1>
+					</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="prelims.html">Prelims</a></li>
+								<li><a href="midterms.html">Midterms</a></li>
+								<li><a href="finals.html">Finals</a></li>
+							</ul>
+						</li>
+						<li><a href="#about">Team</a></li>
+						<li><a href="#service">About</a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+		</nav>
+		<!-- Section: Cascading Stylesheets -->
+		<section id="internet" class="topPortion lessonSections">
+			<div class="container">
+			<div class="section-heading">
+				<h2>Cascading Stylesheets</h2>
+			</div>
+			<div class="row">
+				<p> Managed also by W3 Consortium </p>
+				<ul>
+					<li> Language used to specify the presentation aspects (e.g layout and formatting of structurally marked up documents) </li>
+					<li> Developed by Hakon Wium Lie (CHSS) and Bert Bos (SSP) </li>
+					<li>
+						Versions
+						<ul>
+							<li> CSS 1 (December 17 1996) revised on April 11 2008 </li>
+							<li> CSS 2 (monolithic specification or one stop shop) </li>
+							<li> CSS 3 (no monolithic specification, new addition such as Media queries, animations, transforms) </li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="row rowButton">
+				<div id="accordion" role="tablist" aria-multiselectable="true">
+					<div class="card">
+						<div class="card-header" role="tab" id="fundamentals">
+							<h5 class="mb-0">
+								<a class="collapsed collapsedTitle" data-toggle="collapse" data-parent="#accordion" href="#one" aria-expanded="false" aria-controls="collapseTwo">
+								CSS PREPROCESSORS
+								</a>
+							</h5>
+						</div>
+						<div id="one" class="collapse" role="tabpanel" aria-labelledby="fundamentals">
+							<div class="card-block">
+								<p>Syntactically Awesome Style Sheets (SASS) is a scripting language that extends CSS by allowing developers to write code in one language and then compile it into CSS.</p>
+								<ul>
+									<li> Have limitation in syntax and nest rules </li>
+									<li> It define literals built on top of Ruby </li>
+								</ul>
+								<p>Example: </p>
+								<div class="example">
+									<p>body</p>
+									<p>&nbsp;&nbsp;h1</p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;font-size: 28px</p>
+									<p>&nbsp;&nbsp;h2</p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;font-size: 26px</p>
+									<p>&nbsp;&nbsp;h3</p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;font-size: 24px</p>
+									<p>&nbsp;&nbsp;h4</p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;font-size: 22px</p>
+									<p>&nbsp;&nbsp;h5</p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;font-size: 23px</p>
+									<p>&nbsp;&nbsp;h6</p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;font-size: 24px</p>
+								</div>
+								<h3>LESS</h3>
+								<p>LESS (Leaner Style Sheets)</p>
+								<ul>
+									<li>Less is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themeable and extendable.</li>
+								</ul>
+								<div class="example">
+									<p>//example:</p>
+									<p>@nice-blue: #5B83AD;<br />@light-blue: @nice-blue + #111;</p>
+									<p>#header {</p>
+									<p>color: @light-blue;</p>
+									<p>}</p>
+									<p>//outputs:</p>
+									<p>#header {</p>
+									<p>color: #6c94be;<br /></p>
+									<p>}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--END OF CARD-->
+					<div class="card">
+						<div class="card-header" role="tab" id="fundamentals">
+							<h5 class="mb-0">
+								<a class="collapsed collapsedTitle" data-toggle="collapse" data-parent="#accordion" href="#two" aria-expanded="false" aria-controls="collapseTwo">
+								CSS FRAMEWORKS
+								</a>
+							</h5>
+						</div>
+						<div id="two" class="collapse" role="tabpanel" aria-labelledby="fundamentals">
+							<div class="card-block">
+								<p>  
+								<ul>
+									<li>
+										Bootstrap
+										<ul>
+											<li>Provide predefined classes </li>
+										</ul>
+										<p>Example:</p>
+										<div class = "example">
+											<p>div class = btn-group-vertical</p>
+											<p>btn-default</p>
+											<p>btn-primary</p>
+											<p>btn-info</p>
+											<p>btn-success</p>
+											<p>btn-warn</p>
+											<p>btn-danger</p>
+											<p>btn-sm, xs, large</p>
+											<p>&lt;table class = &lsquo;table&rsquo;-table-hover&gt;</p>
+											<p>&lt;tr class = info&gt;</p>
+											<p>&lt;td&gt;</p>
+											<p>&lt;p class=&rsquo;text-primary&gt;</p>
+											<p>&lt;p class=&rsquo;nav, nav-tabs, pills&gt;</p>
+										</div>
+									</li>
+									<li> 960 Grid System – provide preference format </li>
+									<li>  Bootstrap Foundation – provides set of themes </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--END OF CARD-->
+					<div class="card">
+						<div class="card-header" role="tab" id="fundamentals">
+							<h5 class="mb-0">
+								<a class="collapsed collapsedTitle" data-toggle="collapse" data-parent="#accordion" href="#four" aria-expanded="false" aria-controls="collapseTwo">
+								CSS STATEMENTS
+								</a>
+							</h5>
+						</div>
+						<div id="four" class="collapse" role="tabpanel" aria-labelledby="fundamentals">
+							<div class="card-block">
+								<ul>
+									<li> At &ndash; Rules</li>
+									<li> Charset &ndash; &ldquo;utf-8&rdquo;</li>
+									<li> Import &ndash; allow to get another CSS file inclusion (not supported)</li>
+									<li> Media &ndash; media plays</li>
+									<li> Name Space</li>
+									<li> Document &ndash; block</li>
+									<li> Font &ndash; face</li>
+									<li> Key &ndash; frame animation</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--END OF CARD-->
+					<div class="card">
+						<div class="card-header" role="tab" id="fundamentals">
+							<h5 class="mb-0">
+								<a class="collapsed collapsedTitle" data-toggle="collapse" data-parent="#accordion" href="#five" aria-expanded="false" aria-controls="collapseTwo">
+								CSS SELECTORS
+								</a>
+							</h5>
+						</div>
+						<div id="five" class="collapse" role="tabpanel" aria-labelledby="fundamentals">
+							<div class="card-block">
+								<p> Structure used as a condition in a CSS rule to determine which elements in the document tree are matched by the selector and are thus targeted by the formatting specified in the CSS rule declaration block. The matched elements are called the subjects of the selector.</p>
+								<h3>Selector-syntax</h3>
+								<p>Chain of one or more sequences of simple selectors separated by combinators with one pseudo-element possibly appended to the last sequence</p>
+								<p>Example</p>
+								<div class = "example">
+									<p>Dir#abc&gt;p.xyz[title]+span:last-of-type::after</p>
+									<p>//Dir (type)</p>
+									<p>//Dir#abc (sequence child of)</p>
+									<p>//&gt; (combinator)</p>
+									<p>//P (paragraph)</p>
+									<p>//.xyz (class)</p>
+									<p>//[title] (title attribute)</p>
+									<p>//P.xyz (sequence adjacent)</p>
+									<p>//[title]+span combinatory)</p>
+									<p>//:last-of-type (pseudo class)</p>
+									<p>//::after (pseudo element)</p>
+								</div>
+								<h3>Sequence of Simple Selectors</h3>
+								<ul>
+									<li>Chain of simple selectors not separated by combinators</li>
+									<li>Always starts with a type selector or a universal selector</li>
+									<li>Cannot contain other type selectors or universal selectors</li>
+								</ul>
+								<h3>Group of Selectors</h3>
+								<p>Comma-separated list of selectors representing the union of all elements selected by each of the selectors in the list. (e.g h1,h2,h3 – group selectors separated by comma)</p>
+								<h3>Simple Basic Selectors</h3>
+								<li> Type selector &ndash; type of element you are targeting (all the elements)</li>
+								<li> Universal &ndash; represented by the asterisk (*) matches everything</li>
+								<li>
+									Attribute
+									<ul>
+										<li>[attr] &ndash; class attribute (name of a string)</li>
+										<li>[attr] &ndash; class attribute (name of a string)</li>
+										<li>[attr=value] &ndash; must be exactly the same</li>
+										<li>[attr~=value] &ndash; this value is just one value in a set of values that are space separated.&nbsp;Or one that is exactly match</li>
+										<li>[attr|value] &ndash; used to target the language attribute (lang|=en)</li>
+										<li>[attr^=value] &ndash; beginning value (CSS3)</li>
+										<li>[attr$=value]- end value (CSS3)</li>
+										<li>[attr*=value] value that is found anywhere (CSS3)</li>
+									</ul>
+								</li>
+								</ul>
+								<h3>Class Selectors</h3>
+								<p>full stop (“.”) and a class value</p>
+								<p>Syntax</p>
+								<div class = "example">
+									<p>.x // universal selector</p>
+									<p>p.x //type selector</p>
+								</div>
+								<div class = "example">
+									<p>.sampleClass {</p>
+									<p>&nbsp;margin : 20px;</p>
+									<p>&nbsp;background-color : white;</p>
+									<p>&nbsp;color : black;</p>
+									<p>}</p>
+								</div>
+								<h3>ID Selectors</h3>
+								<p>Pound sign (#) and ID value</p>
+								<p>Syntax</p>
+								<div class = "example">
+									<p>#a</p>
+								</div>
+								<div class = "example">
+									<p>#sampleID {</p>
+									<p>&nbsp;padding : 0 50px;</p>
+									<p>&nbsp;background-color : white;</p>
+									<p>}</p>
+									<p></p>
+								</div>
+								<h3>Pseudo Classes</h3>
+								<p>Implicit class that is associated with the inherited classes or mark up (fake class)</p>
+								<ul>
+									<li>
+										Dynamic pseudo class
+										<ul>
+											<li>
+												Link pseudo classes
+												<ul>
+													<li>:link</li>
+													<li>:visited</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>
+										User action pseudo classes
+										<ul>
+											<li>&nbsp;:hover</li>
+											<li>:active</li>
+											<li>:focus</li>
+										</ul>
+									</li>
+									<li>
+										Target pseudo class (targeting element)
+										<ul>
+											<li>:target (CSS3)</li>
+										</ul>
+									</li>
+									<li>
+										Language pseudo class
+										<ul>
+											<li>:lang()</li>
+										</ul>
+									</li>
+									<li>
+										UI element states pseudo classes
+										<ul>
+											<li>:enabled (CSS3)</li>
+											<li>:disabled (CSS3)</li>
+											<li>:checked (CSS3)</li>
+											<li>:indeterminate (CSS3)</li>
+										</ul>
+									</li>
+									<li>
+										Structural pseudo classes
+										<ul>
+											<li>:root (CSS3)</li>
+											<li>:first-child (CSS3)</li>
+											<li>:last-child (CSS3)</li>
+											<li>:only-child (CSS3)</li>
+											<li>:nth-child() (numbers and literals &ndash; 2n+1) (CSS3)</li>
+											<li>:nth-last-child() (count on the last child &ndash;reverse) (CSS3)</li>
+											<li>:first-of-type (CSS3)</li>
+											<li>:last-of-type (CSS3)</li>
+											<li>:only-of-type (CSS3)</li>
+											<li>:nth-of-type()(CSS3)</li>
+											<li>:nth-last-of-type()(CSS3)</li>
+											<li>:empty (element that doesn&rsquo;t contain anything) (CSS3)</li>
+										</ul>
+									</li>
+									<li>
+										Negation pseudo class
+										<ul>
+											<li>:not() &ndash; simple selector (negates the logic of the selector)</li>
+										</ul>
+									</li>
+									<li>
+										Combinators
+										<ul>
+											<li>
+												Descendant combinators (whitespace, ie. Space, tab, linefeed, carriage return, form feed)
+												<ul>
+													<li>Child combinatory (&gt;) direct descendant</li>
+													<li>
+														Siblings combinators &ndash; at the same level
+														<ul>
+															<li>Adjacent sibling combinators (+)</li>
+															<li>General sibling combinators (~)</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>
+										Pseudo-elements
+										<ul>
+											<li>::first-letter (CSS3) :first-letter</li>
+											<li>::first-line (CSS3) :first-line</li>
+											<li>::before (CSS3) :before</li>
+											<li>::after (CSS3) :after</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<!--END OF CARD-->
+						</div>
+						<div class="card">
+							<div class="card-header" role="tab" id="fundamentals">
+								<h5 class="mb-0">
+									<a class="collapsed collapsedTitle" data-toggle="collapse" data-parent="#accordion" href="#six" aria-expanded="false" aria-controls="collapseTwo">
+									CSS RULE PRECEDENCE
+									</a>
+								</h5>
+							</div>
+							<div id="six" class="collapse" role="tabpanel" aria-labelledby="fundamentals">
+								<div class="card-block">
+									<ol>
+										<li>
+											<h3>By origin and importance</h3>
+											<ul>
+												<li>User agent important declaration</li>
+												<li>User important declaration</li>
+												<li>Author important declaration</li>
+												<li>Author normal declaration</li>
+												<li>User normal declaration</li>
+												<li>User agent normal declaration</li>
+												<li>Example</li>
+												<li class = "example">
+													<p>p {</p>
+													<p>&nbsp;color = red !important;</p>
+													<p>}</p>
+													<p>p {</p>
+													<p>&nbsp;color = green;</p>
+													<p>}</p>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<h3>By specificity</h3>
+											<ul>
+												<li>Inline style</li>
+												<li>example</li>
+												<li>Number of ID selectors</li>
+												<li>Number of class selectors, attributes selectors, and pseudo classes</li>
+												<li>Number of type selectors and pseudo-element</li>
+											</ul>
+										</li>
+										<li>
+											<h3>By order</h3>
+											<ul>
+												<li>The later the declaration the higher the priority</li>
+												<li>Example</li>
+												<li class = "example">
+													<p>h1 {</p>
+													<p>&nbsp;color : red</p>
+													<p>}</p>
+													<p></p>
+													<p>h1 {</p>
+													<p>&nbsp;color : green</p>
+													<p>}</p>
+													<p></p>
+													<p>//h1 will be color green</p>
+												</li>
+											</ul>
+										</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+						<!--END OF CARD-->
+						<div class="card">
+							<div class="card-header" role="tab" id="fundamentals">
+								<h5 class="mb-0">
+									<a class="collapsed collapsedTitle" data-toggle="collapse" data-parent="#accordion" href="#seven" aria-expanded="false" aria-controls="collapseTwo">
+									CSS RULE DECLARATION
+									</a>
+								</h5>
+							</div>
+							<div id="seven" class="collapse" role="tabpanel" aria-labelledby="fundamentals">
+								<div class="card-block">
+									<h3>Properties</h3>
+									<ul>
+										<li>Shorthand properties (e.g background,font) and longhand properties (background)</li>
+										<li>Vendor specific extensions (a.ka. vendor prefixes)</li>
+										<li>
+											Experimental Properties<br />
+											<ul>
+												<li>-webkit-transform-origin;</li>
+												<li>-moz-tranzform-origin; (Mozilla-ghetto</li>
+												<li>-ms-transform-origin;(Edge)</li>
+												<li>-o-transform-transform-origin;(Opera-presto)</li>
+											</ul>
+										</li>
+										<li>
+											Values<br />
+											<ul>
+												<li>Keywords</li>
+												<li>Numbers</li>
+												<li>Dimensions</li>
+												<li>
+													Length Units<br />
+													<ul>
+														<li>Font-relative</li>
+														<li>Viewport-percentage</li>
+														<li>Absolute lengths</li>
+														<li>Angle Units</li>
+														<li>Duration Units</li>
+														<li>Frequency Units</li>
+														<li>Resolution Units</li>
+													</ul>
+												</li>
+												<li>Percentages</li>
+												<li>URL&rsquo;s and URI&rsquo;s</li>
+												<li>
+													Colors <br />
+													<ul>
+														<li>RGB Functions</li>
+														<li>Alpha channel color</li>
+														<li>Hue, saturation, lightness</li>
+													</ul>
+												</li>
+												<li>Functions</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--END OF CARD-->
+					</div>
+					<!--END OF ACCORDION-->
+				</div>
+				<!--END OF TOGGLE ROW-->
+			</div>
+			<!--END OF CONTAINER-->
+		</section>
+		<section id="internet" class="lessonSections">
+			<div class="container">
+				<div class="section-heading">
+					<h2>JavaScript</h2>
+				</div>
+				<div class="row">
+					<h3 class="subTopic">Externally Linked Script</h3>
+					<ul>
+						<li>Gets part of an array to another location on the array. And returns the array (with the same length)<br /><br /></li>
+						<li>
+							Syntax:
+							<ul>
+								<li>&lt;script src="myscripts.js"&gt;&lt;/script&gt;</li>
+							</ul>
+						</li>
+					</ul>
+					<h3 class="subTopic">Embedded Script</h3>
+					<ul>
+						<li>
+							<p>Between a pair of and &lt;/script&gt; tags</p>
+						</li>
+						<li>
+							<p>From an external file specified by the src attribute of a &lt;script&gt; tag</p>
+						</li>
+						<li>
+							Syntax:&nbsp;
+							<ul>
+								<li>&lt;script&gt;<br />document.getElementById("demo").innerHTML = "My First JavaScript";<br />&lt;/script&gt;</li>
+							</ul>
+						</li>
+					</ul>
+					<h3 class="subTopic">Inline Script</h3>
+					<ul>
+						<li>Normally the HTML event attributes are used to call functions specified elsewhere in script tags.</li>
+						<li>
+							Syntax:&nbsp;
+							<ul>
+								<li>&lt;p&gt;&lt;a href="#" onClick="alert('Hello');"&gt;Click Me&lt;/a&gt;&lt;/p&gt;</li>
+							</ul>
+						</li>
+					</ul>
+					<h3 class="subTopic">TOP LEVEL / GLOBAL</h3>
+					<ul>
+						<li>
+							_dump 
+							<p>Prints a string representation of an object to the log file.</p>
+						</li>
+						<li>
+							eval 
+							<p>Evaluates an expression or statements.</p>
+						</li>
+						<li>
+							isNaN 
+							<p>Determines whether the result of a string parsed by parseInt or parseFloat is a valid number.</p>
+						</li>
+						<li>
+							parseFloat 
+							<p>Parses a string and returns a floating point number.</p>
+						</li>
+						<li>
+							parseInt
+							<p>Parses a string and returns an integer of the specified radix or base.</p>
+						</li>
+						<li>
+							print
+							<p>Prints a string to the log file.</p>
+						</li>
+					</ul>
+					<h3 class="subTopic">FUNCTION</h3>
+					<ul>
+						<li>A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().</li>
+						<li>
+							Syntax:
+							<ul>
+								<li>function <em>name</em>(<em>parameter1, parameter2, parameter3</em>) {<br />&nbsp;&nbsp;&nbsp; <em>code to be executed</em>}
+							</ul>
+						</li>
+					</ul>
+					<h3 class="subTopic">ARRAY</h3>
+					<ul>
+					<li class="topSub">Some Characterictics</li>
+					<ul>
+						<li>Allow mixed elements.</li>
+					</ul>
+					<div class = "example">
+						<p>Ex. array1 = [10, true, 'hello'];</p>
+					</div>
+					<ul>
+						<li>Allow to change the size of the array</li>
+					</ul>
+					<div class = "example">
+						<p>Ex. var array1 = new Array(5);</p>
+						<p>array1.length = 4;</p>
+					</div>
+					<ul>
+						<li>Array indices can be contiguous</li>
+					</ul>
+					<div class = "example">
+						<p>Ex. var array1 = [1, 2, 3, 4, 5];</p>
+						<p>array1[8] = 8;</p>
+						<p>console.log(array1);</p>
+						<p>//Result : [1, 2, 3, 4, 5, undefined, undefined, 8]</p>
+					</div>
+					<div class="rowButton">
+						<div id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="card">
+								<div class="card-header" role="tab" id="fundamentals">
+									<h5 class="mb-0">
+										<a class="collapsed collapsedTitle" data-toggle="collapse" data-parent="#accordion" href="#mutatorMethods" aria-expanded="false" aria-controls="collapseTwo">
+										Mutator Methods
+										</a>
+									</h5>
+								</div>
+								<div id="mutatorMethods" class="collapse" role="tabpanel" aria-labelledby="fundamentals">
+									<div class="card-block">
+										<h3>Array.prototype.copyWithin()</h3>
+										<p>Gets part of an array to another location on the array. And returns the array (with the same length).</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>arr.copyWithin(target)</p>
+											<p>arr.copyWithin(target, start)</p>
+											<p>arr.copyWithin(target, start, end)</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample = ['ichi' 'san', 'yon', 'go', 'ni'].copyWithin(2, 0);</p>
+											<p>console.log(sample);</p>
+											<p>// Result : ["ichi", "san", "ichi", "san", "yon"]</p>
+										</div>
+										<h3>Array.prototype.fill()</h3>
+										<p>Fills an array with elements from the start to the end index with a static value.</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>arr.fill(value)</p>
+											<p>arr.fill(value, start)</p>
+											<p>arr.fill(value, start, end)</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample = [8, 9, 3]</p>
+											<p>sample.fill(10);</p>
+											<p>//Result: [10, 10, 10]</p>
+										</div>
+										<h3>Array.prototype.pop()</h3>
+										<p>Removes the last element of an array.</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>array.pop()</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample = [‘cat’, ‘dog’, ‘fish’];</p>
+											<p>sample.pop();</p>
+											<p>// Results: [‘cat’, ‘dog’]</p>
+										</div>
+										<h3>Array.prototype.push()</h3>
+										<p>Adds one or more elements to end of an array.</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>array.push([element1[, ...[, elementN]]])</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample = [‘a’, ‘b’, ‘c’];</p>
+											<P>sample.push(‘d’, ‘e’);</P>
+											<p>//Results: [‘a’, ‘b’, ‘c’, ‘d’, ‘e’)</p>
+										</div>
+										<h3>Array.prototype.reverse()</h3>
+										<p>Returns the reverse order of an array.</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>array.reverse()</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample = [‘Saint’, ‘Louis’, ‘University’]</p>
+											<p>sample.reverse();</p>
+											<p>//Results: [‘University’, ‘Louis’, ‘Saint;]</p>
+										</div>
+										<h3>Array.prototype.shift()</h3>
+										<p>Removes the first element of an array.</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>array.shift()</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample = [‘City’, ‘of’, ‘Summer’]</p>
+											<p>sample.shift();</p>
+											<p>//Results: [‘of’, Summer;]</p>
+										</div>
+										<h3>Array.prototype.sort()</h3>
+										<p>Sorts the elements of an array</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>array.sort()</p>
+											<p>array.sort(compareFunction)</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample = [100, 500, 400, 300, 200];</p>
+											<p>sample.sort();</p>
+											<p>//Results: [100, 200, 300, 400, 500]</p>
+										</div>
+										<h3>Array.prototype.splice()</h3>
+										<p>And and/or removes elements from an array</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>array.splice(start)</p>
+											<p>array.splice(start, deleteCount)</p>
+											<p>array.splice(start, deleteCount, item1, item2, ...)</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample = ['Mall', 'Park', 'Airport', 'Beach'];</p>
+											<p>sample.splice(2, 0, 'Flower Garden');</p>
+											<p>//Results: ["Mall", "Park", "Flower Garden", "Airport", "Beach"]</p>
+										</div>
+										<h3>Array.prototype.unshift()</h3>
+										<p>Adds one or more elements on the first index of an array.</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>array.unshift([element1[, ...[, elementN]]])</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample = ['Blue’', 'Brown'];</p>
+											<p>sample.unshift(‘Pink’, ‘Red’);</p>
+											<p>//Results: ["Pink", "Red", "Blue’", "Brown"]</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--END OF CARD-->
+						</div>
+						<div id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="card">
+								<div class="card-header" role="tab" id="fundamentals">
+									<h5 class="mb-0">
+										<a class="collapsed collapsedTitle" data-toggle="collapse" data-parent="#accordion" href="#accessorMethods" aria-expanded="false" aria-controls="collapseTwo">
+										Accessor Methods
+										</a>
+									</h5>
+								</div>
+								<div id="accessorMethods" class="collapse" role="tabpanel" aria-labelledby="fundamentals">
+									<div class="card-block">
+										<p>Does not modifies the target array</p>
+										<h3>Array.prototype.concat()</h3>
+										<p>Joining an array to another array or a value.</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>var new_array = old_array.concat(value1[, value2[, ...[, valueN]]])</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample1 = [1, 2]</p>
+											<p>var sample2 = [3, 4];</p>
+											<p>var sample3 = sample1.concat(sample2)</p>
+											<p>console.log(sample3)</p>
+											<p>//Results: [1, 2 , 3, 4]</p>
+										</div>
+										<h3>Array.prototype.indexOf()</h3>
+										<p>Gets the index of an element from the array, and returns -1 if the index is not found or undefined.</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>array.indexOf(searchElement[, fromIndex])</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample = [8, 17, 9, 20, 33]</p>
+											<p>sample.indexOf(20);</p>
+											<p>//Results: 3</p>
+											<p>sample.indexOf(100);</p>
+											<p>//Results: -1</p>
+										</div>
+										<h3>Array.prototype.join()</h3>
+										<p>Joins all elements from an array to a string</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>array.join()</p>
+											<p>array.join(separator)</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample = ['to', 'God', 'be', 'the', 'glory'];</p>
+											<p>sample.join('-')</p>
+											<p>//Result: "to-God-be-the-glory"</p>
+										</div>
+										<h3>Array.prototype.lastIndexOf()</h3>
+										<p></p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>array.lastIndexOf(searchElement)</p>
+											<p>array.lastIndexOf(searchElement, fromIndex)</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample = [100, 50, 25, 30, 100];</p>
+											<p>sample.lastIndexOf(100);</p>
+											<p>//Result: 4</p>
+										</div>
+										<h3>Array.prototype.slice()</h3>
+										<p>Gets a subarray from an array, and returns it.</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>array.slice()</p>
+											<p>array.slice(begin)</p>
+											<p>array.slice(begin, end)</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample = [10, 20, 30, 40, 50];</p>
+											<p>sample.slice(2, 4)</p>
+											<p>//Result: [20, 40]</p>
+										</div>
+										<h3>Array.prototype.toString()</h3>
+										<p>Returns the array into a string representation, and returns it.</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>array.toString()</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample = [‘Hello’, ‘World’, ‘Hi’, ‘Universe’];</p>
+											<p>sample.toString();</p>
+											<p>//Result: "Hello,World,Hi,Universe"</p>
+										</div>
+										<h3>Array.prototype.toLocaleString()</h3>
+										<p>Returns the array into a localized string representation, and returns it</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>array.toLocaleString();</p>
+											<p>array.toLocaleString(locales);</p>
+											<p>array.toLocaleString(locales, options);</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var date = new Date();</p>
+											<p>var sample = [‘My birthday is today’, date];</p>
+											<p>sample.toLocaleString();</p>
+											<p>//Result: "My birthday is today,4/20/2017, 9:36:42 PM"</p>
+											<p>// The date depends on the time zone.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--END OF CARD-->
+						</div>
+						<div id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="card">
+								<div class="card-header" role="tab" id="fundamentals">
+									<h5 class="mb-0">
+										<a class="collapsed collapsedTitle" data-toggle="collapse" data-parent="#accordion" href="#iteratorMethods" aria-expanded="false" aria-controls="collapseTwo">
+										Iterator Methods
+										</a>
+									</h5>
+								</div>
+								<div id="iteratorMethods" class="collapse" role="tabpanel" aria-labelledby="fundamentals">
+									<div class="card-block">
+										<h3>Array.prototype.entries()</h3>
+										<p>Returns a new array iterator object that contains the key/value pairs for each index of the array.</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>array.entries()</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample = [‘dog’, ‘cat’, ‘duck’];</p>
+											<p>var iterator = sample.entries();</p>
+											<p>for (let x of iterator) {</p>
+											<p>  console.log(x);</p>
+											<p>}</p>
+											<p>// Results :[0, 'dog']</p>
+											<p>// Results :[1, 'cat']</p>
+											<p>// Results :[2, 'dog']</p>
+										</div>
+										<h3>Array.prototype.every()</h3>
+										<p>Validates all elements inside an array if it satisfies the function, true if valid, and false otherwise.</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>array.every(callback[, thisArg])</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>function isEven (element, index, array) {</p>
+											<p>	return element%2 = 0;</p>
+											<p>}</p>
+											<p>[1, 2, 3, 4, 5].every(isEven );   // Result : false</p>
+											<p>[12, 22, 32, 42, 52].every(isEven ); // Result : true</p>
+										</div>
+										<h3>Array.prototype.filter()</h3>
+										<p>Create and fills the array with elements that satisfies a given function.</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>var newArray = arr.filter(callback[, thisArg])</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>function isOdd(element, index, array) {</p>
+											<p>  return element%2 != 0;</p>
+											<p>}</p>
+											<p>[10, 11, 12, 13, 14].filter(isOdd );</p>
+											<p>// Result : [11,13]</p>
+										</div>
+										<h3>Array.prototype.find()</h3>
+										<p>Returns the first element in an array that satisfies a given function. Returns undefined if otherwise</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>array.find(callback[, thisArg])</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>function isEven (element, index, array) {</p>
+											<p>	return element%2 = 0;</p>
+											<p>}</p>
+											<p>[1, 2, 3, 4, 5].find(isEven );   // Result : 2</p>
+										</div>
+										<h3>Array.prototype.findIndex()</h3>
+										<p>Returns the index of the first element in an array that satisfies a given function. Returns undefined if otherwise.</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>array.findIndex(callback[, thisArg])</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>function isOdd(element, index, array) {</p>
+											<p>  return element%2 != 0; </p>
+											<p>}</p>
+											<p>[10, 11, 12, 13, 14].findIndex(isOdd );</p>
+											<p>// Result : 1</p>
+										</div>
+										<h3>Array.prototype.forEach()</h3>
+										<p>Executes a given function on every element of an array once.</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>arr.forEach(function callback(currentValue, index, array) {//your iterator}[, thisArg]);</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample = ['house', 'park', 'mall'];</p>
+											<p>sample.forEach(function(element) {</p>
+											<p>    console.log(element);</p>
+											<p>});</p>
+											<p>// Result : house</p>
+											<p>// Result : park</p>
+											<p>// Result : mall</p>
+										</div>
+										<h3>Array.prototype.keys()</h3>
+										<p>Returns a new Array Iterator that contains the keys for each index in the array.</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>array.keys(</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample= [1, 2, 3, , 4, 5];</p>
+											<p>keys(sample)</p>
+											<p>// Result : house</p>
+										</div>
+										<h3>Array.prototype.map()</h3>
+										<p>Returning a new array with a set of elements that satisfies a given function.</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>var new_array = arr.map(callback[, thisArg])</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample= [2, 4, 6, 8];</p>
+											<p>sample.map(function(x) {</p>
+											<p>  return x* 3;</p>
+											<p>});</p>
+											<p>// Result : [6, 12, 18, 24]</p>
+										</div>
+										<h3>Array.prototype.reduce()</h3>
+										<p>It executes a given function from left to right, making the array a single value.</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>array.reduce(callback, [initialValue])</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample = [10, 20, 30];</p>
+											<p>sample .reduce( (previous, current) => previous - current);</p>
+											<p>// Result : -40</p>
+										</div>
+										<h3>Array.prototype.reduceRight()</h3>
+										<p>It executes a given function from right to left, making the array a single value.</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p>array.reduceRight(callback[, initialValue])</p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>var sample = [10, 20, 30];</p>
+											<p>sample .reduceRight( (previous, current) => previous - current);</p>
+											<p>// Result : 0</p>
+										</div>
+										<h3>Array.prototype.some()</h3>
+										<p>array.some(callback[, thisArg])</p>
+										<p> Syntax: </p>
+										<div class = "example">
+											<p></p>
+										</div>
+										<p> Example: </p>
+										<div class = "example">
+											<p>function isEven (element, index, array)</p>
+											<p>	return element%2 = 0;</p>
+											<p>}</p>
+											<p>[1, 3, 5, 7, 9].some(isEven );   // Result : false</p>
+											<p>[1, 3, 5, 7, 9, 10].some(isEven ); // Result : true</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--END OF CARD-->
+						</div>
+					</div>
+					<h3 class="subTopic">JAVA VS JAVASCRIPT</h3>
+					<table class = "table">
+						<tbody>
+							<tr>
+								<td>
+									<p><strong>JavaScript</strong></p>
+								</td>
+								<td>
+									<p><strong>Java</strong></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Object-oriented. No distinction between types of objects. Inheritance is through the 
+										prototype mechanism, and properties and methods can be added to any object dynamically.
+									</p>
+								</td>
+								<td>
+									<p>Class-based. Objects are divided into classes and instances with all inheritance through 
+										the class hierarchy. Classes and instances cannot have properties or methods added dynamically.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Dynamic typing &ndash; Variable data types are not declared</p>
+								</td>
+								<td>
+									<p>Static typing &ndash; Variable data types must be declared</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Cannot automatically write to hard disk.</p>
+								</td>
+								<td>
+									<p>Can automatically write to hard disk.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3 class="subTopic">JavaScript Variables</h3>
+					<p>Variable declarations, wherever they occur, are processed before any code is executed.
+						The scope of a variable declared with var is its current <em>execution context</em>, which is
+						either the enclosing function or, for variables declared outside any function, global.
+						If you re-declare a JavaScript variable, it will not lose its value.
+					</p>
+					<h3 class="topSub">Declaring and initializing two variables</h3>
+					<div class = "example">
+						<p>var a = 0, b = 0;</p>
+					</div>
+					<h3 class="topSub">Assigning two variables with single string value</h3>
+					<div class = "example">
+						<p>var a = 'A';</p>
+						<p>var b = a;</p>
+						<p>// Equivalent to:</p>
+						<p>var a, b = a = 'A';</p>
+					</div>
+					<p><strong>let</strong> allows you to declare variables that are limited in scope to the block,
+						statement, or expression on which it is used. This is unlike the var keyword, which defines a 
+						variable globally, or locally to an entire function regardless of block scope.
+					</p>
+					<p>The <strong>const </strong>declaration creates a read-only reference to a value. It does not 
+						mean the value it holds is immutable, just that the variable identifier cannot be reassigned. 
+						For instance, in case the content is an object, this means the object itself can still be altered.
+					</p>
+					<h3 class="topSub">JAVASCRIPT DATA TYPES AND DATA STRUCTURES</h3>
+					<h4>Simple Primitive Types</h4>
+					<p>All types except objects define immutable values (values, which are incapable of being changed).
+						For example and unlike to C, Strings are immutable. We refer to values of these types as "primitive values".
+					</p>
+					<ul>
+						<li>Boolean type</li>
+						<li>Null type</li>
+						<li>Undefined type</li>
+						<li>Number type</li>
+						<li>String type</li>
+						<li>Symbol type</li>
+					</ul>
+					<h4>Structure/Objects</h4>
+					<p>In JavaScript, objects can be seen as a collection of properties. With the object literal syntax a limited set of properties are initialized then properties can be added and removed.</p>
+					<p> Use the prototype object oriented </p>
+					<p>There are two types of object properties which have certain attributes:</p>
+					<ul>
+						<li>Data property</li>
+						<li>Accessor property</li>
+					</ul>
+					<h3 class="topSub">Creating an Object</h3>
+					<ul>
+						<li>The same as Javascript variables, it is also case sensitive. On defining a property of an object, just assign it with a value.</li>
+						<li>Example:</li>
+					</ul>
+					<div class = "example">
+						<p>var flower= new Object();</p>
+						<p>flower.name = ‘rose’;</p>
+						<p>flower.color = ‘red’</p>
+						<p>flower.description = ‘beautiful’;</p>
+					</div>
+					<h3 class="topSub">Deleting properties from an Object</h3>
+					<ul>
+						<li>By using the delete operator, we can remove a property from an Object.</li>
+					</ul>
+					<div class = "example">
+						<p>var flower= new Object();</p>
+						<p>flower.name = ‘rose’</p>
+						<p>flower.color = ‘red’;</p>
+						<p>flower.description = ‘beautiful’;</p>
+						<p></p>
+						<p>delete flower.color; // returns “true”</p>
+						<p>console.log (flower);</p>
+						<p>//Result : Object {name: "rose", description: "beautiful"}</p>
+					</div>
+					<h3 class="topSub">Using JavaScript Object Notation (JSON)</h3>
+					<ul>
+						<li>Used for storing data.</li>
+						<li>An object can composed of an array, set of objects, an array inside an array or an object, or an object inside an array or another object. Data storing could be complex.</li>
+						<li>Example of JSON file:</li>
+					</ul>
+					<div class = "example">
+						<p>flower= [</p>
+						<p>{</p>
+						<p>"name" : "Rose",</p>
+						<p>"color" :"red",</p>
+						<p>"description" : “beautiful”</p>
+						<p>},</p>
+						<p>{</p>
+						<p>"name" : "Rose",</p>
+						<p>"color" :"red",</p>
+						<p>"description" : “beautiful”</p>
+						<p>}</p>
+						<p>]</p>
+					</div>
+					<h3 class="topSub">Storing JSON on a local storage</h3>
+					<ul>
+						<li>By using localStorage property, we can store and retrieve a local storage object</li>
+						<li class = "example">
+							<p>var sampleJSON = JSON.stringify(flower);</p>
+							<p>localStorage.setItem(“data”, sampleJSON);</p>
+						</li>
+						<li>Example of retrieving data:</li>
+						<li class = "example">
+							<p>var retrievedJSON =  localStorage.getItem("data");</p>
+							<p>var flower = JSON.parse(retrievedJSON);</p>
+						</li>
+					</ul>
+					<h3 class="subTopic">DOM</h3>
+					<p>DOM(Document Object Model), according to Mozilla Developer Network, is a programming interface for HTML and XML documents. &ldquo;It provides a structured representation of the document and it defines a way that the structure can be accessed from programs so that they can change the document structure, style and content.&rdquo; </p>
+					<p>DOM Standards</p>
+					<ul>
+						<li>W3C DOM</li>
+						<li>WHATWG DOM</li>
+					</ul>
+					<p>For example, the standard DOM specifies that the getElementsByTagName method in the code below must return a list of all the &lt;P&gt; elements in the document:</p>
+					<p>HTML:</p>
+					<div class="example">
+						<p>&lt;p&gt; The quick brown fox jumped over the lazy dog.&lt;/p&gt;</p>
+						<p>&lt;p&gt; Clean clams crammed in clean cans.&lt;/p&gt;</p>
+					</div>
+					<p>JAVASCRIPT:</p>
+					<div class="example">
+						<p>var paragraphs = document.getElementsByTagName(&ldquo;p&rdquo;);</p>
+						<p>//Paragraph[0] is the paragraph containing &ldquo;Hello World&rdquo;</p>
+						<p>//Paragraph[1] is the paragraph containing &ldquo;This is a paragraph&rdquo;</p>
+						<p>Paragraph[0]</p>
+						<p>//Result :&lt;p&gt; The quick brown fox jumped over the lazy dog.&lt;/p&gt;</p>
+						<p>paragraphs[1].nodeName</p>
+						<p>//Result :&ldquo;P&rdquo;</p>
+						<p>paragraphs[1].innerText</p>
+						<p>//Result :&ldquo;Clean clams crammed in clean cans.&rdquo;</p>
+					</div>
+					<p><strong>Important Data types</strong></p>
+					<p>There are a number of different data types that is being passed around the API that you should be aware of. These are the following important data types:</p>
+					<ul>
+						<li>Document</li>
+						<ul>
+							<li>When an object of type document is returned, this object will be the root document itself.</li>
+						</ul>
+						<li>Element</li>
+						<ul>
+							<li>This refers to the node of type element returned by a member of the DOM API. a method returns an element that is created in the DOM.</li>
+						</ul>
+						<li>nodeList</li>
+						<ul>
+							<li>An array of elements that are accessed by index in either:</li>
+							<ul>
+								<li>list.item(1)</li>
+								<li>list[1]</li>
+							</ul>
+						</ul>
+						<li>Attribute</li>
+						<ul>
+							<li>These are nodes in the DOM that when returned as an object, exposes special interface for attributes</li>
+						</ul>
+						<li>namedNodeMap</li>
+						<ul>
+							<li>Similar to an array but the items in it are accessed by name or by index.</li>
+						</ul>
+					</ul>
+					<p>The following is a brief list of common APIs in web and XML page scripting using the DOM.</p>
+					<ul>
+						<h3><a href="https://developer.mozilla.org/en-US/docs/DOM/document.getElementById">document.getElementById</a>(id)</h3>
+					</ul>
+					<p>SYNTAX:</p>
+					<div class="example">
+						<p>Element = document.getElementById(id);</p>
+					</div>
+					<p>HTML:</p>
+					<div class="example">
+						<p>&lt;body&gt;</p>
+						<p>&lt;p id=&rdquo;btns&rdquo;&gt;</p>
+						<p>&lt;button onclick=&rdquo;saySomething(&lsquo;hello&rsquo;);&rdquo;&gt;Click to say hello&lt;/button&gt;</p>
+						<p>&lt;button onclick=&rdquo;saySomething(&lsquo;hi&rsquo;);&rdquo;&gt;Click to say hi&lt;/button&gt;</p>
+						<p>&lt;/p&gt;</p>
+						<p>&lt;/body&gt;</p>
+					</div>
+					<p>JAVASCRIPT:</p>
+					<div class="example">
+						<p>Function saySomething(newString) {</p>
+						<p>Var elem = document.getElementById(&lsquo;btns&rsquo;);</p>
+						<p>Elem.style.color = newString;</p>
+						<p>}</p>
+					</div>
+					<ul>
+						<h3>document.<a href="https://developer.mozilla.org/en-US/docs/Web/API/Element.getElementsByTagName">getElementsByTagName</a>(name)</h3>
+					</ul>
+					<p>SYNTAX:</p>
+					<div class="example">
+						<p>Elements = element.getElementsByTagName(tagName)</p>
+					</div>
+					<p>JAVASCRIPT:</p>
+					<div class="example">
+						<p>// check the alignment on a number of cells in a table.</p>
+						<p>var table = document.getElementById("table1");</p>
+						<p>var cells = table.getElementsByTagName("td"); </p>
+						<p>for (var i = 0; i &lt; cells.length; i++) { </p>
+						<p>&nbsp;var status = cells[i].getAttribute("stat);</p>
+						<p>&nbsp;&nbsp;if ( status == "open" ) { </p>
+						<p>// get data </p>
+						<p>&nbsp;&nbsp;}</p>
+						<p>}</p>
+					</div>
+					<ul>
+						<h3><a href="https://developer.mozilla.org/en-US/docs/DOM/document.createElement">&nbsp;document.createElement</a>(name)</h3>
+					</ul>
+					<p>SYNTAX:</p>
+					<div class="example">
+						<p>Var element = document.createElement(tagName, [options]);</p>
+					</div>
+					<p>Tagname-specifies the type of element that will be created.</p>
+					<p>Options - optional ElementCreationOptions object that contains a single property called is, where the value of is is the tage name for a particular element previously defined.</p>
+					<div class="example">
+						<p>document.body.onload = addElement;
+						<p>function addElement () {</p>
+						<p>// create a new p element</p>
+						<p>// and give it some content</p>
+						<p>var newParagraph = document.createElement("p");</p>
+						<p>var newContent = document.createTextNode("Hi there and greetings!");</p>
+						<p>newParagraph.appendChild(newContent); //add the text to paragraph.</p>
+						<p>// add the newly created element and its content into the DOM </p>
+						<p>var currentParagraph = document.getElementById("paragraph1");</p>
+						<p>document.body.insert(newParagraph, currentParagraph);</p>
+						<p>}</p>
+					</div>
+					<ul>
+						<h3>parentNode.<a href="https://developer.mozilla.org/en-US/docs/DOM/Node.appendChild">appendChild</a>(node)</h3>
+					</ul>
+					<p>SYNTAX:</p>
+					<div class="example">
+						<p>Var aChild = element.appendChild(aChild);</p>
+					</div>
+					<p>JAVASCRIPT:</p>
+					<div class="example">
+						<p>Var par = document.createElement(&ldquo;p&rdquo;);</p>
+						<p>document.body.appendChild(par);</p>
+					</div>
+					<ul>
+						<h3>element.<a href="https://developer.mozilla.org/en-US/docs/DOM/element.innerHTML">innerHTML</a></h3>
+					</ul>
+					<p>SYNTAX:</p>
+					<div class="example">
+						<p>Const content = element.innerHTML;</p>
+						<p>element.innerHTML = content;</p>
+					</div>
+					<p>HTML: </p>
+					<div class="example">
+						<p>&lt;body&gt;</p>
+						<p>&lt;p id=&rdquo;text1&rdquo;&gt;The quick brown fox jumps over the lazy dog. &lt;/p&gt;</p>
+						<p>&lt;/body&gt;</p>
+					</div>
+					<p>JAVASCRIPT:</p>
+					<div class="example">
+						<p>Var p = document.getElementById(&ldquo;text1&rdquo;);</p>
+						<p>console.log(p.innerText);</p>
+					</div>
+					<ul>
+						<h3>Element.<a href="https://developer.mozilla.org/en-US/docs/DOM/element.style">style</a>.left</h3>
+						<ul>
+							<li>HTMLElement.style property is used to get, also, the inline style of an element</li>
+						</ul>
+						<h3> element.<a href="https://developer.mozilla.org/en-US/docs/DOM/element.setAttribute">setAttribute</a></h3>
+					</ul>
+					<p>SYNTAX:</p>
+					<div class="example">
+						<p>Element.setAttribute(name, value)</p>
+						<p>//Name - name of attribute to be set</p>
+						<p>//Value - value to assign to the attribute</p>
+					</div>
+					<p>HTML:</p>
+					<div class="example">
+						<p>&lt;button&gt;Click here&lt;/button&gt;</p>
+					</div>
+					<p>JAVASCRIPT:</p>
+					<div class="example">
+						<p>Var b = document.querySelector(&ldquo;button&rdquo;)</p>
+						<p>b.setAttribute(&ldquo;name&rdquo;, &ldquo;clickButton&rdquo;);</p>
+						<p>b.setAttribute(&ldquo;disabled&rdquo;, &ldquo;&rdquo;);</p>
+					</div>
+					<ul>
+						<h3>element.<a href="https://developer.mozilla.org/en-US/docs/DOM/element.getAttribute">getAttribute</a></h3>
+					</ul>
+					<p>SYNTAX:</p>
+					<div class="example">
+						<p>Var attribute = element.getAttribute(attributename);</p>
+					</div>
+					<p>JAVASCRIPT:</p>
+					<div class="example">
+						<p>Var div1 = document.getElementById(&ldquo;div1&rdquo;);</p>
+						<p>Var style=div1.getAttribute(&ldquo;style&rdquo;);</p>
+					</div>
+					<ul>
+						<h3>element.<a href="https://developer.mozilla.org/en-US/docs/DOM/element.addEventListener">addEventListener</a></h3>
+						<ul>
+							<li>A method that adds the specified EventListener-compatible object to the event listeners of the event type on the even target on which it&rsquo;s called.</li>
+						</ul>
+					</ul>
+					<p>JAVASCRIPT:</p>
+					<div class="example">
+						<p>window.addEventListner(&ldquo;test&rdquo;, null, options);</p>
+					</div>
+					<ul>
+						<h3><a href="https://developer.mozilla.org/en-US/docs/DOM/window.content">Window.content</a></h3>
+						<ul>
+							<li>A window=object is returned for the primary content window.</li>
+						</ul>
+					</ul>
+					<p>SYNTAX:</p>
+					<div class="example">
+						<p>Var windowObject = window.content;</p>
+					</div>
+					<ul>
+						<h3><a href="https://developer.mozilla.org/en-US/docs/DOM/window.onload"> Window.onload</a></h3>
+					</ul>
+					<p>SYNTAX:</p>
+					<div class="example">
+						<p>Window.onload = funcRef;</p>
+					</div>
+					<p>JAVASCRIPT:</p>
+					<div class="example">
+						<p>Window.onload = function() {</p>
+						<p>init();</p>
+						<p>doSomethingElse();</p>
+						<p>}</p>
+					</div>
+					<ul>
+						<h3><a href="https://developer.mozilla.org/en-US/docs/DOM/window.dump"> window.dump</a></h3>
+					</ul>
+					<p>SYNTAX:</p>
+					<div class="example">
+						<p>window.dump(message);</p>
+						<p>dump(message);</p>
+					</div>
+					<ul>
+						<h3><a href="https://developer.mozilla.org/en-US/docs/DOM/window.scrollTo"> window.scrollTo</a></h3>
+					</ul>
+					<p>SYNTAX:</p>
+					<div class="example">
+						<p>window.scrollTo(x-coord, y-coord)</p>
+					</div>
+				</div>
+				<!--End of Row-->
+			</div>
+			<!--End of Container-->
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-lg-12">
+						<div class="wow shake" data-wow-delay="0.4s">
+							<div class="page-scroll marginbot-30">
+								<a href="#intro" id="totop" class="btn btn-circle">
+								<i class="fa fa-angle-double-up animated"></i>
+								</a>
+							</div>
+						</div>
+						<p>&copy;TechnoWeb. All rights reserved.</p>
+						<div class="credits">
+							<!-- 
+								All the links in the footer should remain intact. 
+								You can delete the links only if you purchased the pro version.
+								Licensing information: https://bootstrapmade.com/license/
+								Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Squadfree
+								-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Core JavaScript Files -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.easing.min.js"></script>	
+		<script src="js/jquery.scrollTo.js"></script>
+		<script src="js/wow.min.js"></script>
+		<!-- Custom Theme JavaScript -->
+		<script src="js/custom.js"></script>
+		<script src="contactform/contactform.js"></script>
+	</body>
+</html>

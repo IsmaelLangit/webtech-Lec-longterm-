@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>TechnoWeb |Finals</title>
+		<!-- Bootstrap Core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<!-- Fonts -->
+		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="css/animate.css" rel="stylesheet" />
+		<!-- Squad theme CSS -->
+		<link href="css/style.css" rel="stylesheet">
+		<link href="color/default.css" rel="stylesheet">
+		<!-- =======================================================
+			Theme Name: Squadfree
+			Theme URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
+			Author: BootstrapMade
+			Author URL: https://bootstrapmade.com
+			======================================================= -->
+	</head>
+	<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+		<!-- Preloader -->
+		<!--<div id="preloader">
+			<div id="load"></div>
+			</div>-->
+		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header page-scroll">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+					<i class="fa fa-bars"></i>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<h1>TECHNOWEB</h1>
+					</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="prelims.html">Prelims</a></li>
+								<li><a href="midterms.html">Midterms</a></li>
+								<li><a href="finals.html">Finals</a></li>
+							</ul>
+						</li>
+						<li><a href="#about">Team</a></li>
+						<li><a href="#service">About</a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+		</nav>
+		<!-- Section: Java Server Side Scripting -->
+		<section id="internet" class="topPortion lessonSections">
+			<div class="container">
+				<div class="section-heading">
+					<h2>Java Server-side Scripting</h2>
+				</div>
+				<div class="row">
+					<p> Java is a descendant of C language. It comes with a background of software components. Java is a platform-independent because of Java Virtual Machine. Java could also be used in Server-side scripting with the use of Java servlets and JSP supported by Java Enterprise Edition. </p>
+				</div>
+				<div class="row">
+					<h3 class="subTopic">
+					Java Servlets</h2>
+					<p>According to the oracle documentation of Java EE 6 Tutorial, “A servlet is a Java programming language used to extend the capabilities of servers that host applications accessed by means of a request-response programming model.” Java servlets are used to expand the capabilities of the application hosted by web servers.</p>
+					<p>Javax.servlet and javax.servlet.http are the packages that provide interfaces and classes to be used in programming with servlets. Servlet interface defines the lifecycle methods which is why it must be implemented in all servlets.</p>
+				</div>
+				<div class="row">
+					<h3 class="subTopic">
+					Servlet Life Cycle</h2>
+					<p>A container where the servlet is deployed is what controls the lifecycle of a servlet.</p>
+				</div>
+				<div class="row">
+					<h3 class="subTopic">Handling Servlet Lifecycle Events</h3>
+					<p>By defining listener objects, you can monitor and react to the events in a servlet’s lifecycle. The methods of the listener objects methods get invoked when lifecycle events occur. The listener class must be defined and specified to be used.</p>
+				</div>
+				<div class="row">
+					<h3 class="subTopic">Defining the Listener Class</h3>
+					<p>A listener class is defined as an implementation of a listener interface. The table below will show the events and the corresponding interface that must be implemented.</p>
+				</div>
+				<table class="table">
+					<tbody>
+						<tr>
+							<td>
+								<p>Object</p>
+							</td>
+							<td>
+								<p>Event</p>
+							</td>
+							<td>
+								<p>Listener Interface and Event Class</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Web Context</p>
+							</td>
+							<td>
+								<p>Initialization and destruction</p>
+							</td>
+							<td>
+								<ul>
+									<li>javax.servlet.ServletContextListener</li>
+									<li>ServletContextEvent</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Web Context</p>
+							</td>
+							<td>
+								<p>Attribute added, removed, or replaced</p>
+							</td>
+							<td>
+								<ul>
+									<li>javax.servlet.ServletContextAttributeListener</li>
+									<li>ServletContextAttributeEvent</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Session</p>
+							</td>
+							<td>
+								<p>Creation, invalidation, activation, passivation, and timeout</p>
+							</td>
+							<td>
+								<ul>
+									<li>javax.servlet.http.HttpSessionListener</li>
+									<li>javax.servlet.http.HttpSessionActivationListener</li>
+									<li>HttpSessionEvent</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Session</p>
+							</td>
+							<td>
+								<p>Attribute added, removed, or replaced</p>
+							</td>
+							<td>
+								<ul>
+									<li>javax.servlet.http.HttpSessionAttributeListener</li>
+									<li>HttpSessionBindingEvent</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Request</p>
+							</td>
+							<td>
+								<p>A servlet request has started being processed by web components</p>
+							</td>
+							<td>
+								<ul>
+									<li>javax.servlet.ServletRequestListener</li>
+									<li>ServletRequestEvent</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Request</p>
+							</td>
+							<td>
+								<p>Attribute added, removed, or replaced</p>
+							</td>
+							<td>
+								<ul>
+									<li>javax.servlet.ServletRequestAttributeListener</li>
+									<li>ServletRequestAttributeEvent</li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="row">
+					<h3 class="subTopic">Creating and Initializing a Servlet</h3>
+					<p>@WebServlet is the annotation used to define a servlet in a web application. It is specified on a class and it contains metadata about the declared servlet. It also must contain at least one URL pattern by using urlPatterns or value attribute.</p>
+					<p>Classes that are annotated with @WebServlet must extend the javax.servlet.http.HttpServlet class. For example, the following code snippet defines a servlet with the URL pattern:</p>
+					<p>import javax.servlet.annotation.WebServlet;</p>
+					<p>import javax.servlet.http.HttpServlet;</p>
+					<p>@WebServlet (/&rdquo;report&rdquo;)</p>
+					<p>Public class SampleServlet extends HttpServlet {</p>
+					<p>&hellip;</p>
+					<p>After the loading and instantiating the servlet class, the web container initializes a servlet. It then delivers the request from the clients.</p>
+					<h3 class="subTopic">Writing Service Methods</h3>
+					<p>The service method of a GenericServlet implements the service provided by a servlet. The <strong>service method</strong> is used for any method in a servlet class that provides service to a client.</p>
+					<p>The pattern for a service method is first, extract information from the request. Second, access external resources, then populate the response based on the information. The procedure for populating the response is:</p>
+					<ol>
+						<li>Retrieve an output stream from the response.</li>
+						<li>Fill in the response headers.</li>
+						<li>Write any body content to the output stream.</li>
+					</ol>
+					<p>Response headers are always first before the response has been committed. Any attempt to set or add headers after the response has been committed will be ignored by the web container.</p>
+					<p><strong><strong><br /><br /></strong></strong></p>
+					<h3 class="subTopic"> Getting Information from Requests</h3>
+					<ul>
+						<li>Parameters - used to convey information between clients and servlets.</li>
+						<li>Object-Value attributes - used to pass information between web container and a servlet in collaborating servlets.</li>
+						<li>Information about the protocol used to communicate the request and about the client and server involved in the request.</li>
+						<li>Information that are important to localization.</li>
+					</ul>
+					<p>HTTP servlets are passed in an HTTP request object HttpServletRequest. It contains the request URL, HTTP Headers, query string, etc. An HTTP request URL contains the following parts:</p>
+					<p><a href="http://[host]:[port][request-path]?[query-string">http://[host]:[port][request-path]?[query-string</a>]</p>
+					<p>The request path is composed of:</p>
+					<ul>
+						<li>Context path - a concatenation of forward slash with the context root of the servlet&rsquo;s web application.</li>
+						<li>Servlet path - path section that corresponds to the component alias that activated this request. It starts with a forward slash.</li>
+						<li>Path info - The part of the request path which is not part of the context path or the servlet path.</li>
+					</ul>
+					<h3 class="subTopic"> Filtering Requests and Responses </h3>
+					<p>A filter is an object that can transform and content of a request response.</p>
+					<p>The main tasks of a filter are:</p>
+					<ol>
+						<li>Query the request and act accordingly</li>
+						<li>Block the request-and-response pair from passing any further.</li>
+						<li>Modify the request headers and data. By providing a customized version of the request, you can do this.</li>
+						<li>Modify the response headers and data by giving a customized version of the request.</li>
+						<li>Interact with external resources.</li>
+					</ol>
+					<p>Filters can be applied in authentication, logging, image conversion, data compression, encryption, tokenizing streams, XML transformations, etc.</p>
+					<p>Reference: http://docs.oracle.com/javaee/6/tutorial/doc/gkcpg.html</p>
+					<p><strong><strong><br /><br /></strong></strong></p>
+					<h3 class="subTopic"> JSP (JavaServer Pages)</h3>
+					<p>This technology provides simplified and fast way to create dynamic web content. It enables the fast development of web-based applications that are server- and platform- independent.</p>
+					<p>A JSP page is a text document which contains two types of text: static and dynamic content. The file extension for JSP is .jsp.</p>
+					<p>JSP uses tags that are similar to to XML which encapsulates the logic that generates the content for the page. It is an extension of the Java Servlet technology.</p>
+					<p>A JSP page is a typical mixture of static HTML markup and JSP elements. JSP constructs examples:</p>
+					<ul>
+						<li>Page Directives</li>
+					</ul>
+					<p>&lt;%@page &hellip;. %&gt;</p>
+					<ul>
+						<li>Library Directives</li>
+					</ul>
+					<p>&lt;%@taglib&hellip;%&gt;</p>
+					<ul>
+						<li>jsp:useBean is an element that creates an object that contains a collection of locales and it initializes an identifier that points to that object.</li>
+						<li>JSP expression language expression</li>
+					</ul>
+					<p>( $ { } )</p>
+					<ul>
+						<li>Custom Tags set a variable and iterates over a collection of locale names and conditionally insert HTML text into the response.</li>
+					</ul>
+					<p>c:forEach, c:if, c:when, c:otherwise</p>
+					<ul>
+						<li>jsp:setProperty is another standard element which sets the calue of an object property.</li>
+						<li>Function (f:equals) tests the quality of an attribute and the current item of a collection.</li>
+					</ul>
+					<p><strong><strong><br /><br /><br /></strong></strong></p>
+					<p>Here is a sample JSP page:</p>
+					<p>&lt;%@page contentType="text/html" pageEncoding="UTF-8"%&gt;</p>
+					<p>&lt;%@page import = "java.sql.*" %&gt;</p>
+					<p>&lt;!DOCTYPE html&gt;</p>
+					<p>&lt;html&gt;</p>
+					<p>&lt;head&gt;</p>
+					<p>&lt;title&gt;Home&lt;/title&gt;</p>
+					<p>&lt;link rel="stylesheet" href="styles/style.css"&gt;</p>
+					<p>&lt;Link rel="icon" href="styles/images/icon.png"&gt;</p>
+					<p>&lt;meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"&gt;</p>
+					<p>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;</p>
+					<p>&lt;meta name="HandheldFriendly" content="true"&gt;</p>
+					<p>&lt;/head&gt;</p>
+					<p>&lt;body&gt;</p>
+					<p>&lt;%</p>
+					<p>String getService = request.getParameter("search");</p>
+					<p>try {</p>
+					<p>if (getService.contains("cleaning")</p>
+					<p>|getService.contains("nail trimming")</p>
+					<p>| getService.contains("sanitary trim")</p>
+					<p>| getService.contains("teeth brushing")</p>
+					<p>| getService.contains("haircut")</p>
+					<p>| getService.contains("blowdry")</p>
+					<p>| getService.contains("shampoo")</p>
+					<p>| getService.contains("bath")</p>
+					<p>| getService.contains("pedicure")</p>
+					<p>| getService.contains("ear cleaning")) {</p>
+					<p>response.sendRedirect("pawgroom.jsp");</p>
+					<p>}</p>
+					<p>if (getService.contains("grooming")</p>
+					<p>| getService.contains("Dentistry")</p>
+					<p>| getService.contains("surgeries")</p>
+					<p>| getService.contains("prescription")</p>
+					<p>| getService.contains("medication")</p>
+					<p>| getService.contains("diets")</p>
+					<p>| getService.contains("deworming")</p>
+					<p>| getService.contains("health certificates")</p>
+					<p>| getService.contains("vaccination")</p>
+					<p>| getService.contains("consultations")</p>
+					<p>| getService.contains("senior pet health")</p>
+					<p>| getService.contains("confinements")) {</p>
+					<p>response.sendRedirect("pawmed.jsp");</p>
+					<p>}</p>
+					<p>} catch (Exception ex) {</p>
+					<p>ex.getMessage();</p>
+					<p>}</p>
+					<p>%&gt;</p>
+					<p>&lt;/body&gt;</p>
+					<p>&lt;/html&gt;</p>
+					<p><strong><strong><br /><br /></strong></strong></p>
+					<p>This program is search.jsp where in the index.jsp, a user enters a certain keyword in a text box and when entered, the user will be redirected to another page that shows the user what he/she is looking for.</p>
+				</div>
+			</div>
+			<!--End of Row-->
+			</div> <!--End of Container-->
+		</section>
+		<!-- Section: PHP -->
+		<section id="internet" class=" lessonSections">
+			<div class="container">
+				<div class="section-heading">
+					<h2>PHP Server Side Scripting</h2>
+				</div>
+				<div class="row">
+					<h3 class="subTopic">
+					What PHP can do?</h2>
+					<ul>
+						<li>generate dynamic page content</li>
+						<li>create, open, read, write, delete, and close files on the server</li>
+						<li>collect form data</li>
+						<li>send and receive cookies</li>
+						<li>add, delete, modify data in your database</li>
+						<li>used to control user-access</li>
+						<li>encrypt data</li>
+					</ul>
+				</div>
+				<div class="row">
+					<h3 class="subTopic">
+					PHP Server Side Scripting Code Example</h2>
+					<p>#!/usr/local/bin/php -q <br>
+						<?php <br>
+							error_reporting(E_ALL);<br>
+							/* Allow the script to hang around waiting for connections. */<br>
+							set_time_limit(0);<br>
+							<br>
+							/* Turn on implicit output flushing so we see what we're getting<br>
+								* as it comes in. */<br>
+							ob_implicit_flush();<br>
+							<br>
+							$address = '192.168.1.53';<br>
+							$port = 10000;<br>
+							<br>
+							if (($sock = socket_create(AF_INET, SOCK_STREAM, SOL_TCP)) === false) {<br>
+							   echo "socket_create() failed: reason: " . socket_strerror(socket_last_error()) . "\n";<br>
+							}<br>
+							<br>
+							if (socket_bind($sock, $address, $port) === false) {<br>
+							   echo "socket_bind() failed: reason: " . socket_strerror(socket_last_error($sock)) . "\n";<br>
+							}<br>
+							<br>
+							if (socket_listen($sock, 5) === false) {<br>
+							   echo "socket_listen() failed: reason: " . socket_strerror(socket_last_error($sock)) . "\n";<br>
+							}<br>
+							<br>
+							do {<br>
+							   if (($msgsock = socket_accept($sock)) === false) {<br>
+							       echo "socket_accept() failed: reason: " . socket_strerror(socket_last_error($sock)) . "\n";<br>
+							       break;<br>
+							   }<br>
+							   /* Send instructions. */<br>
+							   $msg = "\nWelcome to the PHP Test Server. \n" .<br>
+							       "To quit, type 'quit'. To shut down the server type 'shutdown'.\n";<br>
+							   socket_write($msgsock, $msg, strlen($msg));<br>
+							   <br>
+							   do {<br>
+							       if (false === ($buf = socket_read($msgsock, 2048, PHP_NORMAL_READ))) {<br>
+							           echo "socket_read() failed: reason: " . socket_strerror(socket_last_error($msgsock)) . "\n";<br>
+							           break 2;<br>
+							       <br>
+							       }<br>
+							       if (!$buf = trim($buf)) {<br>
+							           continue;<br>
+							       <br>
+							       }<br>
+							       if ($buf == 'quit') {<br>
+							           break;<br>
+							       <br>
+							       }<br>
+							       if ($buf == 'shutdown') {<br>
+							           socket_close($msgsock);<br>
+							           break 2;<br>
+							       <br>
+							       }<br>
+							       $talkback = "PHP: You said '$buf'.\n";<br>
+							       socket_write($msgsock, $talkback, strlen($talkback));<br>
+							       echo "$buf\n";<br>
+							       <br>
+							   } while (true);<br>
+							   socket_close($msgsock);<br>
+							} while (true);<br>
+							<br>
+							socket_close($sock);<br>
+							?><br>
+					</p>
+					<br>
+					<p>This example shows a simple talkback server. Change the address and port variables to suit your setup and execute. You may then connect to the server with a command similar to: telnet 192.168.1.53 10000 (where the address and port match your setup). Anything you type will then be output on the server side, and echoed back to you. To disconnect, enter 'quit'.</p>
+				</div>
+				<div></div>
+			</div>
+		</section>
+		<section id="internet" class="lessonSections">
+			<div class="container">
+				<div class="section-heading">
+					<h2>Node JS</h2>
+				</div>
+				<div class="row">
+					<p> Node.js – Has the same modules with JavaScript libraries. 
+						Use to create desktop applications.
+						Node.js has a set of built-in modules which you can use without any further installation. 
+					</p>
+				</div>
+				<div class="row">
+					<h3 class="subTopic">Node.js Built-in Modules version 6.10.0</h3>
+					<ul>
+						<li>
+							<p> assert – provides a set of assertion tests </p>
+						</li>
+					</ul>
+					<li>
+						<p>  buffer – used to handle binary data</p>
+					</li>
+					<li>
+						<p> child process – to run a child process</p>
+					</li>
+					<li>
+						<p>cluster – to split a single node process into multiple processes </p>
+					</li>
+					<li>
+						<p> crypto – use to handle OpenSSL cryptographic functions</p>
+					</li>
+					<li>
+						<p> dgram – use to provide implementation of UDP datagram sockets </p>
+					</li>
+					<li>
+						<p> dns – used to do DNS lookups and name resolution functions</p>
+					</li>
+					<li>
+						<p>domain – use to handle unhandled errors </p>
+					</li>
+					<li>
+						<p> events - use to handle events </p>
+					</li>
+					<li>
+						<p> fs – use to handle file system </p>
+					</li>
+					<li>
+						<p>  http - use to make node.js act as an HTTP server </p>
+					</li>
+					<li>
+						<p> https – use to make node.js act as an HTTPS server</p>
+					</li>
+					<li>
+						<p>net – use to create server and clients </p>
+					</li>
+					<li>
+						<p> os – provides information about the operation system</p>
+					</li>
+					<li>
+						<p> path – use to handle file paths </p>
+					</li>
+					<li>
+						<p>punycode – use as a character encoding scheme </p>
+					</li>
+					<li>
+						<p>querystring- use to handle URL query strings </p>
+					</li>
+					<li>
+						<p>readline- use to handle readable streams one line at a time </p>
+					</li>
+					<li>
+						<p> stream – use to handle streaming data </p>
+					</li>
+					<li>
+						<p>string_decoder – use to decode buffer objects into strings </p>
+					</li>
+					<li>
+						<p> tls – use to implement TLS and SSL protocols </p>
+					</li>
+					<li>
+						<p>tty – use to provide classes used by a text terminal </p>
+					</li>
+					<li>
+						<p> url – use to parse URL strings</p>
+					</li>
+					<li>
+						<p> util – use to access utility functions</p>
+					</li>
+					<li>
+						<p> v8</p>
+					</li>
+					<li>
+						<p> vm –  to compile JavaScript code in virtual machine</p>
+					</li>
+					<li>
+						<p>zlib – use to compress or decompress files </p>
+					</li>
+				</div>
+			</div>
+		</section>
+		<section id="internet" class="lessonSections">
+			<div class="container">
+				<div class="section-heading">
+					<h2>OWASP Top Ten Projects</h2>
+				</div>
+				<div class="row">
+					<p><strong>OWASP</strong> –The Open Web Application Security Project is an organization providing
+						unbiased and practical information about computer and internet
+						applications. Every 3 years they are releasing the Top Ten most dangerous
+						Web Application security vulnerabilities and providing effective solutions.
+					</p>
+				</div>
+				<div class="row">
+					<h3 class="subTopic">Injection</h3>
+					<p>Injection flaws, it occurs when an intruder send an untrusted data to an interpreter as a part of command or query. the intruder enters an SQL statement into an entry field and the input is not filtered for escape characters.</p>
+					<h3 class="subTopic">Broken authentication and session management</h3>
+					<p>When authentication functions related to the application are not implemented correctly which will allow hackers to compromise passwords specially session ID’s. Threat agents uses leaks or flaws in the authentication or session management functions.</p>
+					<h3 class="subTopic">Cross site scripting (XSS)</h3>
+					<p>Attackers can execute scripts in the browser of the victim and uses the script to hijack session ID’s, hijack the user browser, or deface the website.Often called session stealing or cookie stealing.</p>
+					<h3 class="subTopic">Broken access control</h3>
+					<p>Attackers who are authorized changes the value of the parameters in order to gain access on resources that they are unauthorized to access.</p>
+					<h3 class="subTopic">Security Misconfiguration</h3>
+					<p>Default accounts and misconfigurations are the flaws or vulnerabilities, attackers can access misconfigured accounts and default accounts. They can access those directories and gain unauthorized access. Such flaws result in a compromised system.</p>
+					<h3 class="subTopic">Sensitive data exposure</h3>
+					<p>Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data deserves extra protection such as encryption at rest or in transit, as well as special precautions when exchanged with the browser.</p>
+					<h3 class="subTopic">Insufficient attack protection</h3>
+					<p>The majority of applications and APIs lack the basic ability to detect, prevent, and respond to both manual and automated attacks. Attack protection goes far beyond basic input validation and involves automatically detecting, logging, responding, and even blocking exploit attempts.</p>
+					<h3 class="subTopic">Cross-Site Request Forgery (CSRF)</h3>
+					<p>An attack in logged-on victim’s browser to send forged HTTP request. It also includes the victim’s session cookie also the authentication information of the victim.</p>
+					<h3 class="subTopic">Using Components with Known Vulnerabilities</h3>
+					<p>Using components with known vulnerabilities is that application run with the same privileges. This components are libraries, frameworks and other software modules/application modules.</p>
+					<h3 class="subTopic">Unprotected APIs</h3>
+					<p>Applications today involve rich client applications. Examples of API’s are SOAP, XML, REST, JSON, RPC, GWT and etc. These APIs are often not secured or unprotected. The complexity of the APIs makes it difficult for the tools to analyze and protect.</p>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-lg-12">
+						<div class="wow shake" data-wow-delay="0.4s">
+							<div class="page-scroll marginbot-30">
+								<a href="#intro" id="totop" class="btn btn-circle">
+								<i class="fa fa-angle-double-up animated"></i>
+								</a>
+							</div>
+						</div>
+						<p>&copy;TechnoWeb. All rights reserved.</p>
+						<div class="credits">
+							<!-- 
+								All the links in the footer should remain intact. 
+								You can delete the links only if you purchased the pro version.
+								Licensing information: https://bootstrapmade.com/license/
+								Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Squadfree
+								-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Core JavaScript Files -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.easing.min.js"></script>	
+		<script src="js/jquery.scrollTo.js"></script>
+		<script src="js/wow.min.js"></script>
+		<!-- Custom Theme JavaScript -->
+		<script src="js/custom.js"></script>
+		<script src="contactform/contactform.js"></script>
+	</body>
+</html>
