@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Chapter 8 </title>
+    <Link rel="stylesheet" href="css/nav.css" />
+    <Link rel="stylesheet" href="css/general.css" />
+    <Link rel="stylesheet" href="css/font.css" />
+    <Link rel="icon" href="images/icon.png">
+</head>
+
+<body id ="lesson10-body">
+      <nav class="navClass">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">LESSONS</a>
+              <div class="dropdown-content">
+                <a href ="lesson1.html">Internet and the WWW</a>
+                <a href ="lesson2.html">HTTP (HyperText Markup Language)</a>
+                <a href ="lesson3.html">HTML (Hypertext Transfer Protocol)</a>
+                <a href ="lesson4.html">CSS (Cascading Style Sheets)</a>
+                <a href ="lesson5.html">Javascript</a>
+              </div>
+           <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+      </nav>
+              
+<div class = "banner banner-lessons" id = "lesson10-banner">
+  <h1 class = "title-header">CHAPTER 10: OWASP Top Ten Projects</h1>
+</div>      
+      
+<div class="lesson" id = "lesson10">
+
+    <h2>OWASP Top Ten Projects</h2>
+    <p><strong>OWASP</strong> –The Open Web Application Security Project is an organization providing
+        unbiased and practical information about computer and internet
+        applications. Every 3 years they are releasing the Top Ten most dangerous
+        Web Application security vulnerabilities and providing effective solutions.
+    </p>
+
+    <details>
+       <summary>Injection</summary>
+       <p> Injection flaws, it occurs when an intruder send an untrusted data to an interpreter as a part of command or query. the intruder enters an SQL statement into an entry field and the input is not filtered for escape characters.
+        </p>
+    </details>
+ 
+    <details>
+        <summary>Broken authentication and session management</summary>
+        <p>When authentication functions related to the application are not implemented correctly which will allow hackers to compromise passwords specially session ID’s. Threat agents uses leaks or flaws in the authentication or session management functions.</p>
+    </details>
+ 
+    <details>
+        <summary>Cross site scripting (XSS)</summary>
+        <p>Attackers can execute scripts in the browser of the victim and uses the script to hijack session ID’s, hijack the user browser, or deface the website.Often called session stealing or cookie stealing.</p>
+    </details>
+        
+    <details>
+  	    <summary>Broken access control</summary>
+        <p>Attackers who are authorized changes the value of the parameters in order to gain access on resources that they are unauthorized to access.</p>p>
+    </details>
+        
+    <details>
+ 	    <summary>Security Misconfiguration</summary>
+        <p>Default accounts and misconfigurations are the flaws or vulnerabilities, attackers can access misconfigured accounts and default accounts. They can access those directories and gain unauthorized access. Such flaws result in a compromised system.</p>p>
+    </details>
+ 
+    <details>
+  	    <summary>Sensitive data exposure</summary>
+        <p>Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data deserves extra protection such as encryption at rest or in transit, as well as special precautions when exchanged with the browser.</p>p>
+    </details>
+    
+    <details>
+  	    <summary>Insufficient attack protection</summary>
+        <p>The majority of applications and APIs lack the basic ability to detect, prevent, and respond to both manual and automated attacks. Attack protection goes far beyond basic input validation and involves automatically detecting, logging, responding, and even blocking exploit attempts.</p>
+    </details>
+
+</div>
+
+<footer>
+    <p>IT 324  |  Webtech Lecture  |  9421A | &copy; 2017</p>
+</footer>
+</body>
+
+</html>
